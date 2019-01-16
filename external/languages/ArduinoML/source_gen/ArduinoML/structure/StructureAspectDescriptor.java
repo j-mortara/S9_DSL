@@ -19,6 +19,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAction = createDescriptorForAction();
   /*package*/ final ConceptDescriptor myConceptActuator = createDescriptorForActuator();
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
+  /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
   /*package*/ final ConceptDescriptor myConceptState = createDescriptorForState();
   /*package*/ final EnumerationDescriptor myEnumerationSIGNAL = new EnumerationDescriptor_SIGNAL();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -29,7 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptState);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptSensor, myConceptState);
   }
 
   @Override
@@ -42,6 +43,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptActuator;
       case LanguageConceptSwitch.App:
         return myConceptApp;
+      case LanguageConceptSwitch.Sensor:
+        return myConceptSensor;
       case LanguageConceptSwitch.State:
         return myConceptState;
       default:
@@ -85,6 +88,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("states", 0x36166a13252ed6eL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL).optional(false).ordered(true).multiple(true).origin("243588697374780782").done();
     b.aggregate("actuators", 0x36166a13252ed72L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed16L).optional(false).ordered(true).multiple(true).origin("243588697374780786").done();
+    b.aggregate("sensors", 0x631acfca1ce41f70L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L).optional(false).ordered(true).multiple(true).origin("7141248626124398448").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSensor() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Sensor", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7141248626124266534");
+    b.version(2);
+    b.property("pin", 0x631acfca1ce21c29L).type(PrimitiveTypeId.INTEGER).origin("7141248626124266537").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForState() {

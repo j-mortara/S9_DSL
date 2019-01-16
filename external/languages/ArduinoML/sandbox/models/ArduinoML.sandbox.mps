@@ -10,6 +10,7 @@
       <concept id="243588697374780684" name="ArduinoML.structure.App" flags="ng" index="LcSIH">
         <child id="243588697374780782" name="states" index="LcSJf" />
         <child id="243588697374780786" name="actuators" index="LcSJj" />
+        <child id="7141248626124398448" name="sensors" index="1ZZH2U" />
       </concept>
       <concept id="243588697374780694" name="ArduinoML.structure.Actuator" flags="ng" index="LcSIR">
         <property id="243588697374780697" name="pin" index="LcSIS" />
@@ -23,6 +24,9 @@
         <property id="243588697374780709" name="signal" index="LcSI4" />
         <reference id="243588697374780730" name="target" index="LcSIr" />
       </concept>
+      <concept id="7141248626124266534" name="ArduinoML.structure.Sensor" flags="ng" index="1ZYdfG">
+        <property id="7141248626124266537" name="pin" index="1ZYdfz" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -32,6 +36,10 @@
   </registry>
   <node concept="LcSIH" id="dxpE4MkYKL">
     <property role="TrG5h" value="LED" />
+    <node concept="1ZYdfG" id="6cqNWCsTiVs" role="1ZZH2U">
+      <property role="1ZYdfz" value="12" />
+      <property role="TrG5h" value="theButton" />
+    </node>
     <node concept="LcSIU" id="dxpE4MkYKM" role="LcSJf">
       <property role="TrG5h" value="on" />
       <ref role="LcSIk" node="dxpE4MkYKP" resolve="off" />

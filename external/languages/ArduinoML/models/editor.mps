@@ -101,6 +101,21 @@
       <node concept="3F0ifn" id="dxpE4Ml1aJ" role="3EZMnx">
         <property role="3F0ifm" value="empty" />
       </node>
+      <node concept="3EZMnI" id="6cqNWCsT4s4" role="3EZMnx">
+        <node concept="VPM3Z" id="6cqNWCsT4s6" role="3F10Kt" />
+        <node concept="3F2HdR" id="6cqNWCsT4s$" role="3EZMnx">
+          <ref role="1NtTu8" to="gpyq:6cqNWCsT1XK" resolve="sensors" />
+          <node concept="2iRkQZ" id="6cqNWCsT4sB" role="2czzBx" />
+          <node concept="VPM3Z" id="6cqNWCsT4sC" role="3F10Kt" />
+          <node concept="3F0ifn" id="6cqNWCsT4sQ" role="2czzBI">
+            <property role="3F0ifm" value="no sensor defined" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="6cqNWCsT4s9" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="6cqNWCsT4t3" role="3EZMnx">
+        <property role="3F0ifm" value="empty" />
+      </node>
       <node concept="3EZMnI" id="dxpE4Ml1bc" role="3EZMnx">
         <node concept="VPM3Z" id="dxpE4Ml1be" role="3F10Kt" />
         <node concept="3F2HdR" id="dxpE4Ml1b$" role="3EZMnx">
@@ -135,6 +150,28 @@
       <node concept="3F0A7n" id="dxpE4Ml6TL" role="3EZMnx">
         <ref role="1NtTu8" to="gpyq:dxpE4MkIO_" resolve="signal" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6cqNWCsSAVv">
+    <ref role="1XX52x" to="gpyq:6cqNWCsSxKA" resolve="Sensor" />
+    <node concept="3EZMnI" id="6cqNWCsSAV$" role="2wV5jI">
+      <node concept="3EZMnI" id="6cqNWCsSAVF" role="3EZMnx">
+        <node concept="VPM3Z" id="6cqNWCsSAVH" role="3F10Kt" />
+        <node concept="3F0ifn" id="6cqNWCsSAVQ" role="3EZMnx">
+          <property role="3F0ifm" value="sensor:" />
+        </node>
+        <node concept="3F0A7n" id="6cqNWCsTxqd" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="6cqNWCsSAWD" role="3EZMnx">
+          <property role="3F0ifm" value="on pin" />
+        </node>
+        <node concept="3F0A7n" id="6cqNWCsSAX3" role="3EZMnx">
+          <ref role="1NtTu8" to="gpyq:6cqNWCsSxKD" resolve="pin" />
+        </node>
+        <node concept="l2Vlx" id="6cqNWCsSAVK" role="2iSdaV" />
+      </node>
+      <node concept="2iRfu4" id="6cqNWCsSAVB" role="2iSdaV" />
     </node>
   </node>
 </model>
