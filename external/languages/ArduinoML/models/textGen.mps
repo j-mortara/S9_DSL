@@ -275,6 +275,12 @@
         <node concept="lc7rE" id="6cqNWCsU5nP" role="3cqZAp">
           <node concept="l8MVK" id="6cqNWCsU5CS" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="6cqNWCsUC_u" role="3cqZAp">
+          <node concept="la8eA" id="6cqNWCsUCQz" role="lcghm">
+            <property role="lacIc" value="// Declaring available sensors" />
+          </node>
+          <node concept="l8MVK" id="6cqNWCsUCTz" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="6cqNWCsTLdW" role="3cqZAp">
           <node concept="l9S2W" id="6cqNWCsTLuN" role="lcghm">
             <property role="XA4eZ" value="true" />

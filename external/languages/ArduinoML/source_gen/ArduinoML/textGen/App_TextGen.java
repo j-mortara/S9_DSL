@@ -54,6 +54,8 @@ public class App_TextGen extends TextGenDescriptorBase {
       }
     }
     tgs.newLine();
+    tgs.append("// Declaring available sensors");
+    tgs.newLine();
     {
       Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x631acfca1ce41f70L, "sensors"));
       final SNode lastItem = Sequence.fromIterable(collection).last();
