@@ -15,7 +15,7 @@
       <concept id="243588697374780694" name="ArduinoML.structure.Actuator" flags="ng" index="LcSIR" />
       <concept id="243588697374780699" name="ArduinoML.structure.State" flags="ng" index="LcSIU">
         <child id="243588697374780727" name="actions" index="LcSIm" />
-        <child id="3834294753782225963" name="transition" index="1eoRFC" />
+        <child id="3834294753782225963" name="transitions" index="1eoRFC" />
       </concept>
       <concept id="243588697374780702" name="ArduinoML.structure.Action" flags="ng" index="LcSIZ">
         <property id="243588697374780709" name="signal" index="LcSI4" />
@@ -67,6 +67,108 @@
       <property role="1epAaf" value="10" />
     </node>
     <node concept="1ZYdfG" id="3kQ9GdVkWQn" role="LcSJj">
+      <property role="TrG5h" value="button" />
+      <property role="1epAaf" value="11" />
+    </node>
+  </node>
+  <node concept="LcSIH" id="6Z1mRJzWZKT">
+    <property role="TrG5h" value="dual_check" />
+    <ref role="1epuHo" node="6Z1mRJzWZKU" resolve="off" />
+    <node concept="LcSIU" id="6Z1mRJzWZKU" role="LcSJf">
+      <property role="TrG5h" value="off" />
+      <node concept="1eoRFB" id="6Z1mRJzWZKV" role="1eoRFC">
+        <ref role="1eoRF$" node="6Z1mRJzWZLd" resolve="a" />
+        <ref role="1eoRFA" node="6Z1mRJzWZRh" resolve="a_on" />
+      </node>
+      <node concept="1eoRFB" id="6Z1mRJzWZRe" role="1eoRFC">
+        <ref role="1eoRF$" node="6Z1mRJzWZLh" resolve="b" />
+        <ref role="1eoRFA" node="6Z1mRJzWZRF" resolve="b_on" />
+      </node>
+      <node concept="LcSIZ" id="6Z1mRJzWZLl" role="LcSIm">
+        <property role="LcSI4" value="LOW" />
+        <ref role="LcSIr" node="3kQ9GdVkItk" resolve="led" />
+      </node>
+    </node>
+    <node concept="LcSIU" id="6Z1mRJzWZRh" role="LcSJf">
+      <property role="TrG5h" value="a_on" />
+      <node concept="LcSIZ" id="6Z1mRJzWZRr" role="LcSIm">
+        <property role="LcSI4" value="LOW" />
+        <ref role="LcSIr" node="3kQ9GdVkItk" resolve="led" />
+      </node>
+      <node concept="1eoRFB" id="6Z1mRJzWZRi" role="1eoRFC">
+        <ref role="1eoRF$" node="6Z1mRJzWZLh" resolve="b" />
+        <ref role="1eoRFA" node="6Z1mRJzWZRu" resolve="all_on" />
+      </node>
+    </node>
+    <node concept="LcSIU" id="6Z1mRJzWZRF" role="LcSJf">
+      <property role="TrG5h" value="b_on" />
+      <node concept="1eoRFB" id="6Z1mRJzWZRG" role="1eoRFC">
+        <ref role="1eoRF$" node="6Z1mRJzWZLd" resolve="a" />
+        <ref role="1eoRFA" node="6Z1mRJzWZRu" resolve="all_on" />
+      </node>
+      <node concept="LcSIZ" id="6Z1mRJzWZRT" role="LcSIm">
+        <property role="LcSI4" value="LOW" />
+        <ref role="LcSIr" node="3kQ9GdVkItk" resolve="led" />
+      </node>
+    </node>
+    <node concept="LcSIU" id="6Z1mRJzWZRu" role="LcSJf">
+      <property role="TrG5h" value="all_on" />
+      <node concept="1eoRFB" id="6Z1mRJzWZRv" role="1eoRFC">
+        <property role="1eoRFV" value="LOW" />
+        <ref role="1eoRF$" node="6Z1mRJzWZLd" resolve="a" />
+        <ref role="1eoRFA" node="6Z1mRJzWZRF" resolve="b_on" />
+      </node>
+      <node concept="1eoRFB" id="6Z1mRJzWZSE" role="1eoRFC">
+        <property role="1eoRFV" value="LOW" />
+        <ref role="1eoRFA" node="6Z1mRJzWZRh" resolve="a_on" />
+        <ref role="1eoRF$" node="6Z1mRJzWZLh" resolve="b" />
+      </node>
+      <node concept="LcSIZ" id="6Z1mRJzWZRD" role="LcSIm">
+        <ref role="LcSIr" node="3kQ9GdVkItk" resolve="led" />
+      </node>
+    </node>
+    <node concept="LcSIR" id="6Z1mRJzWZL1" role="LcSJj">
+      <property role="TrG5h" value="led" />
+      <property role="1epAaf" value="10" />
+    </node>
+    <node concept="1ZYdfG" id="6Z1mRJzWZLd" role="LcSJj">
+      <property role="TrG5h" value="a" />
+      <property role="1epAaf" value="11" />
+    </node>
+    <node concept="1ZYdfG" id="6Z1mRJzWZLh" role="LcSJj">
+      <property role="TrG5h" value="b" />
+      <property role="1epAaf" value="12" />
+    </node>
+  </node>
+  <node concept="LcSIH" id="6Z1mRJzZW2t">
+    <property role="TrG5h" value="state_based" />
+    <ref role="1epuHo" node="6Z1mRJzZW2u" resolve="off" />
+    <node concept="LcSIU" id="6Z1mRJzZW2u" role="LcSJf">
+      <property role="TrG5h" value="off" />
+      <node concept="1eoRFB" id="6Z1mRJzZW2v" role="1eoRFC">
+        <ref role="1eoRFA" node="6Z1mRJzZW2A" resolve="on" />
+        <ref role="1eoRF$" node="6Z1mRJzZW2M" resolve="button" />
+      </node>
+      <node concept="LcSIZ" id="6Z1mRJzZW2$" role="LcSIm">
+        <property role="LcSI4" value="LOW" />
+        <ref role="LcSIr" node="3kQ9GdVkItk" resolve="led" />
+      </node>
+    </node>
+    <node concept="LcSIU" id="6Z1mRJzZW2A" role="LcSJf">
+      <property role="TrG5h" value="on" />
+      <node concept="1eoRFB" id="6Z1mRJzZW2B" role="1eoRFC">
+        <ref role="1eoRFA" node="6Z1mRJzZW2u" resolve="off" />
+        <ref role="1eoRF$" node="6Z1mRJzZW2M" resolve="button" />
+      </node>
+      <node concept="LcSIZ" id="6Z1mRJzZW2H" role="LcSIm">
+        <ref role="LcSIr" node="3kQ9GdVkItk" resolve="led" />
+      </node>
+    </node>
+    <node concept="LcSIR" id="6Z1mRJzZW2x" role="LcSJj">
+      <property role="TrG5h" value="led" />
+      <property role="1epAaf" value="10" />
+    </node>
+    <node concept="1ZYdfG" id="6Z1mRJzZW2M" role="LcSJj">
       <property role="TrG5h" value="button" />
       <property role="1epAaf" value="11" />
     </node>

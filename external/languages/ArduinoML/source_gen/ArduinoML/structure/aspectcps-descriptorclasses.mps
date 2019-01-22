@@ -3250,7 +3250,9 @@
                     </node>
                     <node concept="liA8E" id="if" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.optional(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="optional" />
-                      <node concept="3clFbT" id="ip" role="37wK5m" />
+                      <node concept="3clFbT" id="ip" role="37wK5m">
+                        <property role="3clFbU" value="true" />
+                      </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="id" role="2OqNvi">
@@ -3293,7 +3295,7 @@
                         <node concept="liA8E" id="iF" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="aggregate" />
                           <node concept="Xl_RD" id="iG" role="37wK5m">
-                            <property role="Xl_RC" value="transition" />
+                            <property role="Xl_RC" value="transitions" />
                           </node>
                           <node concept="1adDum" id="iH" role="37wK5m">
                             <property role="1adDun" value="0x353626c37b555c2bL" />
@@ -3327,7 +3329,9 @@
                 </node>
                 <node concept="liA8E" id="iz" role="2OqNvi">
                   <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.multiple(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="multiple" />
-                  <node concept="3clFbT" id="iN" role="37wK5m" />
+                  <node concept="3clFbT" id="iN" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
                 </node>
               </node>
               <node concept="liA8E" id="ix" role="2OqNvi">

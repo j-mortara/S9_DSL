@@ -6,7 +6,7 @@
 /build/tmp/*
 /build/artifacts/*
 classes
-*/classes_gen/*
+classes_gen
 testclasses
 *.iws
 teamcity-info.xml

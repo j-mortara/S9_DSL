@@ -13,15 +13,11 @@ public class Transition_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.indent();
-    tgs.append("boolean guard = millis() - time > debounce;");
-    tgs.newLine();
-    tgs.indent();
     tgs.append("if (digitalRead(");
     tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b555c24L, 0x353626c37b555c27L, "sensor")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append(") == ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b555c24L, 0x353626c37b555c38L, "signal")));
-    tgs.append("&& guard) {");
+    tgs.append(" && guard) {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();

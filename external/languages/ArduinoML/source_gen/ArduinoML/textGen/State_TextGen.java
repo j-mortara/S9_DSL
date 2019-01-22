@@ -34,7 +34,18 @@ public class State_TextGen extends TextGenDescriptorBase {
         tgs.newLine();
       }
     });
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x353626c37b555c2bL, "transition")));
+    tgs.indent();
+    tgs.append("boolean guard = millis() - time > debounce;");
+    tgs.newLine();
+    tgs.indent();
+    tgs.appendNode(ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x353626c37b555c2bL, "transitions"))).first());
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x353626c37b555c2bL, "transitions"))).skip(1).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        tgs.indent();
+        tgs.append("else ");
+        tgs.appendNode(it);
+      }
+    });
     tgs.indent();
     tgs.append("else {");
     tgs.newLine();

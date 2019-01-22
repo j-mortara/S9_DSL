@@ -102,14 +102,14 @@
       <property role="IQ2ns" value="243588697374780727" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actions" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="dxpE4MkIOu" resolve="Action" />
     </node>
     <node concept="1TJgyj" id="3kQ9GdVllKF" role="1TKVEi">
       <property role="IQ2ns" value="3834294753782225963" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="transition" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="transitions" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="3kQ9GdVllK$" resolve="Transition" />
     </node>
   </node>
