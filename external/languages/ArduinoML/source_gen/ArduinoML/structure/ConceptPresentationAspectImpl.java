@@ -12,8 +12,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Action;
   private ConceptPresentation props_Actuator;
   private ConceptPresentation props_App;
+  private ConceptPresentation props_Brick;
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_State;
+  private ConceptPresentation props_Transition;
 
   @Override
   @Nullable
@@ -41,6 +43,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_App = cpb.create();
         }
         return props_App;
+      case LanguageConceptSwitch.Brick:
+        if (props_Brick == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Brick = cpb.create();
+        }
+        return props_Brick;
       case LanguageConceptSwitch.Sensor:
         if (props_Sensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -55,6 +63,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_State = cpb.create();
         }
         return props_State;
+      case LanguageConceptSwitch.Transition:
+        if (props_Transition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Transition");
+          props_Transition = cpb.create();
+        }
+        return props_Transition;
     }
     return null;
   }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-1kpu5jjounik5ic8cqgbdv945i2oix">
-  <files names="Actuator_TextGen.java:App_TextGen.java:Sensor_TextGen.java:State_TextGen.java:TextGenAspectDescriptor.java" />
+<product version="3" modelHash="92utylwchf8aqj6it2c5b39czj9b2s4">
+  <files names="Actuator_TextGen.java:App_TextGen.java:Brick_TextGen.java:Sensor_TextGen.java:State_TextGen.java:TextGenAspectDescriptor.java:Transition_TextGen.java" />
 </product>
 

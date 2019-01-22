@@ -15,7 +15,7 @@ public class Actuator_TextGen extends TextGenDescriptorBase {
     tgs.append("int ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append(" = ");
-    tgs.append(String.valueOf(SPropertyOperations.getInteger(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed16L, 0x36166a13252ed19L, "pin"))));
+    tgs.append(String.valueOf(SPropertyOperations.getInteger(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b504441L, 0x353626c37b50444cL, "pin"))));
     tgs.append(";");
   }
 }

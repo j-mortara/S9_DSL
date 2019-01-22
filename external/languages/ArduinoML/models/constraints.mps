@@ -50,17 +50,9 @@
       </concept>
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
-      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
-        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
-      </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213098023997" name="property" index="1MhHOB" />
-        <child id="1213100494875" name="referent" index="1Mr941" />
-      </concept>
-      <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
-        <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
-        <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
@@ -102,9 +94,9 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="H333ZM8tXC">
-    <ref role="1M2myG" to="gpyq:dxpE4MkIOm" resolve="Actuator" />
+    <ref role="1M2myG" to="gpyq:3kQ9GdVk4h1" resolve="Brick" />
     <node concept="EnEH3" id="H333ZM8tXD" role="1MhHOB">
-      <ref role="EomxK" to="gpyq:dxpE4MkIOp" resolve="pin" />
+      <ref role="EomxK" to="gpyq:3kQ9GdVk4hc" resolve="pin" />
       <node concept="QB0g5" id="H333ZM8u50" role="QCWH9">
         <node concept="3clFbS" id="H333ZM8u51" role="2VODD2">
           <node concept="3clFbF" id="H333ZM8ucm" role="3cqZAp">
@@ -185,12 +177,6 @@
   </node>
   <node concept="1M2fIO" id="H333ZM9gb_">
     <ref role="1M2myG" to="gpyq:dxpE4MkIOr" resolve="State" />
-    <node concept="1N5Pfh" id="H333ZM9gbA" role="1Mr941">
-      <ref role="1N5Vy1" to="gpyq:dxpE4MkIOP" resolve="next" />
-      <node concept="1dDu$B" id="H333ZM9gbC" role="1N6uqs">
-        <ref role="1dDu$A" to="gpyq:dxpE4MkIOr" resolve="State" />
-      </node>
-    </node>
   </node>
 </model>
 

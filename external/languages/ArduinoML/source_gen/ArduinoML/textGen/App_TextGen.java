@@ -12,7 +12,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class App_TextGen extends TextGenDescriptorBase {
   @Override
@@ -30,6 +30,11 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("**/");
     tgs.newLine();
     tgs.newLine();
+    tgs.append("// Time and debounce init");
+    tgs.newLine();
+    tgs.append("long time =0;long debounce=200;");
+    tgs.newLine();
+    tgs.newLine();
     tgs.append("// Declaring states function headers");
     tgs.newLine();
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "states"))).visitAll(new IVisitor<SNode>() {
@@ -41,23 +46,10 @@ public class App_TextGen extends TextGenDescriptorBase {
       }
     });
     tgs.newLine();
-    tgs.append("// Declaring available actuators");
+    tgs.append("// Declaring available bricks");
     tgs.newLine();
     {
-      Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed72L, "actuators"));
-      final SNode lastItem = Sequence.fromIterable(collection).last();
-      for (SNode item : collection) {
-        tgs.appendNode(item);
-        if (item != lastItem) {
-          tgs.append("\n");
-        }
-      }
-    }
-    tgs.newLine();
-    tgs.append("// Declaring available sensors");
-    tgs.newLine();
-    {
-      Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x631acfca1ce41f70L, "sensors"));
+      Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed72L, "bricks"));
       final SNode lastItem = Sequence.fromIterable(collection).last();
       for (SNode item : collection) {
         tgs.appendNode(item);
@@ -87,39 +79,37 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("{");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed72L, "actuators"))).visitAll(new IVisitor<SNode>() {
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed72L, "bricks"))).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         tgs.indent();
-        tgs.append("pinMode(");
-        tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-        tgs.append(", ");
-        tgs.append("OUTPUT);");
-        tgs.newLine();
+        if (SNodeOperations.getConcept(it).isSubConceptOf(MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed16L, "ArduinoML.structure.Actuator"))) {
+          tgs.append("pinMode(");
+          tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          tgs.append(", ");
+          tgs.append("OUTPUT);");
+          tgs.newLine();
+        } else if (SNodeOperations.getConcept(it).isSubConceptOf(MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L, "ArduinoML.structure.Sensor"))) {
+          tgs.append("pinMode(");
+          tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          tgs.append(", ");
+          tgs.append("INPUT);");
+          tgs.newLine();
+        }
       }
     });
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
     tgs.newLine();
     tgs.newLine();
-    tgs.append("int main(void)");
+    tgs.append("void loop(void)");
     tgs.newLine();
     tgs.append("{");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("setup();");
-    tgs.newLine();
-    tgs.indent();
     tgs.append("state_");
-    tgs.append(SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "states"))).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SPropertyOperations.getBoolean(it, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x36166a13253e794L, "isInitial"));
-      }
-    }), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initial_sate")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append("();");
-    tgs.newLine();
-    tgs.indent();
-    tgs.append("return 0;");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");

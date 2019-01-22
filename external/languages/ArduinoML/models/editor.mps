@@ -19,8 +19,12 @@
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -58,13 +62,16 @@
         </node>
         <node concept="3F0A7n" id="dxpE4Ml2Im" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="lj46D" id="3kQ9GdVk4hm" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="l2Vlx" id="dxpE4Ml2I6" role="2iSdaV" />
         <node concept="3F0ifn" id="dxpE4Ml2Iu" role="3EZMnx">
           <property role="3F0ifm" value="on pin" />
         </node>
         <node concept="3F0A7n" id="dxpE4Ml2IC" role="3EZMnx">
-          <ref role="1NtTu8" to="gpyq:dxpE4MkIOp" resolve="pin" />
+          <ref role="1NtTu8" to="gpyq:3kQ9GdVk4hc" resolve="pin" />
         </node>
       </node>
       <node concept="2iRfu4" id="dxpE4Ml2HX" role="2iSdaV" />
@@ -81,15 +88,24 @@
         <node concept="3F0A7n" id="dxpE4Ml2Hh" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
+        <node concept="3F0ifn" id="3kQ9GdVkYYg" role="3EZMnx">
+          <property role="3F0ifm" value="initial_state" />
+        </node>
+        <node concept="1iCGBv" id="3kQ9GdVlaQ$" role="3EZMnx">
+          <ref role="1NtTu8" to="gpyq:3kQ9GdVkWQr" resolve="initial_sate" />
+          <node concept="1sVBvm" id="3kQ9GdVlaQA" role="1sWHZn">
+            <node concept="3F0A7n" id="3kQ9GdVlaQK" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
         <node concept="l2Vlx" id="dxpE4Ml2GQ" role="2iSdaV" />
-      </node>
-      <node concept="3F0ifn" id="dxpE4Ml2Hl" role="3EZMnx">
-        <property role="3F0ifm" value="empty" />
       </node>
       <node concept="3EZMnI" id="dxpE4Ml1ab" role="3EZMnx">
         <node concept="VPM3Z" id="dxpE4Ml1ad" role="3F10Kt" />
         <node concept="3F2HdR" id="dxpE4Ml1ar" role="3EZMnx">
-          <ref role="1NtTu8" to="gpyq:dxpE4MkIPM" resolve="actuators" />
+          <ref role="1NtTu8" to="gpyq:dxpE4MkIPM" resolve="bricks" />
           <node concept="2iRkQZ" id="dxpE4Ml1au" role="2czzBx" />
           <node concept="VPM3Z" id="dxpE4Ml1av" role="3F10Kt" />
           <node concept="3F0ifn" id="dxpE4Ml1az" role="2czzBI">
@@ -99,21 +115,6 @@
         <node concept="l2Vlx" id="dxpE4Ml1ag" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="dxpE4Ml1aJ" role="3EZMnx">
-        <property role="3F0ifm" value="empty" />
-      </node>
-      <node concept="3EZMnI" id="6cqNWCsT4s4" role="3EZMnx">
-        <node concept="VPM3Z" id="6cqNWCsT4s6" role="3F10Kt" />
-        <node concept="3F2HdR" id="6cqNWCsT4s$" role="3EZMnx">
-          <ref role="1NtTu8" to="gpyq:6cqNWCsT1XK" resolve="sensors" />
-          <node concept="2iRkQZ" id="6cqNWCsT4sB" role="2czzBx" />
-          <node concept="VPM3Z" id="6cqNWCsT4sC" role="3F10Kt" />
-          <node concept="3F0ifn" id="6cqNWCsT4sQ" role="2czzBI">
-            <property role="3F0ifm" value="no sensor defined" />
-          </node>
-        </node>
-        <node concept="l2Vlx" id="6cqNWCsT4s9" role="2iSdaV" />
-      </node>
-      <node concept="3F0ifn" id="6cqNWCsT4t3" role="3EZMnx">
         <property role="3F0ifm" value="empty" />
       </node>
       <node concept="3EZMnI" id="dxpE4Ml1bc" role="3EZMnx">
@@ -167,11 +168,44 @@
           <property role="3F0ifm" value="on pin" />
         </node>
         <node concept="3F0A7n" id="6cqNWCsSAX3" role="3EZMnx">
-          <ref role="1NtTu8" to="gpyq:6cqNWCsSxKD" resolve="pin" />
+          <ref role="1NtTu8" to="gpyq:3kQ9GdVk4hc" resolve="pin" />
         </node>
         <node concept="l2Vlx" id="6cqNWCsSAVK" role="2iSdaV" />
       </node>
       <node concept="2iRfu4" id="6cqNWCsSAVB" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3kQ9GdVllKQ">
+    <ref role="1XX52x" to="gpyq:3kQ9GdVllK$" resolve="Transition" />
+    <node concept="3EZMnI" id="3kQ9GdVllKU" role="2wV5jI">
+      <node concept="1iCGBv" id="3kQ9GdVllL4" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:3kQ9GdVllKB" resolve="sensor" />
+        <node concept="1sVBvm" id="3kQ9GdVllL6" role="1sWHZn">
+          <node concept="3F0A7n" id="3kQ9GdVllLd" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3kQ9GdVllLl" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
+      <node concept="3F0A7n" id="3kQ9GdVllLx" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:3kQ9GdVllKS" resolve="signal" />
+      </node>
+      <node concept="3F0ifn" id="3kQ9GdVllLJ" role="3EZMnx">
+        <property role="3F0ifm" value="then" />
+      </node>
+      <node concept="1iCGBv" id="3kQ9GdVllM8" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:3kQ9GdVllK_" resolve="nextState" />
+        <node concept="1sVBvm" id="3kQ9GdVllMa" role="1sWHZn">
+          <node concept="3F0A7n" id="3kQ9GdVllMn" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3kQ9GdVllKX" role="2iSdaV" />
     </node>
   </node>
 </model>

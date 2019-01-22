@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="33z4evsg7hk9gqwxgluvgm0ss3ipz1t">
-  <files names="App__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:State__BehaviorDescriptor.java" />
+<product version="3" modelHash="2beh58ara5tuo1ojbrsn0qqd2nx2fg1">
+  <files names="BehaviorAspectDescriptor.java" />
 </product>
 

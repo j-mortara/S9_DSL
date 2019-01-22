@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-d5kxy6x685umvd84vka7k0inak9w52p">
-  <files names="Action_Editor.java:Action_EditorBuilder_a.java:Action_SubstituteMenu.java:Actuator_Editor.java:Actuator_EditorBuilder_a.java:App_Editor.java:App_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Sensor_Editor.java:Sensor_EditorBuilder_a.java:State_SubstituteMenu.java" />
+<product version="3" modelHash="-bcbzid4u9orq8ch5ts0eacxk72gg7m6">
+  <files names="Action_Editor.java:Action_EditorBuilder_a.java:Action_SubstituteMenu.java:Actuator_Editor.java:Actuator_EditorBuilder_a.java:App_Editor.java:App_EditorBuilder_a.java:App_SubstituteMenu.java:EditorAspectDescriptorImpl.java:Sensor_Editor.java:Sensor_EditorBuilder_a.java:Transition_Editor.java:Transition_EditorBuilder_a.java" />
 </product>
 
