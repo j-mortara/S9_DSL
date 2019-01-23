@@ -53,7 +53,7 @@ public class Brick_Constraints extends BaseConstraintsDescriptor {
           public boolean accept(SNode it) {
             return Objects.equals(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), (SPropertyOperations.getString(propertyValue)));
           }
-        }).count() <= 1;
+        }).count() <= 1 && !((SPropertyOperations.getString(propertyValue)).matches("^[0-9].*"));
       }
     });
     return properties;

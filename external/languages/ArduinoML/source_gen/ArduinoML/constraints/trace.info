@@ -28,7 +28,7 @@
       <node id="811505826641600361" at="30,0,34,0" concept="2" trace="hasOwnValidator#()Z" />
       <node id="811505826641614519" at="45,0,49,0" concept="2" trace="hasOwnValidator#()Z" />
       <node id="811505826641601302" at="36,36,41,24" concept="4" />
-      <node id="811505826641615028" at="51,37,56,24" concept="4" />
+      <node id="811505826641615028" at="51,37,56,97" concept="4" />
       <node id="811505826641600361" at="34,0,43,0" concept="2" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
       <node id="811505826641614519" at="49,0,58,0" concept="2" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
       <node id="811505826641600361" at="28,119,43,7" concept="1" />
@@ -51,7 +51,7 @@
       <scope id="811505826641600361" at="35,76,41,24">
         <var name="propertyName" id="811505826641600361" />
       </scope>
-      <scope id="811505826641614519" at="50,76,56,24">
+      <scope id="811505826641614519" at="50,76,56,97">
         <var name="propertyName" id="811505826641614519" />
       </scope>
       <scope id="811505826641600361" at="34,0,43,0">
