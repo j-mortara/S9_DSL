@@ -38,7 +38,7 @@
     </language>
   </registry>
   <node concept="LcSIH" id="3kQ9GdVkHLQ">
-    <property role="TrG5h" value="test" />
+    <property role="TrG5h" value="simple" />
     <ref role="1epuHo" node="3kQ9GdVsXwG" resolve="off" />
     <node concept="LcSIU" id="3kQ9GdVllKm" role="LcSJf">
       <property role="TrG5h" value="on" />
