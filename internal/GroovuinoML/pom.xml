@@ -58,7 +58,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>main.groovy.groovuinoml.main.GroovuinoML</mainClass>
+							<mainClass>groovuinoml.main.GroovuinoML</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

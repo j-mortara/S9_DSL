@@ -1,4 +1,4 @@
-package main.groovy.groovuinoml.dsl;
+package groovuinoml.dsl;
 
 import java.util.Map;
 

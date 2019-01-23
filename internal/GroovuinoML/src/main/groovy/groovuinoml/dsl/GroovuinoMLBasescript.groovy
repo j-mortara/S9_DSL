@@ -1,6 +1,4 @@
-package main.groovy.groovuinoml.dsl
-
-import java.util.List;
+package groovuinoml.dsl
 
 import io.github.mosser.arduinoml.kernel.behavioral.Action
 import io.github.mosser.arduinoml.kernel.behavioral.State
