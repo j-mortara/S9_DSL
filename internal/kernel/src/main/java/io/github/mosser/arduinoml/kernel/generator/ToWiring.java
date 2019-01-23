@@ -16,7 +16,11 @@ public class ToWiring extends Visitor<StringBuffer> {
 	}
 
 	private void w(String s) {
-		result.append(String.format("%s\n",s));
+		w(s, true);
+	}
+
+	private void w(String s, boolean end) {
+		result.append(String.format("%s%s",s, end ? "\n" : ""));
 	}
 
 	@Override
@@ -61,23 +65,29 @@ public class ToWiring extends Visitor<StringBuffer> {
 			action.accept(this);
 		}
 
-		if (state.getTransition() != null) {
+		if (! state.getTransitions().isEmpty()) {
 			w("  boolean guard = millis() - time > debounce;");
 			context.put(CURRENT_STATE, state);
-			state.getTransition().accept(this);
-			w("}\n");
+			w("  ", false);
+			state.getTransitions().stream().findFirst().ifPresent(transition -> transition.accept(this));
+			state.getTransitions().stream().skip(1).forEach(transition ->{
+					w("  else " , false);
+					transition.accept(this);
+					});
+			w("  else {");
+			w(String.format("    state_%s();",((State) context.get(CURRENT_STATE)).getName()));
+			w("  }");
+			w("}");
 		}
 
 	}
 
 	@Override
 	public void visit(Transition transition) {
-		w(String.format("  if( digitalRead(%d) == %s && guard ) {",
+		w(String.format("if( digitalRead(%d) == %s && guard ) {",
 				transition.getSensor().getPin(),transition.getValue()));
 		w("    time = millis();");
 		w(String.format("    state_%s();",transition.getNext().getName()));
-		w("  } else {");
-		w(String.format("    state_%s();",((State) context.get(CURRENT_STATE)).getName()));
 		w("  }");
 	}
 

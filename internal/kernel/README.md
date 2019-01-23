@@ -1,7 +1,8 @@
 # ArduinoML Kernel implementation for the JVM
 
   * Author: [Sebastien Mosser](mailto?mosser@i3s.unice.fr)
-  * Version: 1.0
+  * Modified by: [Thomas Canava](mailto?thomas.canava@etu.unice.fr), [Loïc Gardaire](mailto?loic.gardaire@etu.unice.fr), [Johann Mortara](mailto?johann.mortara@etu.unice.fr)
+  * Version: 1.1
 
 This is a quick and dirty implementation of the ArduinoML kernel, using the Java language.
 

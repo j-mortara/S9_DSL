@@ -1,14 +1,24 @@
-sensor "button" pin 9
-actuator "led1" pin 12
-actuator "led2" pin 13
-actuator "led3" pin 14
+sensor "buttonA" pin 9
+sensor "buttonB" pin 10
+actuator "led" pin 12
 
-state "on" means led1 becomes high
-state "off" means led1 becomes low and led2 becomes low and led3 becomes low
+state "off" means led becomes low
+state "a_on" means led becomes low
+state "b_on" means led becomes low
+state "led_on" means led becomes high
 
 initial off
 
-from on to off when button becomes high
-from off to on when button becomes high
+from off to a_on when buttonA becomes high
+from a_on to off when buttonA becomes low
 
-export "Switch!"
+from off to b_on when buttonB becomes high
+from b_on to off when buttonB becomes low
+
+from a_on to led_on when buttonB becomes high
+from led_on to a_on when buttonB becomes low
+
+from b_on to led_on when buttonA becomes high
+from led_on to b_on when buttonA becomes low
+
+export "Sub!"

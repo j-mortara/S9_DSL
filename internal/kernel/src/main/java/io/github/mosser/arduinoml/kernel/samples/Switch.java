@@ -53,8 +53,8 @@ public class Switch {
 		off2on.setValue(SIGNAL.HIGH);
 
 		// Binding transitions to states
-		on.setTransition(on2off);
-		off.setTransition(off2on);
+		on.addTransitions(on2off);
+		off.addTransitions(off2on);
 
 		// Building the App
 		App theSwitch = new App();
