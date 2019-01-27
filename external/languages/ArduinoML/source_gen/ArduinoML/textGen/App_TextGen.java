@@ -35,6 +35,15 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("long time =0;long debounce=200;");
     tgs.newLine();
     tgs.newLine();
+    if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies"))).isNotEmpty()) {
+      tgs.append("// declaring playTone function");
+      tgs.newLine();
+      MelodySetup.declarePlayTone(ctx);
+      tgs.newLine();
+      MelodySetup.declareMelodies(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies")), ctx);
+      tgs.newLine();
+    }
+
     tgs.append("// Declaring states function headers");
     tgs.newLine();
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "states"))).visitAll(new IVisitor<SNode>() {

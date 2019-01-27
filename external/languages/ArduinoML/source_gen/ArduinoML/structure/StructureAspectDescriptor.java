@@ -12,17 +12,24 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
-import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAction = createDescriptorForAction();
   /*package*/ final ConceptDescriptor myConceptActuator = createDescriptorForActuator();
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
   /*package*/ final ConceptDescriptor myConceptBrick = createDescriptorForBrick();
+  /*package*/ final ConceptDescriptor myConceptMelody = createDescriptorForMelody();
+  /*package*/ final ConceptDescriptor myConceptMelodyNote = createDescriptorForMelodyNote();
+  /*package*/ final ConceptDescriptor myConceptPlayNote = createDescriptorForPlayNote();
+  /*package*/ final ConceptDescriptor myConceptPlayNoteFromMelody = createDescriptorForPlayNoteFromMelody();
   /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
+  /*package*/ final ConceptDescriptor myConceptSimpleAction = createDescriptorForSimpleAction();
+  /*package*/ final ConceptDescriptor myConceptSpeaker = createDescriptorForSpeaker();
   /*package*/ final ConceptDescriptor myConceptState = createDescriptorForState();
   /*package*/ final ConceptDescriptor myConceptTransition = createDescriptorForTransition();
+  /*package*/ final EnumerationDescriptor myEnumerationNOTE = new EnumerationDescriptor_NOTE();
   /*package*/ final EnumerationDescriptor myEnumerationSIGNAL = new EnumerationDescriptor_SIGNAL();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -32,7 +39,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptBrick, myConceptSensor, myConceptState, myConceptTransition);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptBrick, myConceptMelody, myConceptMelodyNote, myConceptPlayNote, myConceptPlayNoteFromMelody, myConceptSensor, myConceptSimpleAction, myConceptSpeaker, myConceptState, myConceptTransition);
   }
 
   @Override
@@ -47,8 +54,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptApp;
       case LanguageConceptSwitch.Brick:
         return myConceptBrick;
+      case LanguageConceptSwitch.Melody:
+        return myConceptMelody;
+      case LanguageConceptSwitch.MelodyNote:
+        return myConceptMelodyNote;
+      case LanguageConceptSwitch.PlayNote:
+        return myConceptPlayNote;
+      case LanguageConceptSwitch.PlayNoteFromMelody:
+        return myConceptPlayNoteFromMelody;
       case LanguageConceptSwitch.Sensor:
         return myConceptSensor;
+      case LanguageConceptSwitch.SimpleAction:
+        return myConceptSimpleAction;
+      case LanguageConceptSwitch.Speaker:
+        return myConceptSpeaker;
       case LanguageConceptSwitch.State:
         return myConceptState;
       case LanguageConceptSwitch.Transition:
@@ -60,7 +79,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationSIGNAL);
+    return Arrays.asList(myEnumerationNOTE, myEnumerationSIGNAL);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -68,11 +87,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
 
   private static ConceptDescriptor createDescriptorForAction() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Action", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1eL);
-    b.class_(false, false, false);
-    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/243588697374780702");
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Action", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L);
+    b.interface_();
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799018170162");
     b.version(2);
-    b.property("signal", 0x36166a13252ed25L).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed20L)).origin("243588697374780709").done();
     b.associate("target", 0x36166a13252ed3aL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed16L).optional(false).origin("243588697374780730").done();
     return b.create();
   }
@@ -91,8 +109,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/243588697374780684");
     b.version(2);
     b.associate("initial_sate", 0x353626c37b53cd9bL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL).optional(false).origin("3834294753782123931").done();
-    b.aggregate("states", 0x36166a13252ed6eL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL).optional(false).ordered(true).multiple(true).origin("243588697374780782").done();
     b.aggregate("bricks", 0x36166a13252ed72L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b504441L).optional(false).ordered(true).multiple(true).origin("243588697374780786").done();
+    b.aggregate("melodies", 0x6bc7b3d27bb8847aL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(true).ordered(true).multiple(true).origin("7766373799023903866").done();
+    b.aggregate("states", 0x36166a13252ed6eL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL).optional(false).ordered(true).multiple(true).origin("243588697374780782").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBrick() {
@@ -104,11 +123,66 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("pin", 0x353626c37b50444cL).type(PrimitiveTypeId.INTEGER).origin("3834294753781892172").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForMelody() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Melody", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799017967898");
+    b.version(2);
+    b.aggregate("notes", 0x6bc7b3d27b5df15dL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L).optional(false).ordered(true).multiple(true).origin("7766373799017967965").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMelodyNote() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "MelodyNote", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L);
+    b.class_(false, false, false);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799017967911");
+    b.version(2);
+    b.property("value", 0x6bc7b3d27b5df14eL).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5deedeL)).origin("7766373799017967950").done();
+    b.property("duration", 0x6bc7b3d27bcf7fadL).type(PrimitiveTypeId.INTEGER).origin("7766373799025409965").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPlayNote() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "PlayNote", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5e710bL);
+    b.class_(false, false, false);
+    b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799018000651");
+    b.version(2);
+    b.property("note", 0x6bc7b3d27b5e710cL).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5deedeL)).origin("7766373799018000652").done();
+    b.property("duration", 0x6bc7b3d27b5e710eL).type(PrimitiveTypeId.INTEGER).origin("7766373799018000654").done();
+    b.associate("melody", 0x6bc7b3d27b5efeaeL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(true).origin("7766373799018036910").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPlayNoteFromMelody() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "PlayNoteFromMelody", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bd80508L);
+    b.class_(false, false, false);
+    b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799025968392");
+    b.version(2);
+    b.associate("melody", 0x6bc7b3d27bd8050bL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(false).origin("7766373799025968395").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForSensor() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Sensor", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L);
     b.class_(false, false, false);
     b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b504441L);
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7141248626124266534");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSimpleAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "SimpleAction", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1eL);
+    b.class_(false, false, false);
+    b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/243588697374780702");
+    b.version(2);
+    b.property("signal", 0x36166a13252ed25L).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed20L)).origin("243588697374780709").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSpeaker() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Speaker", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bac6d0cL);
+    b.class_(false, false, false);
+    b.super_("ArduinoML.structure.Actuator", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed16L);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799023111436");
     b.version(2);
     return b.create();
   }
@@ -118,7 +192,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/243588697374780699");
     b.version(2);
-    b.aggregate("actions", 0x36166a13252ed37L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1eL).optional(true).ordered(true).multiple(true).origin("243588697374780727").done();
+    b.aggregate("actions", 0x36166a13252ed37L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L).optional(true).ordered(true).multiple(true).origin("243588697374780727").done();
     b.aggregate("transitions", 0x353626c37b555c2bL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b555c24L).optional(false).ordered(true).multiple(true).origin("3834294753782225963").done();
     return b.create();
   }
@@ -128,7 +202,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/3834294753782225956");
     b.version(2);
     b.property("signal", 0x353626c37b555c38L).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed20L)).origin("3834294753782225976").done();
-    b.associate("sensor", 0x353626c37b555c27L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L).optional(true).origin("3834294753782225959").done();
+    b.associate("sensor", 0x353626c37b555c27L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L).optional(false).origin("3834294753782225959").done();
     b.associate("nextState", 0x353626c37b555c25L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL).optional(false).origin("3834294753782225957").done();
     return b.create();
   }

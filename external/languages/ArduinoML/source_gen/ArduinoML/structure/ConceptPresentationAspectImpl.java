@@ -13,7 +13,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Actuator;
   private ConceptPresentation props_App;
   private ConceptPresentation props_Brick;
+  private ConceptPresentation props_Melody;
+  private ConceptPresentation props_MelodyNote;
+  private ConceptPresentation props_PlayNote;
+  private ConceptPresentation props_PlayNoteFromMelody;
   private ConceptPresentation props_Sensor;
+  private ConceptPresentation props_SimpleAction;
+  private ConceptPresentation props_Speaker;
   private ConceptPresentation props_State;
   private ConceptPresentation props_Transition;
 
@@ -25,7 +31,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Action:
         if (props_Action == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1eL, 0x36166a13252ed3aL, "target", "", "");
           props_Action = cpb.create();
         }
         return props_Action;
@@ -49,6 +54,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Brick = cpb.create();
         }
         return props_Brick;
+      case LanguageConceptSwitch.Melody:
+        if (props_Melody == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Melody = cpb.create();
+        }
+        return props_Melody;
+      case LanguageConceptSwitch.MelodyNote:
+        if (props_MelodyNote == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("MelodyNote");
+          props_MelodyNote = cpb.create();
+        }
+        return props_MelodyNote;
+      case LanguageConceptSwitch.PlayNote:
+        if (props_PlayNote == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PlayNote");
+          props_PlayNote = cpb.create();
+        }
+        return props_PlayNote;
+      case LanguageConceptSwitch.PlayNoteFromMelody:
+        if (props_PlayNoteFromMelody == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PlayNoteFromMelody");
+          props_PlayNoteFromMelody = cpb.create();
+        }
+        return props_PlayNoteFromMelody;
       case LanguageConceptSwitch.Sensor:
         if (props_Sensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -56,6 +89,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensor = cpb.create();
         }
         return props_Sensor;
+      case LanguageConceptSwitch.SimpleAction:
+        if (props_SimpleAction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L, 0x36166a13252ed3aL, "target", "", "");
+          props_SimpleAction = cpb.create();
+        }
+        return props_SimpleAction;
+      case LanguageConceptSwitch.Speaker:
+        if (props_Speaker == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Speaker = cpb.create();
+        }
+        return props_Speaker;
       case LanguageConceptSwitch.State:
         if (props_State == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

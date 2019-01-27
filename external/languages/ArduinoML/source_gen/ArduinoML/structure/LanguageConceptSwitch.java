@@ -13,17 +13,29 @@ public final class LanguageConceptSwitch {
   public static final int Actuator = 1;
   public static final int App = 2;
   public static final int Brick = 3;
-  public static final int Sensor = 4;
-  public static final int State = 5;
-  public static final int Transition = 6;
+  public static final int Melody = 4;
+  public static final int MelodyNote = 5;
+  public static final int PlayNote = 6;
+  public static final int PlayNoteFromMelody = 7;
+  public static final int Sensor = 8;
+  public static final int SimpleAction = 9;
+  public static final int Speaker = 10;
+  public static final int State = 11;
+  public static final int Transition = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x8a1177a2191f4d85L, 0xb39864536e65e675L);
-    builder.put(0x36166a13252ed1eL, Action);
+    builder.put(0x6bc7b3d27b610732L, Action);
     builder.put(0x36166a13252ed16L, Actuator);
     builder.put(0x36166a13252ed0cL, App);
     builder.put(0x353626c37b504441L, Brick);
+    builder.put(0x6bc7b3d27b5df11aL, Melody);
+    builder.put(0x6bc7b3d27b5df127L, MelodyNote);
+    builder.put(0x6bc7b3d27b5e710bL, PlayNote);
+    builder.put(0x6bc7b3d27bd80508L, PlayNoteFromMelody);
     builder.put(0x631acfca1ce21c26L, Sensor);
+    builder.put(0x36166a13252ed1eL, SimpleAction);
+    builder.put(0x6bc7b3d27bac6d0cL, Speaker);
     builder.put(0x36166a13252ed1bL, State);
     builder.put(0x353626c37b555c24L, Transition);
     myIndex = builder.seal();

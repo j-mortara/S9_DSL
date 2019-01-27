@@ -28,8 +28,14 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new App_TextGen();
       case LanguageConceptSwitch.Brick:
         return new Brick_TextGen();
+      case LanguageConceptSwitch.PlayNote:
+        return new PlayNote_TextGen();
+      case LanguageConceptSwitch.PlayNoteFromMelody:
+        return new PlayNoteFromMelody_TextGen();
       case LanguageConceptSwitch.Sensor:
         return new Sensor_TextGen();
+      case LanguageConceptSwitch.SimpleAction:
+        return new SimpleAction_TextGen();
       case LanguageConceptSwitch.State:
         return new State_TextGen();
       case LanguageConceptSwitch.Transition:

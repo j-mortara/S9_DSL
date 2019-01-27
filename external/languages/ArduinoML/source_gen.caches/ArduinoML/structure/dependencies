@@ -11,6 +11,17 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase" />
   </dependency>
+  <dependency className="ArduinoML.structure.EnumerationDescriptor_NOTE">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
+  </dependency>
   <dependency className="ArduinoML.structure.EnumerationDescriptor_SIGNAL">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -29,6 +40,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
   </dependency>
   <dependency className="ArduinoML.structure.StructureAspectDescriptor">
+    <classNode dependClassName="ArduinoML.structure.EnumerationDescriptor_NOTE" />
     <classNode dependClassName="ArduinoML.structure.EnumerationDescriptor_SIGNAL" />
     <classNode dependClassName="ArduinoML.structure.LanguageConceptSwitch" />
     <classNode dependClassName="java.lang.Override" />

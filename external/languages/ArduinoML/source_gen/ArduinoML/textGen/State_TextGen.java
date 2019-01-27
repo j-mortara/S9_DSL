@@ -26,14 +26,13 @@ public class State_TextGen extends TextGenDescriptorBase {
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x36166a13252ed37L, "actions"))).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         tgs.indent();
-        tgs.append("digitalWrite(");
-        tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1eL, 0x36166a13252ed3aL, "target")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-        tgs.append(", ");
-        tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1eL, 0x36166a13252ed25L, "signal")));
-        tgs.append(");");
-        tgs.newLine();
+        tgs.appendNode(it);
       }
     });
+    tgs.indent();
+    tgs.append("while (true){");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("boolean guard = millis() - time > debounce;");
     tgs.newLine();
@@ -46,20 +45,10 @@ public class State_TextGen extends TextGenDescriptorBase {
         tgs.appendNode(it);
       }
     });
-    tgs.indent();
-    tgs.append("else {");
-    tgs.newLine();
-    ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
-    tgs.append("state_");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-    tgs.append("();");
-    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("}");
     tgs.newLine();
-
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
     tgs.newLine();

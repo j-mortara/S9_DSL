@@ -22,7 +22,7 @@ public class EnumerationDescriptor_SIGNAL extends EnumerationDescriptorBase {
   @Nullable
   @Override
   public EnumerationDescriptor.MemberDescriptor getDefault() {
-    return VALUE_HIGH_0;
+    return null;
   }
 
   @NotNull
