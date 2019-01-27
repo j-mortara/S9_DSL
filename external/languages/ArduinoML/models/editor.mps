@@ -310,7 +310,9 @@
         </node>
         <node concept="3F0ifn" id="6J7GX9VsjkZ" role="3EZMnx">
           <property role="3F0ifm" value="ms" />
-          <ref role="1k5W1q" node="6J7GX9W64wx" resolve="action" />
+          <node concept="VechU" id="6J7GX9WqxZh" role="3F10Kt">
+            <property role="Vb096" value="pink" />
+          </node>
         </node>
         <node concept="3F0ifn" id="6J7GX9Vo$jR" role="3EZMnx">
           <property role="3F0ifm" value="on" />

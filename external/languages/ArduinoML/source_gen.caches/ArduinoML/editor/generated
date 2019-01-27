@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="ecp7r4mm0a1h9xhkah7xhsing22whtd">
+<product version="3" modelHash="93kbqfhzgqhf5swjx2xhg7879exebcy">
   <files names="Actuator_Editor.java:Actuator_EditorBuilder_a.java:App_Editor.java:App_EditorBuilder_a.java:App_SubstituteMenu.java:EditorAspectDescriptorImpl.java:MelodyNote_Editor.java:MelodyNote_EditorBuilder_a.java:Melody_Editor.java:Melody_EditorBuilder_a.java:PlayNoteFromMelody_Editor.java:PlayNoteFromMelody_EditorBuilder_a.java:PlayNote_Editor.java:PlayNote_EditorBuilder_a.java:Sensor_Editor.java:Sensor_EditorBuilder_a.java:SimpleAction_Editor.java:SimpleAction_EditorBuilder_a.java:SimpleAction_SubstituteMenu.java:Speaker_Editor.java:Speaker_EditorBuilder_a.java:State_Editor.java:State_EditorBuilder_a.java:Transition_Editor.java:Transition_EditorBuilder_a.java:stylesheet_StyleSheet.java" />
 </product>
 
