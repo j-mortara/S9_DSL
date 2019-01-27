@@ -308,21 +308,21 @@
       <property role="TrG5h" value="happy" />
       <node concept="gA$bP" id="6J7GX9VTXnh" role="gA$af">
         <property role="gA$as" value="1915" />
-        <property role="g2cLZ" value="500" />
+        <property role="g2cLZ" value="250" />
       </node>
       <node concept="gA$bP" id="6J7GX9VVesd" role="gA$af">
-        <property role="g2cLZ" value="500" />
+        <property role="g2cLZ" value="250" />
       </node>
       <node concept="gA$bP" id="6J7GX9VVesg" role="gA$af">
-        <property role="g2cLZ" value="500" />
+        <property role="g2cLZ" value="250" />
         <property role="gA$as" value="1700" />
       </node>
       <node concept="gA$bP" id="6J7GX9VVesk" role="gA$af">
-        <property role="g2cLZ" value="500" />
+        <property role="g2cLZ" value="250" />
         <property role="gA$as" value="1915" />
       </node>
       <node concept="gA$bP" id="6J7GX9VVesp" role="gA$af">
-        <property role="g2cLZ" value="500" />
+        <property role="g2cLZ" value="250" />
         <property role="gA$as" value="1432" />
       </node>
       <node concept="gA$bP" id="6J7GX9VVesv" role="gA$af">
