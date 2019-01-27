@@ -9,8 +9,7 @@ import io.github.mosser.arduinoml.kernel.structural.SIGNAL
 abstract class GroovuinoMLBasescript extends Script {
 	// sensor "name" pin n
 	def sensor(String name) {
-		[pin: { n -> ((GroovuinoMLBinding)this.getBinding()).getGroovuinoMLModel().createSensor(name, n) },
-		onPin: { n -> ((GroovuinoMLBinding)this.getBinding()).getGroovuinoMLModel().createSensor(name, n)}]
+		[pin: { n -> ((GroovuinoMLBinding)this.getBinding()).getGroovuinoMLModel().createSensor(name, n) }]
 	}
 	
 	// actuator "name" pin n
@@ -56,11 +55,6 @@ abstract class GroovuinoMLBasescript extends Script {
 		}]
 	}
 	
-	// export name
-	def export(String name) {
-		println(((GroovuinoMLBinding) this.getBinding()).getGroovuinoMLModel().generateCode(name).toString())
-	}
-	
 	// disable run method while running
 	int count = 0
 	abstract void scriptBody()
@@ -68,6 +62,7 @@ abstract class GroovuinoMLBasescript extends Script {
 		if(count == 0) {
 			count++
 			scriptBody()
+			println(((GroovuinoMLBinding) this.getBinding()).getGroovuinoMLModel().generateCode("appName").toString())
 		} else {
 			println "Run method is disabled"
 		}
