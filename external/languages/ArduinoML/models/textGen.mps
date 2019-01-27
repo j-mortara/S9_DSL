@@ -254,18 +254,6 @@
         </node>
         <node concept="3clFbJ" id="6J7GX9VQ1BT" role="3cqZAp">
           <node concept="3clFbS" id="6J7GX9VQ1BV" role="3clFbx">
-            <node concept="lc7rE" id="6J7GX9Vt00p" role="3cqZAp">
-              <node concept="la8eA" id="6J7GX9Vt0iF" role="lcghm">
-                <property role="lacIc" value="// declaring playTone function" />
-              </node>
-              <node concept="l8MVK" id="6J7GX9Vt0S$" role="lcghm" />
-            </node>
-            <node concept="lc7rE" id="6J7GX9Vth9m" role="3cqZAp">
-              <node concept="1bDJIP" id="6J7GX9Vthq_" role="lcghm">
-                <ref role="1rvKf6" node="6J7GX9VteLD" resolve="declarePlayTone" />
-              </node>
-              <node concept="l8MVK" id="6J7GX9VujlZ" role="lcghm" />
-            </node>
             <node concept="lc7rE" id="6J7GX9VQlMP" role="3cqZAp">
               <node concept="1bDJIP" id="6J7GX9VQlNj" role="lcghm">
                 <ref role="1rvKf6" node="6J7GX9VQknd" resolve="declareMelodies" />
@@ -938,12 +926,25 @@
       <node concept="3clFbS" id="6J7GX9VqjKq" role="2VODD2">
         <node concept="lc7rE" id="6J7GX9VujB6" role="3cqZAp">
           <node concept="la8eA" id="6J7GX9VujBs" role="lcghm">
-            <property role="lacIc" value="playTone(" />
+            <property role="lacIc" value="tone(" />
+          </node>
+          <node concept="l9hG8" id="6J7GX9VulqV" role="lcghm">
+            <node concept="2OqwBi" id="6J7GX9VumdL" role="lb14g">
+              <node concept="2OqwBi" id="6J7GX9VulFf" role="2Oq$k0">
+                <node concept="117lpO" id="6J7GX9VulyP" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6J7GX9VAv$d" role="2OqNvi">
+                  <ref role="3Tt5mk" to="gpyq:dxpE4MkIOU" resolve="target" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6J7GX9Vums6" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
           <node concept="l9hG8" id="6J7GX9VujD2" role="lcghm">
             <node concept="3cpWs3" id="6J7GX9VRLvf" role="lb14g">
               <node concept="Xl_RD" id="6J7GX9VRLye" role="3uHU7B">
-                <property role="Xl_RC" value="" />
+                <property role="Xl_RC" value=", " />
               </node>
               <node concept="2OqwBi" id="6J7GX9VujMl" role="3uHU7w">
                 <node concept="117lpO" id="6J7GX9VujDV" role="2Oq$k0" />
@@ -964,22 +965,6 @@
                 <node concept="3TrcHB" id="6J7GX9Vukw_" role="2OqNvi">
                   <ref role="3TsBF5" to="gpyq:6J7GX9VnB4e" resolve="duration" />
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="6J7GX9Vulc0" role="lcghm">
-            <property role="lacIc" value=", " />
-          </node>
-          <node concept="l9hG8" id="6J7GX9VulqV" role="lcghm">
-            <node concept="2OqwBi" id="6J7GX9VumdL" role="lb14g">
-              <node concept="2OqwBi" id="6J7GX9VulFf" role="2Oq$k0">
-                <node concept="117lpO" id="6J7GX9VulyP" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6J7GX9VAv$d" role="2OqNvi">
-                  <ref role="3Tt5mk" to="gpyq:dxpE4MkIOU" resolve="target" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="6J7GX9Vums6" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
@@ -1369,75 +1354,6 @@
         </node>
       </node>
     </node>
-    <node concept="1bwezc" id="6J7GX9VteLD" role="1bwxVq">
-      <property role="TrG5h" value="declarePlayTone" />
-      <node concept="3cqZAl" id="6J7GX9VteLE" role="3clF45" />
-      <node concept="3clFbS" id="6J7GX9VteLF" role="3clF47">
-        <node concept="lc7rE" id="6J7GX9Vt1a3" role="3cqZAp">
-          <node concept="la8eA" id="6J7GX9Vt1rj" role="lcghm">
-            <property role="lacIc" value="void playTone(int tone, int duration, int speakerPin) {" />
-          </node>
-          <node concept="l8MVK" id="6J7GX9Vt1y3" role="lcghm" />
-        </node>
-        <node concept="1bpajm" id="6J7GX9Vt2mE" role="3cqZAp" />
-        <node concept="3izx1p" id="6J7GX9VtXil" role="3cqZAp">
-          <node concept="3clFbS" id="6J7GX9VtXin" role="3izTki">
-            <node concept="1bpajm" id="6J7GX9VtXm9" role="3cqZAp" />
-            <node concept="lc7rE" id="6J7GX9Vt1N_" role="3cqZAp">
-              <node concept="la8eA" id="6J7GX9Vt24S" role="lcghm">
-                <property role="lacIc" value="for (long i = 0; i &lt; duration * 1000L; i+= tone *2) {" />
-              </node>
-              <node concept="l8MVK" id="6J7GX9VtdDx" role="lcghm" />
-            </node>
-            <node concept="3izx1p" id="6J7GX9VtgWC" role="3cqZAp">
-              <node concept="3clFbS" id="6J7GX9VtgWE" role="3izTki">
-                <node concept="1bpajm" id="6J7GX9VtgYk" role="3cqZAp" />
-                <node concept="lc7rE" id="6J7GX9VtetG" role="3cqZAp">
-                  <node concept="la8eA" id="6J7GX9VteJG" role="lcghm">
-                    <property role="lacIc" value="digitalWrite(speakerPin, HIGH);" />
-                  </node>
-                  <node concept="l8MVK" id="6J7GX9VteLi" role="lcghm" />
-                </node>
-                <node concept="1bpajm" id="6J7GX9Vth0O" role="3cqZAp" />
-                <node concept="lc7rE" id="6J7GX9VtgNv" role="3cqZAp">
-                  <node concept="la8eA" id="6J7GX9VtgOn" role="lcghm">
-                    <property role="lacIc" value="delayMicroseconds(tone);" />
-                  </node>
-                  <node concept="l8MVK" id="6J7GX9VtgPs" role="lcghm" />
-                </node>
-                <node concept="1bpajm" id="6J7GX9Vth1_" role="3cqZAp" />
-                <node concept="lc7rE" id="6J7GX9VtgOK" role="3cqZAp">
-                  <node concept="la8eA" id="6J7GX9VtgOL" role="lcghm">
-                    <property role="lacIc" value="digitalWrite(speakerPin, LOW);" />
-                  </node>
-                  <node concept="l8MVK" id="6J7GX9VtgPT" role="lcghm" />
-                </node>
-                <node concept="1bpajm" id="6J7GX9Vth20" role="3cqZAp" />
-                <node concept="lc7rE" id="6J7GX9VtgRc" role="3cqZAp">
-                  <node concept="la8eA" id="6J7GX9VtgRd" role="lcghm">
-                    <property role="lacIc" value="delayMicroseconds(tone);" />
-                  </node>
-                  <node concept="l8MVK" id="6J7GX9VtgRe" role="lcghm" />
-                </node>
-              </node>
-            </node>
-            <node concept="1bpajm" id="6J7GX9Vth3G" role="3cqZAp" />
-            <node concept="lc7rE" id="6J7GX9VtgTw" role="3cqZAp">
-              <node concept="la8eA" id="6J7GX9VtgV4" role="lcghm">
-                <property role="lacIc" value="}" />
-              </node>
-              <node concept="l8MVK" id="6J7GX9VtXjg" role="lcghm" />
-            </node>
-          </node>
-        </node>
-        <node concept="lc7rE" id="6J7GX9VtgVt" role="3cqZAp">
-          <node concept="la8eA" id="6J7GX9VtgVu" role="lcghm">
-            <property role="lacIc" value="}" />
-          </node>
-          <node concept="l8MVK" id="6J7GX9VtXjH" role="lcghm" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="WtQ9Q" id="6J7GX9VX09q">
     <ref role="WuzLi" to="gpyq:6J7GX9VQ0k8" resolve="PlayNoteFromMelody" />
@@ -1445,7 +1361,23 @@
       <node concept="3clFbS" id="6J7GX9VX09s" role="2VODD2">
         <node concept="lc7rE" id="6J7GX9VYDVm" role="3cqZAp">
           <node concept="la8eA" id="6J7GX9VYDVn" role="lcghm">
-            <property role="lacIc" value="playTone(" />
+            <property role="lacIc" value="tone(" />
+          </node>
+          <node concept="l9hG8" id="6J7GX9VYVnm" role="lcghm">
+            <node concept="2OqwBi" id="6J7GX9W0ykY" role="lb14g">
+              <node concept="2OqwBi" id="6J7GX9VYVz0" role="2Oq$k0">
+                <node concept="117lpO" id="6J7GX9VYVqA" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6J7GX9VYVGc" role="2OqNvi">
+                  <ref role="3Tt5mk" to="gpyq:dxpE4MkIOU" resolve="target" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6J7GX9W0yYM" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7eeBdbVuYCN" role="lcghm">
+            <property role="lacIc" value=", " />
           </node>
         </node>
         <node concept="lc7rE" id="6J7GX9VYTTm" role="3cqZAp">
@@ -1467,22 +1399,6 @@
               <node concept="117lpO" id="6J7GX9VYUBH" role="2Oq$k0" />
               <node concept="3TrEf2" id="6J7GX9VYV6_" role="2OqNvi">
                 <ref role="3Tt5mk" to="gpyq:6J7GX9VQ0kb" resolve="melody" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="6J7GX9VYVhw" role="lcghm">
-            <property role="lacIc" value=", " />
-          </node>
-          <node concept="l9hG8" id="6J7GX9VYVnm" role="lcghm">
-            <node concept="2OqwBi" id="6J7GX9W0ykY" role="lb14g">
-              <node concept="2OqwBi" id="6J7GX9VYVz0" role="2Oq$k0">
-                <node concept="117lpO" id="6J7GX9VYVqA" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6J7GX9VYVGc" role="2OqNvi">
-                  <ref role="3Tt5mk" to="gpyq:dxpE4MkIOU" resolve="target" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="6J7GX9W0yYM" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
