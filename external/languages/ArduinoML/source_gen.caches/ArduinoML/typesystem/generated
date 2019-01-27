@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-85gf4w04i5g3czffixiobje8qpabt8y">
+<product version="3" modelHash="-ecx371c1y5ibxc87bui5v25wc0ewg6k">
   <files names="NameChecker.java:TypesystemDescriptor.java:check_Action_NonTypesystemRule.java:check_Brick_NonTypesystemRule.java:check_PlayNote_NonTypesystemRule.java:check_State_NonTypesystemRule.java" />
 </product>
 

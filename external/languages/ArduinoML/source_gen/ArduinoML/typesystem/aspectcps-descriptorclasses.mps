@@ -2919,7 +2919,7 @@
                             </node>
                           </node>
                           <node concept="Xl_RD" id="gJ" role="3uHU7B">
-                            <property role="Xl_RC" value="Invalid brick name " />
+                            <property role="Xl_RC" value="Invalid name " />
                             <node concept="cd27G" id="gT" role="lGtFl">
                               <node concept="3u3nmq" id="gU" role="cd27D">
                                 <property role="3u3nmv" value="7766373799020949701" />

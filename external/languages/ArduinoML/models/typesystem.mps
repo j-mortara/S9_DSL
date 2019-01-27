@@ -395,7 +395,7 @@
                 </node>
               </node>
               <node concept="Xl_RD" id="6J7GX9VyR35" role="3uHU7B">
-                <property role="Xl_RC" value="Invalid brick name " />
+                <property role="Xl_RC" value="Invalid name " />
               </node>
             </node>
             <node concept="1YBJjd" id="6J7GX9VTsfD" role="2OEOjV">
