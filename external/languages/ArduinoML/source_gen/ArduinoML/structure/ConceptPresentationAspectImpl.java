@@ -71,14 +71,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.PlayNote:
         if (props_PlayNote == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("PlayNote");
+          cpb.shortDesc("Plays a music note");
+          cpb.rawPresentation("play note");
           props_PlayNote = cpb.create();
         }
         return props_PlayNote;
       case LanguageConceptSwitch.PlayNoteFromMelody:
         if (props_PlayNoteFromMelody == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("PlayNoteFromMelody");
+          cpb.shortDesc("Plays the next note of the given melody");
+          cpb.rawPresentation("play note from melody");
           props_PlayNoteFromMelody = cpb.create();
         }
         return props_PlayNoteFromMelody;

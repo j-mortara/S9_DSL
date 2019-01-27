@@ -150,6 +150,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("note", 0x6bc7b3d27b5e710cL).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5deedeL)).origin("7766373799018000652").done();
     b.property("duration", 0x6bc7b3d27b5e710eL).type(PrimitiveTypeId.INTEGER).origin("7766373799018000654").done();
     b.associate("melody", 0x6bc7b3d27b5efeaeL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(true).origin("7766373799018036910").done();
+    b.alias("play note");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPlayNoteFromMelody() {
@@ -159,6 +160,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799025968392");
     b.version(2);
     b.associate("melody", 0x6bc7b3d27bd8050bL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(false).origin("7766373799025968395").done();
+    b.alias("play note from melody");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSensor() {

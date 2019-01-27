@@ -22,6 +22,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -195,6 +197,7 @@
   <node concept="AxPO7" id="6J7GX9VnuVu">
     <property role="TrG5h" value="NOTE" />
     <property role="3lZH7k" value="derive_from_internal_value" />
+    <property role="PDuV0" value="true" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
     <node concept="M4N5e" id="6J7GX9VnuVv" role="M5hS2">
       <property role="1uS6qv" value="1915" />
@@ -258,6 +261,8 @@
   <node concept="1TIwiD" id="6J7GX9VnB4b">
     <property role="EcuMT" value="7766373799018000651" />
     <property role="TrG5h" value="PlayNote" />
+    <property role="34LRSv" value="play note" />
+    <property role="R4oN_" value="Plays a music note" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6J7GX9VnB4c" role="1TKVEl">
       <property role="IQ2nx" value="7766373799018000652" />
@@ -298,6 +303,8 @@
   <node concept="1TIwiD" id="6J7GX9VQ0k8">
     <property role="EcuMT" value="7766373799025968392" />
     <property role="TrG5h" value="PlayNoteFromMelody" />
+    <property role="R4oN_" value="Plays the next note of the given melody" />
+    <property role="34LRSv" value="play note from melody" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6J7GX9VQ0k9" role="PzmwI">
       <ref role="PrY4T" node="6J7GX9VogsM" resolve="Action" />

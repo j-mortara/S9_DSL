@@ -11,6 +11,10 @@
         <reference id="7766373799025968395" name="melody" index="g7Vrp" />
       </concept>
       <concept id="7766373799023111436" name="ArduinoML.structure.Speaker" flags="ng" index="gqXVu" />
+      <concept id="7766373799018000651" name="ArduinoML.structure.PlayNote" flags="ng" index="gAsbp">
+        <property id="7766373799018000654" name="duration" index="gAsbs" />
+        <property id="7766373799018000652" name="note" index="gAsbu" />
+      </concept>
       <concept id="7766373799017967898" name="ArduinoML.structure.Melody" flags="ng" index="gA$b8">
         <child id="7766373799017967965" name="notes" index="gA$af" />
       </concept>
@@ -248,6 +252,11 @@
         <ref role="LcSIr" node="6J7GX9VGsKZ" resolve="speaker" />
         <ref role="g7Vrp" node="6J7GX9VMgyi" resolve="test" />
       </node>
+      <node concept="gAsbp" id="6J7GX9WpZrG" role="LcSIm">
+        <property role="gAsbu" value="1915" />
+        <property role="gAsbs" value="250" />
+        <ref role="LcSIr" node="6J7GX9VGsKZ" resolve="speaker" />
+      </node>
       <node concept="1eoRFB" id="6J7GX9W5uJI" role="1eoRFC">
         <property role="1eoRFV" value="HIGH" />
         <ref role="1eoRF$" node="6J7GX9VnJV8" resolve="button2" />
@@ -279,6 +288,7 @@
       <property role="TrG5h" value="test" />
       <node concept="gA$bP" id="6J7GX9W5uIQ" role="gA$af">
         <property role="g2cLZ" value="250" />
+        <property role="gA$as" value="1915" />
       </node>
       <node concept="gA$bP" id="6J7GX9W5uIS" role="gA$af">
         <property role="g2cLZ" value="250" />
@@ -298,6 +308,7 @@
       </node>
       <node concept="gA$bP" id="6J7GX9W5uJa" role="gA$af">
         <property role="g2cLZ" value="250" />
+        <property role="gA$as" value="1915" />
       </node>
       <node concept="gA$bP" id="6J7GX9W5uJh" role="gA$af">
         <property role="g2cLZ" value="250" />
@@ -312,6 +323,7 @@
       </node>
       <node concept="gA$bP" id="6J7GX9VVesd" role="gA$af">
         <property role="g2cLZ" value="250" />
+        <property role="gA$as" value="1915" />
       </node>
       <node concept="gA$bP" id="6J7GX9VVesg" role="gA$af">
         <property role="g2cLZ" value="250" />

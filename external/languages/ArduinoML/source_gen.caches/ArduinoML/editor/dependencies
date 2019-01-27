@@ -52,6 +52,7 @@
   </dependency>
   <dependency className="ArduinoML.editor.App_EditorBuilder_a">
     <classNode dependClassName="ArduinoML.editor.stylesheet_StyleSheet.keywordStyleClass" />
+    <classNode dependClassName="ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
