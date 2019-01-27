@@ -62,7 +62,7 @@ abstract class GroovuinoMLBasescript extends Script {
 		if(count == 0) {
 			count++
 			scriptBody()
-			println(((GroovuinoMLBinding) this.getBinding()).getGroovuinoMLModel().generateCode(name).toString())
+			println(((GroovuinoMLBinding) this.getBinding()).getGroovuinoMLModel().generateCode("appName").toString())
 		} else {
 			println "Run method is disabled"
 		}

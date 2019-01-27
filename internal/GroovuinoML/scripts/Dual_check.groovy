@@ -1,11 +1,11 @@
-sensor a pin 9
-sensor b pin 10
-actuator led pin 11
+sensor "a" pin 9
+sensor "b" pin 10
+actuator "led" pin 11
 
-state off means led becomes low
-state a_on means led becomes low
-state b_on means led becomes low
-state all_on means led becomes high
+state "off" means led becomes low
+state "a_on" means led becomes low
+state "b_on" means led becomes low
+state "all_on" means led becomes high
 
 initial off
 

@@ -1,20 +1,13 @@
-sensor a pin 9
-sensor b pin 10
-actuator led pin 11
+sensor "button" pin 9
+actuator "led" pin 12
+actuator "buzzer" pin 11
 
-state off means led becomes low
-state a_on means led becomes low
-state b_on means led becomes low
-state all_on means led becomes high
+state "off" means led becomes low and buzzer becomes low
+state "buzzer_on" means buzzer becomes high
+state "buzzer_off_led_on" means led becomes high and buzzer becomes low
 
 initial off
 
-from off to a_on when a becomes high
-from off to b_on when b becomes high
-
-from a_on to all_on when b becomes high
-
-from b_on to all_on when a becomes high
-
-from all_on to b_on when a becomes low
-from all_on to a_on when b becomes low
+from off to buzzer_on when button becomes high
+from buzzer_on to buzzer_off_led_on when button becomes high
+from buzzer_off_led_on to off when button becomes high
