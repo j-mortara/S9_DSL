@@ -36,8 +36,9 @@
         <child id="243588697374780727" name="actions" index="LcSIm" />
         <child id="3834294753782225963" name="transitions" index="1eoRFC" />
       </concept>
-      <concept id="243588697374780702" name="ArduinoML.structure.SimpleAction" flags="ng" index="LcSIZ">
+      <concept id="243588697374780702" name="ArduinoML.structure.Action" flags="ng" index="LcSIZ">
         <property id="243588697374780709" name="signal" index="LcSI4" />
+        <reference id="243588697374780730" name="target" index="LcSIs" />
       </concept>
       <concept id="3834294753782225956" name="ArduinoML.structure.Transition" flags="ng" index="1eoRFB">
         <property id="3834294753782225976" name="signal" index="1eoRFV" />
@@ -549,6 +550,61 @@
     <node concept="1ZYdfG" id="7qz6UFkm6DN" role="LcSJj">
       <property role="TrG5h" value="button2" />
       <property role="1epAaf" value="11" />
+    </node>
+  </node>
+  <node concept="LcSIH" id="6erYaoVlKvv">
+    <property role="TrG5h" value="multi_state" />
+    <ref role="1epuHo" node="3kQ9GdVsXwG" resolve="off" />
+    <node concept="LcSIR" id="6erYaoVlKvA" role="LcSJj">
+      <property role="TrG5h" value="led" />
+      <property role="1epAaf" value="12" />
+    </node>
+    <node concept="LcSIR" id="6erYaoVlKvS" role="LcSJj">
+      <property role="TrG5h" value="buzzer" />
+      <property role="1epAaf" value="11" />
+    </node>
+    <node concept="1ZYdfG" id="6erYaoVlKvI" role="LcSJj">
+      <property role="TrG5h" value="button" />
+      <property role="1epAaf" value="10" />
+    </node>
+    <node concept="LcSIU" id="6erYaoVlKvw" role="LcSJf">
+      <property role="TrG5h" value="off" />
+      <node concept="1eoRFB" id="6erYaoVlKvx" role="1eoRFC">
+        <ref role="1eoRFA" node="6erYaoVlKwa" resolve="buzzer_on" />
+        <ref role="1eoRF$" node="3kQ9GdVkWQn" resolve="button" />
+      </node>
+      <node concept="LcSIZ" id="6erYaoVlKw1" role="LcSIm">
+        <property role="LcSI4" value="LOW" />
+        <ref role="LcSIs" node="3kQ9GdVkItk" resolve="led" />
+      </node>
+      <node concept="LcSIZ" id="6erYaoVlKw6" role="LcSIm">
+        <property role="LcSI4" value="LOW" />
+        <ref role="LcSIs" node="6erYaoVlKvS" resolve="buzzer" />
+      </node>
+    </node>
+    <node concept="LcSIU" id="6erYaoVlKwa" role="LcSJf">
+      <property role="TrG5h" value="buzzer_on" />
+      <node concept="1eoRFB" id="6erYaoVlKwb" role="1eoRFC">
+        <ref role="1eoRF$" node="3kQ9GdVkWQn" resolve="button" />
+        <ref role="1eoRFA" node="6erYaoVlKwi" resolve="buzzer_off_led_on" />
+      </node>
+      <node concept="LcSIZ" id="6erYaoVlKws" role="LcSIm">
+        <ref role="LcSIs" node="6erYaoVlKvS" resolve="buzzer" />
+      </node>
+    </node>
+    <node concept="LcSIU" id="6erYaoVlKwi" role="LcSJf">
+      <property role="TrG5h" value="buzzer_off_led_on" />
+      <node concept="1eoRFB" id="6erYaoVlKwj" role="1eoRFC">
+        <ref role="1eoRF$" node="3kQ9GdVkWQn" resolve="button" />
+        <ref role="1eoRFA" node="3kQ9GdVsXwG" resolve="off" />
+      </node>
+      <node concept="LcSIZ" id="6erYaoVlKwu" role="LcSIm">
+        <ref role="LcSIs" node="3kQ9GdVkItk" resolve="led" />
+      </node>
+      <node concept="LcSIZ" id="6erYaoVlKwz" role="LcSIm">
+        <property role="LcSI4" value="LOW" />
+        <ref role="LcSIs" node="6erYaoVlKvS" resolve="buzzer" />
+      </node>
     </node>
   </node>
 </model>
