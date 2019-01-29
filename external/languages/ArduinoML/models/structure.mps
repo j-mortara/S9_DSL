@@ -291,11 +291,6 @@
     <property role="34LRSv" value="play note" />
     <property role="R4oN_" value="Plays a music note" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6J7GX9VnB4e" role="1TKVEl">
-      <property role="IQ2nx" value="7766373799018000654" />
-      <property role="TrG5h" value="duration" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="PrWs8" id="6J7GX9VogsQ" role="PzmwI">
       <ref role="PrY4T" node="6J7GX9VogsM" resolve="Action" />
     </node>

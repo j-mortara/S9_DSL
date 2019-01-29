@@ -1,72 +1,47 @@
 // Wiring code generated from an ArduinoML model
-// Application name: Sub!
+// Application name: appName
 
 void setup(){
-  pinMode(9, INPUT);  // buttonA [Sensor]
-  pinMode(10, INPUT);  // buttonB [Sensor]
   pinMode(12, OUTPUT); // led [Actuator]
+  pinMode(11, OUTPUT); // buzzer [Actuator]
+  pinMode(9, INPUT);  // button [Sensor]
 }
 
 long time = 0; long debounce = 200;
 
-void state_off() {
-  digitalWrite(12,LOW);
+void state_buzzer_on() {
+  digitalWrite(11,HIGH);
   boolean guard = millis() - time > debounce;
   if( digitalRead(9) == HIGH && guard ) {
     time = millis();
-    state_a_on();
-  }
-  else if( digitalRead(10) == HIGH && guard ) {
-    time = millis();
-    state_b_on();
+    state_buzzer_off_led_on();
   }
   else {
-    state_off();
+    state_buzzer_on();
   }
 }
-void state_a_on() {
+void state_off() {
   digitalWrite(12,LOW);
+  digitalWrite(11,LOW);
   boolean guard = millis() - time > debounce;
-  if( digitalRead(9) == LOW && guard ) {
+  if( digitalRead(9) == HIGH && guard ) {
     time = millis();
-    state_off();
-  }
-  else if( digitalRead(10) == HIGH && guard ) {
-    time = millis();
-    state_led_on();
+    state_buzzer_on();
   }
   else {
-    state_a_on();
-  }
-}
-void state_b_on() {
-  digitalWrite(12,LOW);
-  boolean guard = millis() - time > debounce;
-  if( digitalRead(10) == LOW && guard ) {
-    time = millis();
     state_off();
   }
-  else if( digitalRead(9) == HIGH && guard ) {
-    time = millis();
-    state_led_on();
-  }
-  else {
-    state_b_on();
-  }
 }
-void state_led_on() {
+void state_buzzer_off_led_on() {
   digitalWrite(12,HIGH);
+  digitalWrite(11,LOW);
   boolean guard = millis() - time > debounce;
-  if( digitalRead(10) == LOW && guard ) {
+  if( digitalRead(9) == HIGH && guard ) {
     time = millis();
-    state_a_on();
-  }
-  else if( digitalRead(9) == LOW && guard ) {
-    time = millis();
-    state_b_on();
+    state_off();
   }
   else {
-    state_led_on();
+    state_buzzer_off_led_on();
   }
 }
 void loop() {

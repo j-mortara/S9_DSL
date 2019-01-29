@@ -148,7 +148,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L);
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799018000651");
     b.version(2);
-    b.property("duration", 0x6bc7b3d27b5e710eL).type(PrimitiveTypeId.INTEGER).origin("7766373799018000654").done();
     b.aggregate("note", 0x7cd55a217c6f4daaL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L).optional(false).ordered(true).multiple(false).origin("8995194930610523562").done();
     b.alias("play note");
     return b.create();

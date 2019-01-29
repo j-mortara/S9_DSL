@@ -17,7 +17,7 @@ public class PlayNote_TextGen extends TextGenDescriptorBase {
     tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L, 0x36166a13252ed3aL, "target")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append(", " + Utils.computeFrequency(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5e710bL, 0x7cd55a217c6f4daaL, "note"))));
     tgs.append(", ");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5e710bL, 0x6bc7b3d27b5e710eL, "duration")));
+    tgs.append("" + SPropertyOperations.getInteger(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5e710bL, 0x7cd55a217c6f4daaL, "note")), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L, 0x6bc7b3d27bcf7fadL, "duration")));
     tgs.append(");");
     tgs.newLine();
   }
