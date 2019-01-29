@@ -1243,7 +1243,7 @@
             <node concept="liA8E" id="6_" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
               <node concept="Xl_RD" id="6D" role="37wK5m">
-                <property role="Xl_RC" value="long time =0;long debounce=200;" />
+                <property role="Xl_RC" value="long time =0;long debounce=100;" />
                 <node concept="cd27G" id="6F" role="lGtFl">
                   <node concept="3u3nmq" id="6G" role="cd27D">
                     <property role="3u3nmv" value="3834294753782229430" />

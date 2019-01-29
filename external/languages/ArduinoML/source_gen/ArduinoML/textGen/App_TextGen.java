@@ -32,7 +32,7 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.append("// Time and debounce init");
     tgs.newLine();
-    tgs.append("long time =0;long debounce=200;");
+    tgs.append("long time =0;long debounce=100;");
     tgs.newLine();
     tgs.newLine();
     if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies"))).isNotEmpty()) {

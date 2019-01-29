@@ -262,7 +262,7 @@
         </node>
         <node concept="lc7rE" id="3kQ9GdVlmoW" role="3cqZAp">
           <node concept="la8eA" id="3kQ9GdVlmAQ" role="lcghm">
-            <property role="lacIc" value="long time =0;long debounce=200;" />
+            <property role="lacIc" value="long time =0;long debounce=100;" />
           </node>
           <node concept="l8MVK" id="3kQ9GdVsXTC" role="lcghm" />
         </node>

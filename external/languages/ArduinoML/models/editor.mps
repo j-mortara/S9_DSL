@@ -270,6 +270,7 @@
           <ref role="1NtTu8" to="gpyq:6J7GX9Vnv5e" resolve="value" />
         </node>
         <node concept="3F0A7n" id="7Nlmy5Whnv$" role="3EZMnx">
+          <property role="1$x2rV" value="octave" />
           <ref role="1NtTu8" to="gpyq:7Nlmy5WfTZD" resolve="octave" />
           <node concept="VPXOz" id="7Nlmy5Wuy$Z" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -308,9 +309,6 @@
             <node concept="3F0ifn" id="6J7GX9VNu1P" role="3EZMnx">
               <property role="3F0ifm" value="notes" />
               <ref role="1k5W1q" node="6J7GX9W64wh" resolve="parameter" />
-            </node>
-            <node concept="3F0ifn" id="7Nlmy5W$D$0" role="3EZMnx">
-              <property role="3F0ifm" value="notes" />
             </node>
             <node concept="3F2HdR" id="6J7GX9VNu1V" role="3EZMnx">
               <property role="2czwfO" value=" " />
