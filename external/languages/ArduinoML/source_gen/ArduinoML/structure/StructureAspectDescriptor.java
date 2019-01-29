@@ -178,6 +178,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/243588697374780702");
     b.version(2);
     b.property("signal", 0x36166a13252ed25L).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed20L)).origin("243588697374780709").done();
+    b.alias("put");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSpeaker() {

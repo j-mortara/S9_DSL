@@ -24,6 +24,12 @@ public class check_MelodyNote_NonTypesystemRule extends AbstractNonTypesystemRul
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(melodyNote, "The octave must be between 0 and 7", "r:86136e03-8a7b-41ce-9bbb-e90666fa6e2f(ArduinoML.typesystem)", "8995194930609145471", null, errorTarget);
       }
     }
+    if (SPropertyOperations.getInteger(melodyNote, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L, 0x6bc7b3d27bcf7fadL, "duration")) < 0) {
+      {
+        MessageTarget errorTarget = new NodeMessageTarget();
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(melodyNote, "The duration must be > 0 but is " + SPropertyOperations.getInteger(melodyNote, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L, 0x6bc7b3d27bcf7fadL, "duration")), "r:86136e03-8a7b-41ce-9bbb-e90666fa6e2f(ArduinoML.typesystem)", "8995194930612979134", null, errorTarget);
+      }
+    }
   }
   public SAbstractConcept getApplicableConcept() {
     return MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L, "ArduinoML.structure.MelodyNote");

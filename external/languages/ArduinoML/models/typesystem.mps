@@ -651,6 +651,41 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbJ" id="7Nlmy5W_arF" role="3cqZAp">
+        <node concept="3clFbS" id="7Nlmy5W_arH" role="3clFbx">
+          <node concept="2MkqsV" id="7Nlmy5W_cmY" role="3cqZAp">
+            <node concept="3cpWs3" id="7Nlmy5W_cFR" role="2MkJ7o">
+              <node concept="2OqwBi" id="7Nlmy5W_cZQ" role="3uHU7w">
+                <node concept="1YBJjd" id="7Nlmy5W_cOj" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7Nlmy5WmrKd" resolve="melodyNote" />
+                </node>
+                <node concept="3TrcHB" id="7Nlmy5W_dS_" role="2OqNvi">
+                  <ref role="3TsBF5" to="gpyq:6J7GX9VNRYH" resolve="duration" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="7Nlmy5W_cmZ" role="3uHU7B">
+                <property role="Xl_RC" value="The duration must be &gt; 0 but is " />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="7Nlmy5W_cn0" role="2OEOjV">
+              <ref role="1YBMHb" node="7Nlmy5WmrKd" resolve="melodyNote" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOVzh" id="7Nlmy5W_CfC" role="3clFbw">
+          <node concept="2OqwBi" id="7Nlmy5W_a$T" role="3uHU7B">
+            <node concept="1YBJjd" id="7Nlmy5W_asa" role="2Oq$k0">
+              <ref role="1YBMHb" node="7Nlmy5WmrKd" resolve="melodyNote" />
+            </node>
+            <node concept="3TrcHB" id="7Nlmy5W_aYj" role="2OqNvi">
+              <ref role="3TsBF5" to="gpyq:6J7GX9VNRYH" resolve="duration" />
+            </node>
+          </node>
+          <node concept="3cmrfG" id="7Nlmy5W_bYA" role="3uHU7w">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="7Nlmy5WmrKd" role="1YuTPh">
       <property role="TrG5h" value="melodyNote" />

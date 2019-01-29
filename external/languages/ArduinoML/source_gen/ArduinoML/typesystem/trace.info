@@ -254,38 +254,47 @@
     <file name="check_MelodyNote_NonTypesystemRule.java">
       <node id="8995194930609145471" at="22,7,23,60" concept="5" />
       <node id="8995194930609145471" at="23,60,24,238" concept="5" />
-      <node id="8995194930609110026" at="28,50,29,138" concept="6" />
-      <node id="8995194930609110026" at="31,68,32,102" concept="6" />
-      <node id="8995194930609110026" at="34,30,35,17" concept="6" />
+      <node id="8995194930612979134" at="28,7,29,60" concept="5" />
+      <node id="8995194930612979134" at="29,60,30,409" concept="5" />
+      <node id="8995194930609110026" at="34,50,35,138" concept="6" />
+      <node id="8995194930609110026" at="37,68,38,102" concept="6" />
+      <node id="8995194930609110026" at="40,30,41,17" concept="6" />
       <node id="8995194930609110026" at="18,0,20,0" concept="1" trace="check_MelodyNote_NonTypesystemRule#()V" />
-      <node id="8995194930609110026" at="28,0,31,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="8995194930609110026" at="31,0,34,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="8995194930609110026" at="34,0,37,0" concept="4" trace="overrides#()Z" />
+      <node id="8995194930609110026" at="34,0,37,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8995194930609110026" at="37,0,40,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8995194930609110026" at="40,0,43,0" concept="4" trace="overrides#()Z" />
       <node id="8995194930609145471" at="21,359,25,7" concept="0" />
+      <node id="8995194930612979134" at="27,185,31,7" concept="0" />
       <node id="8995194930609110033" at="20,123,26,5" concept="3" />
-      <node id="8995194930609110026" at="20,0,28,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="8995194930612971243" at="26,5,32,5" concept="3" />
+      <node id="8995194930609110026" at="20,0,34,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="8995194930609110026" at="18,47,18,47" />
-      <scope id="8995194930609110026" at="28,50,29,138" />
-      <scope id="8995194930609110026" at="31,68,32,102" />
-      <scope id="8995194930609110026" at="34,30,35,17" />
+      <scope id="8995194930609110026" at="34,50,35,138" />
+      <scope id="8995194930609110026" at="37,68,38,102" />
+      <scope id="8995194930609110026" at="40,30,41,17" />
       <scope id="8995194930609110026" at="18,0,20,0" />
       <scope id="8995194930609145471" at="22,7,24,238">
         <var name="_reporter_2309309498" id="8995194930609145471" />
         <var name="errorTarget" id="8995194930609145471" />
       </scope>
-      <scope id="8995194930609110026" at="28,0,31,0" />
-      <scope id="8995194930609110026" at="31,0,34,0">
-        <var name="argument" id="8995194930609110026" />
+      <scope id="8995194930612979134" at="28,7,30,409">
+        <var name="_reporter_2309309498" id="8995194930612979134" />
+        <var name="errorTarget" id="8995194930612979134" />
       </scope>
       <scope id="8995194930609110026" at="34,0,37,0" />
+      <scope id="8995194930609110026" at="37,0,40,0">
+        <var name="argument" id="8995194930609110026" />
+      </scope>
+      <scope id="8995194930609110026" at="40,0,43,0" />
       <scope id="8995194930609110035" at="21,359,25,7" />
-      <scope id="8995194930609110027" at="20,123,26,5" />
-      <scope id="8995194930609110026" at="20,0,28,0">
+      <scope id="8995194930612971245" at="27,185,31,7" />
+      <scope id="8995194930609110027" at="20,123,32,5" />
+      <scope id="8995194930609110026" at="20,0,34,0">
         <var name="melodyNote" id="8995194930609110026" />
         <var name="status" id="8995194930609110026" />
         <var name="typeCheckingContext" id="8995194930609110026" />
       </scope>
-      <unit id="8995194930609110026" at="17,0,38,0" name="ArduinoML.typesystem.check_MelodyNote_NonTypesystemRule" />
+      <unit id="8995194930609110026" at="17,0,44,0" name="ArduinoML.typesystem.check_MelodyNote_NonTypesystemRule" />
     </file>
   </root>
 </debug-info>

@@ -94,7 +94,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.SimpleAction:
         if (props_SimpleAction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L, 0x36166a13252ed3aL, "target", "", "");
+          cpb.shortDesc("Puts the given actuator to the given signal");
+          cpb.rawPresentation("put");
           props_SimpleAction = cpb.create();
         }
         return props_SimpleAction;

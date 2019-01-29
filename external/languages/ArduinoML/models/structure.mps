@@ -126,6 +126,8 @@
   <node concept="1TIwiD" id="dxpE4MkIOu">
     <property role="EcuMT" value="243588697374780702" />
     <property role="TrG5h" value="SimpleAction" />
+    <property role="34LRSv" value="put" />
+    <property role="R4oN_" value="Puts the given actuator to the given signal" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="dxpE4MkIO_" role="1TKVEl">
       <property role="IQ2nx" value="243588697374780709" />
