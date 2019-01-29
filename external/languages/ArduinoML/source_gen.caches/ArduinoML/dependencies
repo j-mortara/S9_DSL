@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="ArduinoML.Language">
-    <classNode dependClassName="ArduinoML.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="ArduinoML.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="ArduinoML.constraints.ConstraintsAspectDescriptor" />
-    <classNode dependClassName="ArduinoML.dataFlow.DataFlowAspectDescriptorImpl" />
     <classNode dependClassName="ArduinoML.editor.EditorAspectDescriptorImpl" />
-    <classNode dependClassName="ArduinoML.intentions.IntentionsDescriptor" />
     <classNode dependClassName="ArduinoML.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="ArduinoML.structure.StructureAspectDescriptor" />
     <classNode dependClassName="ArduinoML.textGen.TextGenAspectDescriptor" />
@@ -15,11 +12,8 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
-    <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
