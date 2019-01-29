@@ -139,6 +139,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("value", 0x6bc7b3d27b5df14eL).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5deedeL)).origin("7766373799017967950").done();
     b.property("duration", 0x6bc7b3d27bcf7fadL).type(PrimitiveTypeId.INTEGER).origin("7766373799025409965").done();
+    b.property("octave", 0x7cd55a217c3f9fe9L).type(PrimitiveTypeId.INTEGER).origin("8995194930607398889").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPlayNote() {
@@ -147,9 +148,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L);
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799018000651");
     b.version(2);
-    b.property("note", 0x6bc7b3d27b5e710cL).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5deedeL)).origin("7766373799018000652").done();
     b.property("duration", 0x6bc7b3d27b5e710eL).type(PrimitiveTypeId.INTEGER).origin("7766373799018000654").done();
-    b.associate("melody", 0x6bc7b3d27b5efeaeL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(true).origin("7766373799018036910").done();
+    b.aggregate("note", 0x7cd55a217c6f4daaL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L).optional(false).ordered(true).multiple(false).origin("8995194930610523562").done();
     b.alias("play note");
     return b.create();
   }

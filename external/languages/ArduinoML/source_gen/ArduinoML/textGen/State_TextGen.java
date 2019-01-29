@@ -25,11 +25,9 @@ public class State_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().increaseIndent();
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x36166a13252ed37L, "actions"))).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
-
-        ctx.getBuffer().area().increaseIndent();
         tgs.indent();
         tgs.appendNode(it);
-        ctx.getBuffer().area().decreaseIndent();
+
       }
     });
     tgs.indent();

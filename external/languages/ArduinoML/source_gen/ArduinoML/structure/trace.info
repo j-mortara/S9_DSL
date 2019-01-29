@@ -306,68 +306,65 @@
   </root>
   <root nodeRef="r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799017967326">
     <file name="EnumerationDescriptor_NOTE.java">
-      <node id="7766373799017967326" at="15,39,16,189" concept="9" />
-      <node id="7766373799017967327" at="19,0,20,0" concept="2" trace="VALUE_1047_0" />
-      <node id="7766373799038152313" at="20,0,21,0" concept="2" trace="VALUE_1109_0" />
-      <node id="7766373799017967328" at="21,0,22,0" concept="2" trace="VALUE_1175_0" />
-      <node id="7766373799038152340" at="22,0,23,0" concept="2" trace="VALUE_1245_0" />
-      <node id="7766373799017967331" at="23,0,24,0" concept="2" trace="VALUE_1319_0" />
-      <node id="7766373799017967335" at="24,0,25,0" concept="2" trace="VALUE_1397_0" />
-      <node id="7766373799038152370" at="25,0,26,0" concept="2" trace="VALUE_1480_0" />
-      <node id="8326765191030197124" at="26,0,27,0" concept="2" trace="VALUE_2960_0" />
-      <node id="7766373799017967340" at="27,0,28,0" concept="2" trace="VALUE_1568_0" />
-      <node id="7766373799038152403" at="28,0,29,0" concept="2" trace="VALUE_1661_0" />
-      <node id="7766373799017967346" at="29,0,30,0" concept="2" trace="VALUE_1760_0" />
-      <node id="7766373799038152415" at="30,0,31,0" concept="2" trace="VALUE_1865_0" />
-      <node id="7766373799017967353" at="31,0,32,0" concept="2" trace="VALUE_1976_0" />
-      <node id="7766373799017967326" at="35,62,36,16" concept="6" />
-      <node id="7766373799017967326" at="41,74,42,207" concept="6" />
-      <node id="7766373799017967326" at="48,25,49,18" concept="6" />
-      <node id="7766373799017967327" at="52,18,53,28" concept="6" />
-      <node id="7766373799038152313" at="54,18,55,28" concept="6" />
-      <node id="7766373799017967328" at="56,18,57,28" concept="6" />
-      <node id="7766373799038152340" at="58,18,59,28" concept="6" />
-      <node id="7766373799017967331" at="60,18,61,28" concept="6" />
-      <node id="7766373799017967335" at="62,18,63,28" concept="6" />
-      <node id="7766373799038152370" at="64,18,65,28" concept="6" />
-      <node id="8326765191030197124" at="66,18,67,28" concept="6" />
-      <node id="7766373799017967340" at="68,18,69,28" concept="6" />
-      <node id="7766373799038152403" at="70,18,71,28" concept="6" />
-      <node id="7766373799017967346" at="72,18,73,28" concept="6" />
-      <node id="7766373799038152415" at="74,18,75,28" concept="6" />
-      <node id="7766373799017967353" at="76,18,77,28" concept="6" />
-      <node id="7766373799017967326" at="78,5,79,16" concept="6" />
+      <node id="7766373799017967326" at="15,39,16,188" concept="9" />
+      <node id="7766373799017967327" at="19,0,20,0" concept="2" trace="VALUE_32703_0" />
+      <node id="7766373799038152313" at="20,0,21,0" concept="2" trace="VALUE_34648_0" />
+      <node id="7766373799017967328" at="21,0,22,0" concept="2" trace="VALUE_36708_0" />
+      <node id="7766373799038152340" at="22,0,23,0" concept="2" trace="VALUE_38891_0" />
+      <node id="7766373799017967331" at="23,0,24,0" concept="2" trace="VALUE_41203_0" />
+      <node id="7766373799017967335" at="24,0,25,0" concept="2" trace="VALUE_43654_0" />
+      <node id="7766373799038152370" at="25,0,26,0" concept="2" trace="VALUE_46249_0" />
+      <node id="7766373799017967340" at="26,0,27,0" concept="2" trace="VALUE_48999_0" />
+      <node id="7766373799038152403" at="27,0,28,0" concept="2" trace="VALUE_51913_0" />
+      <node id="7766373799017967346" at="28,0,29,0" concept="2" trace="VALUE_550_0" />
+      <node id="7766373799038152415" at="29,0,30,0" concept="2" trace="VALUE_5827_0" />
+      <node id="7766373799017967353" at="30,0,31,0" concept="2" trace="VALUE_61735_0" />
+      <node id="7766373799017967326" at="34,62,35,16" concept="6" />
+      <node id="7766373799017967326" at="40,74,41,202" concept="6" />
+      <node id="7766373799017967326" at="47,25,48,18" concept="6" />
+      <node id="7766373799017967327" at="51,20,52,29" concept="6" />
+      <node id="7766373799038152313" at="53,20,54,29" concept="6" />
+      <node id="7766373799017967328" at="55,20,56,29" concept="6" />
+      <node id="7766373799038152340" at="57,20,58,29" concept="6" />
+      <node id="7766373799017967331" at="59,20,60,29" concept="6" />
+      <node id="7766373799017967335" at="61,20,62,29" concept="6" />
+      <node id="7766373799038152370" at="63,20,64,29" concept="6" />
+      <node id="7766373799017967340" at="65,20,66,29" concept="6" />
+      <node id="7766373799038152403" at="67,20,68,29" concept="6" />
+      <node id="7766373799017967346" at="69,18,70,27" concept="6" />
+      <node id="7766373799038152415" at="71,19,72,28" concept="6" />
+      <node id="7766373799017967353" at="73,20,74,29" concept="6" />
+      <node id="7766373799017967326" at="75,5,76,16" concept="6" />
       <node id="7766373799017967326" at="15,0,18,0" concept="0" trace="EnumerationDescriptor_NOTE#()V" />
-      <node id="7766373799017967326" at="47,84,50,5" concept="3" />
-      <node id="7766373799017967326" at="33,0,38,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <node id="7766373799017967326" at="39,0,44,0" concept="4" trace="getMembers#()Ljava/util/Collection;" />
-      <node id="7766373799017967326" at="50,5,78,5" concept="10" />
-      <node id="7766373799017967326" at="45,0,81,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <scope id="7766373799017967326" at="15,39,16,189" />
-      <scope id="7766373799017967326" at="35,62,36,16" />
-      <scope id="7766373799017967326" at="41,74,42,207" />
-      <scope id="7766373799017967326" at="48,25,49,18" />
-      <scope id="7766373799017967327" at="52,18,53,28" />
-      <scope id="7766373799038152313" at="54,18,55,28" />
-      <scope id="7766373799017967328" at="56,18,57,28" />
-      <scope id="7766373799038152340" at="58,18,59,28" />
-      <scope id="7766373799017967331" at="60,18,61,28" />
-      <scope id="7766373799017967335" at="62,18,63,28" />
-      <scope id="7766373799038152370" at="64,18,65,28" />
-      <scope id="8326765191030197124" at="66,18,67,28" />
-      <scope id="7766373799017967340" at="68,18,69,28" />
-      <scope id="7766373799038152403" at="70,18,71,28" />
-      <scope id="7766373799017967346" at="72,18,73,28" />
-      <scope id="7766373799038152415" at="74,18,75,28" />
-      <scope id="7766373799017967353" at="76,18,77,28" />
+      <node id="7766373799017967326" at="46,84,49,5" concept="3" />
+      <node id="7766373799017967326" at="32,0,37,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="7766373799017967326" at="38,0,43,0" concept="4" trace="getMembers#()Ljava/util/Collection;" />
+      <node id="7766373799017967326" at="49,5,75,5" concept="10" />
+      <node id="7766373799017967326" at="44,0,78,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="7766373799017967326" at="15,39,16,188" />
+      <scope id="7766373799017967326" at="34,62,35,16" />
+      <scope id="7766373799017967326" at="40,74,41,202" />
+      <scope id="7766373799017967326" at="47,25,48,18" />
+      <scope id="7766373799017967327" at="51,20,52,29" />
+      <scope id="7766373799038152313" at="53,20,54,29" />
+      <scope id="7766373799017967328" at="55,20,56,29" />
+      <scope id="7766373799038152340" at="57,20,58,29" />
+      <scope id="7766373799017967331" at="59,20,60,29" />
+      <scope id="7766373799017967335" at="61,20,62,29" />
+      <scope id="7766373799038152370" at="63,20,64,29" />
+      <scope id="7766373799017967340" at="65,20,66,29" />
+      <scope id="7766373799038152403" at="67,20,68,29" />
+      <scope id="7766373799017967346" at="69,18,70,27" />
+      <scope id="7766373799038152415" at="71,19,72,28" />
+      <scope id="7766373799017967353" at="73,20,74,29" />
       <scope id="7766373799017967326" at="15,0,18,0" />
-      <scope id="7766373799017967326" at="33,0,38,0" />
-      <scope id="7766373799017967326" at="39,0,44,0" />
-      <scope id="7766373799017967326" at="47,84,79,16" />
-      <scope id="7766373799017967326" at="45,0,81,0">
+      <scope id="7766373799017967326" at="32,0,37,0" />
+      <scope id="7766373799017967326" at="38,0,43,0" />
+      <scope id="7766373799017967326" at="46,84,76,16" />
+      <scope id="7766373799017967326" at="44,0,78,0">
         <var name="string" id="7766373799017967326" />
       </scope>
-      <unit id="7766373799017967326" at="13,0,82,0" name="ArduinoML.structure.EnumerationDescriptor_NOTE" />
+      <unit id="7766373799017967326" at="13,0,79,0" name="ArduinoML.structure.EnumerationDescriptor_NOTE" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7766373799017967326" at="32,0,33,0" concept="2" trace="myEnumerationNOTE" />
@@ -434,13 +431,14 @@
       <node id="7766373799017967911" at="138,96,139,17" concept="1" />
       <node id="7766373799017967950" at="139,17,140,176" concept="1" />
       <node id="7766373799025409965" at="140,176,141,115" concept="1" />
-      <node id="7766373799017967911" at="141,115,142,22" concept="6" />
-      <node id="7766373799017967911" at="135,0,144,0" concept="8" trace="createDescriptorForMelodyNote#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="8995194930607398889" at="141,115,142,113" concept="1" />
+      <node id="7766373799017967911" at="142,113,143,22" concept="6" />
+      <node id="7766373799017967911" at="135,0,145,0" concept="8" trace="createDescriptorForMelodyNote#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="7766373799017967911" at="59,44,60,35" />
-      <scope id="7766373799017967911" at="135,68,142,22">
+      <scope id="7766373799017967911" at="135,68,143,22">
         <var name="b" id="7766373799017967911" />
       </scope>
-      <scope id="7766373799017967911" at="135,0,144,0" />
+      <scope id="7766373799017967911" at="135,0,145,0" />
     </file>
   </root>
   <root nodeRef="r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799018000651">
@@ -464,21 +462,20 @@
     <file name="StructureAspectDescriptor.java">
       <node id="7766373799018000651" at="25,0,26,0" concept="2" trace="myConceptPlayNote" />
       <node id="7766373799018000651" at="61,42,62,33" concept="6" />
-      <node id="7766373799018000651" at="144,66,145,152" concept="5" />
-      <node id="7766373799018000651" at="145,152,146,34" concept="1" />
-      <node id="7766373799018000651" at="147,76,148,96" concept="1" />
-      <node id="7766373799018000651" at="148,96,149,17" concept="1" />
-      <node id="7766373799018000652" at="149,17,150,175" concept="1" />
-      <node id="7766373799018000654" at="150,175,151,115" concept="1" />
-      <node id="7766373799018036910" at="151,115,152,169" concept="1" />
-      <node id="7766373799018000651" at="152,169,153,25" concept="1" />
+      <node id="7766373799018000651" at="145,66,146,152" concept="5" />
+      <node id="7766373799018000651" at="146,152,147,34" concept="1" />
+      <node id="7766373799018000651" at="148,76,149,96" concept="1" />
+      <node id="7766373799018000651" at="149,96,150,17" concept="1" />
+      <node id="7766373799018000654" at="150,17,151,115" concept="1" />
+      <node id="8995194930610523562" at="151,115,152,198" concept="1" />
+      <node id="7766373799018000651" at="152,198,153,25" concept="1" />
       <node id="7766373799018000651" at="153,25,154,22" concept="6" />
-      <node id="7766373799018000651" at="144,0,156,0" concept="8" trace="createDescriptorForPlayNote#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="7766373799018000651" at="145,0,156,0" concept="8" trace="createDescriptorForPlayNote#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="7766373799018000651" at="61,42,62,33" />
-      <scope id="7766373799018000651" at="144,66,154,22">
+      <scope id="7766373799018000651" at="145,66,154,22">
         <var name="b" id="7766373799018000651" />
       </scope>
-      <scope id="7766373799018000651" at="144,0,156,0" />
+      <scope id="7766373799018000651" at="145,0,156,0" />
     </file>
   </root>
   <root nodeRef="r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799018170162">
@@ -506,7 +503,7 @@
       <node id="7766373799018170162" at="92,96,93,17" concept="1" />
       <node id="243588697374780730" at="93,17,94,167" concept="1" />
       <node id="7766373799018170162" at="94,167,95,22" concept="6" />
-      <node id="7766373799018170162" at="146,34,147,76" concept="1" />
+      <node id="7766373799018170162" at="147,34,148,76" concept="1" />
       <node id="7766373799018170162" at="158,34,159,76" concept="1" />
       <node id="7766373799018170162" at="176,34,177,76" concept="1" />
       <node id="7766373799018170162" at="89,0,97,0" concept="8" trace="createDescriptorForAction#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />

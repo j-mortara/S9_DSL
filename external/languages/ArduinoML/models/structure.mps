@@ -198,58 +198,54 @@
     <property role="TrG5h" value="NOTE" />
     <property role="3lZH7k" value="derive_from_internal_value" />
     <property role="PDuV0" value="true" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="6J7GX9VnuVv" role="M5hS2">
-      <property role="1uS6qv" value="1047" />
       <property role="1uS6qo" value="do" />
+      <property role="1uS6qv" value="32.703" />
     </node>
     <node concept="M4N5e" id="6J7GX9W$uTT" role="M5hS2">
       <property role="1uS6qo" value="do#" />
-      <property role="1uS6qv" value="1109" />
+      <property role="1uS6qv" value="34.648" />
     </node>
     <node concept="M4N5e" id="6J7GX9VnuVw" role="M5hS2">
       <property role="1uS6qo" value="ré" />
-      <property role="1uS6qv" value="1175" />
+      <property role="1uS6qv" value="36.708" />
     </node>
     <node concept="M4N5e" id="6J7GX9W$uUk" role="M5hS2">
       <property role="1uS6qo" value="ré#" />
-      <property role="1uS6qv" value="1245" />
+      <property role="1uS6qv" value="38.891" />
     </node>
     <node concept="M4N5e" id="6J7GX9VnuVz" role="M5hS2">
       <property role="1uS6qo" value="mi" />
-      <property role="1uS6qv" value="1319" />
+      <property role="1uS6qv" value="41.203" />
     </node>
     <node concept="M4N5e" id="6J7GX9VnuVB" role="M5hS2">
       <property role="1uS6qo" value="fa" />
-      <property role="1uS6qv" value="1397" />
+      <property role="1uS6qv" value="43.654" />
     </node>
     <node concept="M4N5e" id="6J7GX9W$uUM" role="M5hS2">
       <property role="1uS6qo" value="fa#" />
-      <property role="1uS6qv" value="1480" />
-    </node>
-    <node concept="M4N5e" id="7eeBdbVskI4" role="M5hS2">
-      <property role="1uS6qo" value="fa#2" />
-      <property role="1uS6qv" value="2960" />
+      <property role="1uS6qv" value="46.249" />
     </node>
     <node concept="M4N5e" id="6J7GX9VnuVG" role="M5hS2">
       <property role="1uS6qo" value="sol" />
-      <property role="1uS6qv" value="1568" />
+      <property role="1uS6qv" value="48.999" />
     </node>
     <node concept="M4N5e" id="6J7GX9W$uVj" role="M5hS2">
       <property role="1uS6qo" value="sol#" />
-      <property role="1uS6qv" value="1661" />
+      <property role="1uS6qv" value="51.913" />
     </node>
     <node concept="M4N5e" id="6J7GX9VnuVM" role="M5hS2">
       <property role="1uS6qo" value="la" />
-      <property role="1uS6qv" value="1760" />
+      <property role="1uS6qv" value="55.0" />
     </node>
     <node concept="M4N5e" id="6J7GX9W$uVv" role="M5hS2">
       <property role="1uS6qo" value="la#" />
-      <property role="1uS6qv" value="1865" />
+      <property role="1uS6qv" value="58.27" />
     </node>
     <node concept="M4N5e" id="6J7GX9VnuVT" role="M5hS2">
       <property role="1uS6qo" value="si" />
-      <property role="1uS6qv" value="1976" />
+      <property role="1uS6qv" value="61.735" />
     </node>
   </node>
   <node concept="1TIwiD" id="6J7GX9Vnv4q">
@@ -281,6 +277,11 @@
       <property role="TrG5h" value="duration" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="7Nlmy5WfTZD" role="1TKVEl">
+      <property role="IQ2nx" value="8995194930607398889" />
+      <property role="TrG5h" value="octave" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6J7GX9VnB4b">
     <property role="EcuMT" value="7766373799018000651" />
@@ -288,24 +289,20 @@
     <property role="34LRSv" value="play note" />
     <property role="R4oN_" value="Plays a music note" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6J7GX9VnB4c" role="1TKVEl">
-      <property role="IQ2nx" value="7766373799018000652" />
-      <property role="TrG5h" value="note" />
-      <ref role="AX2Wp" node="6J7GX9VnuVu" resolve="NOTE" />
-    </node>
     <node concept="1TJgyi" id="6J7GX9VnB4e" role="1TKVEl">
       <property role="IQ2nx" value="7766373799018000654" />
       <property role="TrG5h" value="duration" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="6J7GX9VnJUI" role="1TKVEi">
-      <property role="IQ2ns" value="7766373799018036910" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="melody" />
-      <ref role="20lvS9" node="6J7GX9Vnv4q" resolve="Melody" />
-    </node>
     <node concept="PrWs8" id="6J7GX9VogsQ" role="PzmwI">
       <ref role="PrY4T" node="6J7GX9VogsM" resolve="Action" />
+    </node>
+    <node concept="1TJgyj" id="7Nlmy5WrOQE" role="1TKVEi">
+      <property role="IQ2ns" value="8995194930610523562" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="note" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6J7GX9Vnv4B" resolve="MelodyNote" />
     </node>
   </node>
   <node concept="PlHQZ" id="6J7GX9VogsM">

@@ -59,6 +59,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -253,9 +254,15 @@
     <ref role="1XX52x" to="gpyq:6J7GX9Vnv4B" resolve="MelodyNote" />
     <node concept="3EZMnI" id="6J7GX9VNRYK" role="2wV5jI">
       <node concept="2iRkQZ" id="6J7GX9VNRYL" role="2iSdaV" />
-      <node concept="3F0A7n" id="6J7GX9Vnv5q" role="3EZMnx">
-        <property role="1$x2rV" value="note" />
-        <ref role="1NtTu8" to="gpyq:6J7GX9Vnv5e" resolve="value" />
+      <node concept="3EZMnI" id="7Nlmy5Wd0MB" role="3EZMnx">
+        <node concept="2iRfu4" id="7Nlmy5Wd0MC" role="2iSdaV" />
+        <node concept="3F0A7n" id="6J7GX9Vnv5q" role="3EZMnx">
+          <property role="1$x2rV" value="note" />
+          <ref role="1NtTu8" to="gpyq:6J7GX9Vnv5e" resolve="value" />
+        </node>
+        <node concept="3F0A7n" id="7Nlmy5Whnv$" role="3EZMnx">
+          <ref role="1NtTu8" to="gpyq:7Nlmy5WfTZD" resolve="octave" />
+        </node>
       </node>
       <node concept="3F0A7n" id="6J7GX9VNRYT" role="3EZMnx">
         <property role="1$x2rV" value="duration" />
@@ -301,21 +308,8 @@
           <property role="3F0ifm" value="play note" />
           <ref role="1k5W1q" node="6J7GX9W64wx" resolve="action" />
         </node>
-        <node concept="3F0A7n" id="6J7GX9Vo$jp" role="3EZMnx">
-          <ref role="1NtTu8" to="gpyq:6J7GX9VnB4c" resolve="note" />
-        </node>
-        <node concept="3F0ifn" id="6J7GX9Vo$jx" role="3EZMnx">
-          <property role="3F0ifm" value="for" />
-          <ref role="1k5W1q" node="6J7GX9W64wh" resolve="parameter" />
-        </node>
-        <node concept="3F0A7n" id="6J7GX9Vo$jF" role="3EZMnx">
-          <ref role="1NtTu8" to="gpyq:6J7GX9VnB4e" resolve="duration" />
-        </node>
-        <node concept="3F0ifn" id="6J7GX9VsjkZ" role="3EZMnx">
-          <property role="3F0ifm" value="ms" />
-          <node concept="VechU" id="6J7GX9WqxZh" role="3F10Kt">
-            <property role="Vb096" value="pink" />
-          </node>
+        <node concept="3F1sOY" id="7Nlmy5WrOR_" role="3EZMnx">
+          <ref role="1NtTu8" to="gpyq:7Nlmy5WrOQE" resolve="note" />
         </node>
         <node concept="3F0ifn" id="6J7GX9Vo$jR" role="3EZMnx">
           <property role="3F0ifm" value="on" />

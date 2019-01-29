@@ -608,5 +608,54 @@
       <ref role="1YaFvo" to="gpyq:6J7GX9VnB4b" resolve="PlayNote" />
     </node>
   </node>
+  <node concept="18kY7G" id="7Nlmy5WmrKa">
+    <property role="TrG5h" value="check_MelodyNote" />
+    <node concept="3clFbS" id="7Nlmy5WmrKb" role="18ibNy">
+      <node concept="3clFbJ" id="7Nlmy5WmrKh" role="3cqZAp">
+        <node concept="22lmx$" id="7Nlmy5WmvvE" role="3clFbw">
+          <node concept="3eOSWO" id="7Nlmy5Wm$ii" role="3uHU7w">
+            <node concept="3cmrfG" id="7Nlmy5Wm$il" role="3uHU7w">
+              <property role="3cmrfH" value="7" />
+            </node>
+            <node concept="2OqwBi" id="7Nlmy5WmvQU" role="3uHU7B">
+              <node concept="1YBJjd" id="7Nlmy5WmvB8" role="2Oq$k0">
+                <ref role="1YBMHb" node="7Nlmy5WmrKd" resolve="melodyNote" />
+              </node>
+              <node concept="3TrcHB" id="7Nlmy5WmwC6" role="2OqNvi">
+                <ref role="3TsBF5" to="gpyq:7Nlmy5WfTZD" resolve="octave" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eOVzh" id="7Nlmy5WmuFQ" role="3uHU7B">
+            <node concept="2OqwBi" id="7Nlmy5WmrTc" role="3uHU7B">
+              <node concept="1YBJjd" id="7Nlmy5WmrKt" role="2Oq$k0">
+                <ref role="1YBMHb" node="7Nlmy5WmrKd" resolve="melodyNote" />
+              </node>
+              <node concept="3TrcHB" id="7Nlmy5Wms0m" role="2OqNvi">
+                <ref role="3TsBF5" to="gpyq:7Nlmy5WfTZD" resolve="octave" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="7Nlmy5WmuFT" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="7Nlmy5WmrKj" role="3clFbx">
+          <node concept="2MkqsV" id="7Nlmy5Wm$pZ" role="3cqZAp">
+            <node concept="Xl_RD" id="7Nlmy5Wm$qb" role="2MkJ7o">
+              <property role="Xl_RC" value="The octave must be between 0 and 7" />
+            </node>
+            <node concept="1YBJjd" id="7Nlmy5Wm$sK" role="2OEOjV">
+              <ref role="1YBMHb" node="7Nlmy5WmrKd" resolve="melodyNote" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7Nlmy5WmrKd" role="1YuTPh">
+      <property role="TrG5h" value="melodyNote" />
+      <ref role="1YaFvo" to="gpyq:6J7GX9Vnv4B" resolve="MelodyNote" />
+    </node>
+  </node>
 </model>
 
