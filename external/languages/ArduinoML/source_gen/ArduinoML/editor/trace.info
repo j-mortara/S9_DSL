@@ -18,7 +18,7 @@
       <unit at="24,0,88,0" name="ArduinoML.editor.App_SubstituteMenu" />
     </file>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="17,0,79,0" name="ArduinoML.editor.EditorAspectDescriptorImpl" />
+      <unit at="16,0,66,0" name="ArduinoML.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="SimpleAction_SubstituteMenu.java">
       <unit at="47,0,66,0" name="ArduinoML.editor.SimpleAction_SubstituteMenu$SMP_ReferenceScope_p0qbq0_a" />
@@ -3074,39 +3074,6 @@
       <unit id="7766373799030755557" at="162,0,213,0" name="ArduinoML.editor.State_EditorBuilder_a$actionsListHandler_sjqidp_a1a1a" />
       <unit id="7766373799030755557" at="242,0,293,0" name="ArduinoML.editor.State_EditorBuilder_a$transitionsListHandler_sjqidp_a3a1a" />
       <unit id="7766373799030755557" at="47,0,301,0" name="ArduinoML.editor.State_EditorBuilder_a" />
-    </file>
-  </root>
-  <root nodeRef="r:d07cdc7e-ab6e-4c77-9df4-19bd95da7d31(ArduinoML.editor)/8995194930605768774">
-    <file name="Melody_TransformationMenu.java">
-      <node id="8995194930605768774" at="19,0,20,0" concept="2" trace="myLocations" />
-      <node id="8995194930605768774" at="21,67,22,63" concept="6" />
-      <node id="8995194930605768774" at="27,99,28,49" concept="1" />
-      <node id="8995194930605768774" at="28,49,29,225" concept="1" />
-      <node id="8995194930605768774" at="30,9,31,44" concept="6" />
-      <node id="8995194930605768774" at="32,15,33,50" concept="1" />
-      <node id="8995194930605768774" at="39,124,40,156" concept="5" />
-      <node id="8995194930605768774" at="40,156,41,18" concept="6" />
-      <node id="8995194930605768774" at="20,0,24,0" concept="4" trace="isApplicableToLocation#(Ljava/lang/String;)Z" />
-      <node id="8995194930605768774" at="29,225,34,5" concept="10" />
-      <node id="8995194930605768774" at="37,0,43,0" concept="4" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljava/util/List;" />
-      <node id="8995194930605768774" at="25,0,36,0" concept="4" trace="createMenuItems#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljava/util/List;" />
-      <scope id="8995194930605768774" at="21,67,22,63" />
-      <scope id="8995194930605768774" at="30,9,31,44" />
-      <scope id="8995194930605768774" at="32,15,33,50" />
-      <scope id="8995194930605768774" at="39,124,41,18">
-        <var name="result" id="8995194930605768774" />
-      </scope>
-      <scope id="8995194930605768774" at="20,0,24,0">
-        <var name="location" id="8995194930605768774" />
-      </scope>
-      <scope id="8995194930605768774" at="37,0,43,0">
-        <var name="_context" id="8995194930605768774" />
-      </scope>
-      <scope id="8995194930605768774" at="27,99,34,5" />
-      <scope id="8995194930605768774" at="25,0,36,0">
-        <var name="context" id="8995194930605768774" />
-      </scope>
-      <unit id="8995194930605768774" at="18,0,45,0" name="ArduinoML.editor.Melody_TransformationMenu" />
     </file>
   </root>
 </debug-info>
