@@ -138,7 +138,6 @@ import jetbrains.mps.editor.runtime.EditorCell_Empty;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createRefNodeList_0());
     return editorCell;
   }
@@ -151,24 +150,18 @@ import jetbrains.mps.editor.runtime.EditorCell_Empty;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_2() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "notes");
-    editorCell.setCellId("Constant_mqebbi_b0c0a");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new Melody_EditorBuilder_a.notesListHandler_mqebbi_c0c0a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new Melody_EditorBuilder_a.notesListHandler_mqebbi_b0c0a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
     editorCell.setCellId("refNodeList_notes");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class notesListHandler_mqebbi_c0c0a extends RefNodeListHandler {
+  private static class notesListHandler_mqebbi_b0c0a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public notesListHandler_mqebbi_c0c0a(SNode ownerNode, EditorContext context) {
+    public notesListHandler_mqebbi_b0c0a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -191,7 +184,7 @@ import jetbrains.mps.editor.runtime.EditorCell_Empty;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(notesListHandler_mqebbi_c0c0a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL, 0x6bc7b3d27b5df15dL, "notes")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(notesListHandler_mqebbi_b0c0a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL, 0x6bc7b3d27b5df15dL, "notes")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();

@@ -266,18 +266,55 @@
         <property role="0UGn8" value="5" />
         <property role="gA$as" value="55.0" />
       </node>
-      <node concept="gA$bP" id="7Nlmy5WARFR" role="gA$af">
+      <node concept="gA$bP" id="7Nlmy5WEMU7" role="gA$af">
         <property role="g2cLZ" value="250" />
         <property role="0UGn8" value="5" />
-        <property role="gA$as" value="32.703" />
+        <property role="gA$as" value="46.249" />
       </node>
-    </node>
-    <node concept="gA$b8" id="6J7GX9VTXna" role="gvNuC">
-      <property role="TrG5h" value="happy" />
-      <node concept="gA$bP" id="7Nlmy5WntZg" role="gA$af">
-        <property role="0UGn8" value="5" />
-        <property role="gA$as" value="48.999" />
+      <node concept="gA$bP" id="7Nlmy5WEMU8" role="gA$af">
         <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="5" />
+        <property role="gA$as" value="61.735" />
+      </node>
+      <node concept="gA$bP" id="7Nlmy5WEMU9" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="6" />
+        <property role="gA$as" value="34.648" />
+      </node>
+      <node concept="gA$bP" id="7Nlmy5WEMUa" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="6" />
+        <property role="gA$as" value="41.203" />
+      </node>
+      <node concept="gA$bP" id="7Nlmy5WEMUb" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="6" />
+        <property role="gA$as" value="46.249" />
+      </node>
+      <node concept="gA$bP" id="7Nlmy5WEMUc" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="6" />
+        <property role="gA$as" value="41.203" />
+      </node>
+      <node concept="gA$bP" id="7Nlmy5WEMUd" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="6" />
+        <property role="gA$as" value="34.648" />
+      </node>
+      <node concept="gA$bP" id="7Nlmy5WEMUe" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="5" />
+        <property role="gA$as" value="55.0" />
+      </node>
+      <node concept="gA$bP" id="7Nlmy5WEMUf" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="6" />
+        <property role="gA$as" value="61.735" />
+      </node>
+      <node concept="gA$bP" id="7Nlmy5WEMUg" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="6" />
+        <property role="gA$as" value="55.0" />
       </node>
     </node>
     <node concept="LcSIU" id="6J7GX9VnJUL" role="LcSJf">
@@ -294,7 +331,7 @@
       </node>
     </node>
     <node concept="LcSIU" id="7eeBdbVv$jB" role="LcSJf">
-      <property role="TrG5h" value="happy_birthday" />
+      <property role="TrG5h" value="simple_note" />
       <node concept="1eoRFB" id="7eeBdbVv$jZ" role="1eoRFC">
         <property role="1eoRFV" value="HIGH" />
         <ref role="1eoRF$" node="6J7GX9VzGze" resolve="button" />
@@ -305,13 +342,21 @@
         <ref role="1eoRF$" node="6J7GX9VnJV8" resolve="button2" />
         <ref role="1eoRFA" node="6J7GX9VsCJh" resolve="button2_pushed" />
       </node>
-      <node concept="LcSIZ" id="6J7GX9Vv3uQ" role="LcSIm">
-        <property role="LcSI4" value="HIGH" />
-        <ref role="LcSIr" node="3kQ9GdVkItk" resolve="led" />
-      </node>
-      <node concept="g7Vrq" id="6J7GX9VX09g" role="LcSIm">
-        <ref role="g7Vrp" node="6J7GX9VTXna" resolve="happy" />
+      <node concept="gAsbp" id="7Nlmy5WEnhw" role="LcSIm">
         <ref role="LcSIr" node="6J7GX9VGsKZ" resolve="speaker" />
+        <node concept="gA$bP" id="7Nlmy5WEnhy" role="0Ixub">
+          <property role="g2cLZ" value="250" />
+          <property role="0UGn8" value="5" />
+          <property role="gA$as" value="32.703" />
+        </node>
+      </node>
+      <node concept="gAsbp" id="7Nlmy5WEnhB" role="LcSIm">
+        <ref role="LcSIr" node="6J7GX9VGsKZ" resolve="speaker" />
+        <node concept="gA$bP" id="7Nlmy5WEnhC" role="0Ixub">
+          <property role="g2cLZ" value="250" />
+          <property role="0UGn8" value="5" />
+          <property role="gA$as" value="36.708" />
+        </node>
       </node>
     </node>
     <node concept="LcSIU" id="6J7GX9VsCJh" role="LcSJf">
@@ -319,20 +364,12 @@
       <node concept="1eoRFB" id="6J7GX9VsCJi" role="1eoRFC">
         <property role="1eoRFV" value="LOW" />
         <ref role="1eoRF$" node="6J7GX9VnJV8" resolve="button2" />
-        <ref role="1eoRFA" node="7eeBdbVv$jB" resolve="happy_birthday" />
+        <ref role="1eoRFA" node="7eeBdbVv$jB" resolve="simple_note" />
       </node>
       <node concept="1eoRFB" id="6J7GX9W5uK0" role="1eoRFC">
         <property role="1eoRFV" value="HIGH" />
         <ref role="1eoRF$" node="3kQ9GdVkWQn" resolve="button" />
         <ref role="1eoRFA" node="7eeBdbVv$iD" resolve="button_pushed" />
-      </node>
-      <node concept="gAsbp" id="7Nlmy5Wsp98" role="LcSIm">
-        <ref role="LcSIr" node="6J7GX9VGsKZ" resolve="speaker" />
-        <node concept="gA$bP" id="7Nlmy5Wsp99" role="0Ixub">
-          <property role="g2cLZ" value="250" />
-          <property role="0UGn8" value="5" />
-          <property role="gA$as" value="36.708" />
-        </node>
       </node>
     </node>
     <node concept="LcSIU" id="7eeBdbVv$iD" role="LcSJf">
@@ -362,11 +399,11 @@
     </node>
     <node concept="gqXVu" id="6J7GX9VGsKZ" role="LcSJj">
       <property role="TrG5h" value="speaker" />
-      <property role="1epAaf" value="10" />
+      <property role="1epAaf" value="9" />
     </node>
     <node concept="1ZYdfG" id="6J7GX9VzGze" role="LcSJj">
       <property role="TrG5h" value="button" />
-      <property role="1epAaf" value="9" />
+      <property role="1epAaf" value="10" />
     </node>
     <node concept="1ZYdfG" id="6J7GX9VnJV8" role="LcSJj">
       <property role="TrG5h" value="button2" />
@@ -554,172 +591,117 @@
         <property role="g2cLZ" value="250" />
       </node>
     </node>
-    <node concept="gA$b8" id="6AZTindT3sp" role="gvNuC">
-      <property role="TrG5h" value="fa_majeur" />
-      <node concept="gA$bP" id="6AZTindT3sq" role="gA$af">
-        <property role="gA$as" value="43.654" />
-        <property role="g2cLZ" value="250" />
-        <property role="0UGn8" value="5" />
-      </node>
-      <node concept="gA$bP" id="6AZTindT3sr" role="gA$af">
-        <property role="gA$as" value="55.0" />
-        <property role="g2cLZ" value="250" />
-        <property role="0UGn8" value="5" />
-      </node>
-      <node concept="gA$bP" id="6AZTindT3ss" role="gA$af">
-        <property role="gA$as" value="32.703" />
-        <property role="g2cLZ" value="250" />
-        <property role="0UGn8" value="6" />
-      </node>
-      <node concept="gA$bP" id="6AZTindTXkP" role="gA$af">
-        <property role="gA$as" value="43.654" />
-        <property role="0UGn8" value="6" />
-        <property role="g2cLZ" value="250" />
-      </node>
-    </node>
     <node concept="gA$b8" id="6AZTindT3su" role="gvNuC">
       <property role="TrG5h" value="sol_majeur" />
       <node concept="gA$bP" id="6AZTindT3sv" role="gA$af">
         <property role="gA$as" value="48.999" />
-        <property role="g2cLZ" value="2506" />
+        <property role="g2cLZ" value="500" />
         <property role="0UGn8" value="5" />
       </node>
       <node concept="gA$bP" id="6AZTindT3sw" role="gA$af">
         <property role="gA$as" value="61.735" />
-        <property role="g2cLZ" value="250" />
+        <property role="g2cLZ" value="500" />
         <property role="0UGn8" value="5" />
       </node>
       <node concept="gA$bP" id="6AZTindT3sx" role="gA$af">
         <property role="gA$as" value="36.708" />
-        <property role="g2cLZ" value="250" />
+        <property role="g2cLZ" value="500" />
         <property role="0UGn8" value="6" />
       </node>
       <node concept="gA$bP" id="6AZTindTXkU" role="gA$af">
         <property role="gA$as" value="48.999" />
         <property role="0UGn8" value="6" />
-        <property role="g2cLZ" value="250" />
-      </node>
-    </node>
-    <node concept="gA$b8" id="6AZTindTXkZ" role="gvNuC">
-      <property role="TrG5h" value="sol_majeur7" />
-      <node concept="gA$bP" id="6AZTindTXl0" role="gA$af">
-        <property role="gA$as" value="48.999" />
-        <property role="g2cLZ" value="2506" />
-        <property role="0UGn8" value="5" />
-      </node>
-      <node concept="gA$bP" id="6AZTindTXl1" role="gA$af">
-        <property role="gA$as" value="61.735" />
-        <property role="g2cLZ" value="250" />
-        <property role="0UGn8" value="5" />
-      </node>
-      <node concept="gA$bP" id="6AZTindTXl2" role="gA$af">
-        <property role="gA$as" value="36.708" />
-        <property role="g2cLZ" value="250" />
-        <property role="0UGn8" value="6" />
-      </node>
-      <node concept="gA$bP" id="6AZTindTXl3" role="gA$af">
-        <property role="gA$as" value="43.654" />
-        <property role="0UGn8" value="6" />
-        <property role="g2cLZ" value="250" />
+        <property role="g2cLZ" value="500" />
       </node>
     </node>
     <node concept="LcSIU" id="6AZTindT3sz" role="LcSJf">
       <property role="TrG5h" value="initial" />
-      <node concept="1eoRFB" id="6AZTindT3s_" role="1eoRFC">
-        <property role="1eoRFV" value="HIGH" />
-        <ref role="1eoRFA" node="6AZTindTXmy" resolve="button3_pushed" />
-        <ref role="1eoRF$" node="6AZTindTXmd" resolve="button3" />
-      </node>
       <node concept="1eoRFB" id="6AZTindTXmm" role="1eoRFC">
         <property role="1eoRFV" value="HIGH" />
-        <ref role="1eoRFA" node="6AZTindT3sJ" resolve="button1_pushed" />
         <ref role="1eoRF$" node="6AZTindT3sS" resolve="button1" />
+        <ref role="1eoRFA" node="6AZTindT3sJ" resolve="b1_pushed_b2_off" />
       </node>
-      <node concept="1eoRFB" id="6AZTindT3s$" role="1eoRFC">
-        <property role="1eoRFV" value="HIGH" />
-        <ref role="1eoRFA" node="6AZTindT3sG" resolve="button2_pushed" />
-        <ref role="1eoRF$" node="6J7GX9VnJV8" resolve="button2" />
-      </node>
-    </node>
-    <node concept="LcSIU" id="6AZTindTXmy" role="LcSJf">
-      <property role="TrG5h" value="button3_pushed" />
-      <node concept="1eoRFB" id="6AZTindTXmz" role="1eoRFC">
-        <property role="1eoRFV" value="HIGH" />
-        <ref role="1eoRF$" node="6AZTindT3sS" resolve="button1" />
-        <ref role="1eoRFA" node="6AZTindTXn5" resolve="button1and3_pushed" />
-      </node>
-      <node concept="1eoRFB" id="6AZTindTXnx" role="1eoRFC">
+      <node concept="1eoRFB" id="7Nlmy5WDTby" role="1eoRFC">
         <property role="1eoRFV" value="HIGH" />
         <ref role="1eoRF$" node="6AZTindT3sT" resolve="button2" />
-        <ref role="1eoRFA" node="6AZTindTXn$" resolve="button2and3_pushed" />
+        <ref role="1eoRFA" node="7Nlmy5WDTbn" resolve="b2_pushed_b1_off" />
       </node>
     </node>
     <node concept="LcSIU" id="6AZTindT3sJ" role="LcSJf">
-      <property role="TrG5h" value="button1_pushed" />
+      <property role="TrG5h" value="b1_pushed_b2_off" />
       <node concept="1eoRFB" id="6AZTindT3sK" role="1eoRFC">
         <property role="1eoRFV" value="LOW" />
         <ref role="1eoRF$" node="6AZTindT3sS" resolve="button1" />
-        <ref role="1eoRFA" node="6AZTindT3sz" resolve="initial" />
+        <ref role="1eoRFA" node="7Nlmy5WDTcN" resolve="b1" />
       </node>
-      <node concept="1eoRFB" id="6AZTindTXr4" role="1eoRFC">
+      <node concept="1eoRFB" id="7Nlmy5WDTb_" role="1eoRFC">
         <property role="1eoRFV" value="HIGH" />
-        <ref role="1eoRF$" node="6AZTindTXmd" resolve="button3" />
-        <ref role="1eoRFA" node="6AZTindTXn5" resolve="button1and3_pushed" />
+        <ref role="1eoRF$" node="6J7GX9VnJV8" resolve="button2" />
+        <ref role="1eoRFA" node="7Nlmy5WDTbC" resolve="b1_pushed_b2_pushed" />
       </node>
-      <node concept="g7Vrq" id="6AZTindTXpB" role="LcSIm">
+    </node>
+    <node concept="LcSIU" id="7Nlmy5WDTbn" role="LcSJf">
+      <property role="TrG5h" value="b2_pushed_b1_off" />
+      <node concept="1eoRFB" id="7Nlmy5WDTc9" role="1eoRFC">
+        <property role="1eoRFV" value="LOW" />
+        <ref role="1eoRF$" node="6J7GX9VnJV8" resolve="button2" />
+        <ref role="1eoRFA" node="7Nlmy5WDTda" resolve="b2" />
+      </node>
+      <node concept="1eoRFB" id="7Nlmy5WDTbo" role="1eoRFC">
+        <property role="1eoRFV" value="HIGH" />
+        <ref role="1eoRF$" node="6AZTindT3sS" resolve="button1" />
+        <ref role="1eoRFA" node="7Nlmy5WDTbC" resolve="b1_pushed_b2_pushed" />
+      </node>
+    </node>
+    <node concept="LcSIU" id="7Nlmy5WDTcN" role="LcSJf">
+      <property role="TrG5h" value="b1" />
+      <node concept="1eoRFB" id="7Nlmy5WDTcO" role="1eoRFC">
+        <property role="1eoRFV" value="HIGH" />
+        <ref role="1eoRF$" node="6J7GX9VnJV8" resolve="button2" />
+        <ref role="1eoRFA" node="7Nlmy5WDTbC" resolve="b1_pushed_b2_pushed" />
+      </node>
+      <node concept="1eoRFB" id="7Nlmy5WDTcP" role="1eoRFC">
+        <property role="1eoRFV" value="LOW" />
+        <ref role="1eoRF$" node="6AZTindT3sS" resolve="button1" />
+        <ref role="1eoRFA" node="6J7GX9VnJUL" resolve="initial" />
+      </node>
+      <node concept="g7Vrq" id="7Nlmy5WDTdU" role="LcSIm">
         <ref role="g7Vrp" node="6AZTindT3sf" resolve="do_majeur" />
         <ref role="LcSIr" node="6AZTindT3sQ" resolve="speaker" />
       </node>
     </node>
-    <node concept="LcSIU" id="6AZTindT3sG" role="LcSJf">
-      <property role="TrG5h" value="button2_pushed" />
-      <node concept="1eoRFB" id="6AZTindT3sH" role="1eoRFC">
-        <property role="1eoRFV" value="LOW" />
-        <ref role="1eoRF$" node="6AZTindT3sT" resolve="button2" />
-        <ref role="1eoRFA" node="6AZTindT3sz" resolve="initial" />
-      </node>
-      <node concept="1eoRFB" id="6AZTindT3sI" role="1eoRFC">
-        <property role="1eoRFV" value="HIGH" />
-        <ref role="1eoRF$" node="6AZTindTXmd" resolve="button3" />
-        <ref role="1eoRFA" node="6AZTindTXn$" resolve="button2and3_pushed" />
-      </node>
-      <node concept="g7Vrq" id="6AZTindTXpD" role="LcSIm">
-        <ref role="g7Vrp" node="6AZTindT3sk" resolve="la_mineur" />
+    <node concept="LcSIU" id="7Nlmy5WDTda" role="LcSJf">
+      <property role="TrG5h" value="b2" />
+      <node concept="g7Vrq" id="7Nlmy5WDTdY" role="LcSIm">
         <ref role="LcSIr" node="6AZTindT3sQ" resolve="speaker" />
+        <ref role="g7Vrp" node="6AZTindT3sk" resolve="la_mineur" />
+      </node>
+      <node concept="1eoRFB" id="7Nlmy5WDTdb" role="1eoRFC">
+        <property role="1eoRFV" value="HIGH" />
+        <ref role="1eoRF$" node="6AZTindT3sS" resolve="button1" />
+        <ref role="1eoRFA" node="7Nlmy5WDTbC" resolve="b1_pushed_b2_pushed" />
+      </node>
+      <node concept="1eoRFB" id="7Nlmy5WDTdc" role="1eoRFC">
+        <property role="1eoRFV" value="LOW" />
+        <ref role="1eoRFA" node="6J7GX9VnJUL" resolve="initial" />
+        <ref role="1eoRF$" node="6J7GX9VnJV8" resolve="button2" />
       </node>
     </node>
-    <node concept="LcSIU" id="6AZTindTXn5" role="LcSJf">
-      <property role="TrG5h" value="button1and3_pushed" />
-      <node concept="1eoRFB" id="6AZTindTXn6" role="1eoRFC">
-        <property role="1eoRFV" value="LOW" />
-        <ref role="1eoRF$" node="6AZTindTXmd" resolve="button3" />
-        <ref role="1eoRFA" node="6AZTindT3sJ" resolve="button1_pushed" />
-      </node>
-      <node concept="1eoRFB" id="6AZTindTXqY" role="1eoRFC">
+    <node concept="LcSIU" id="7Nlmy5WDTbC" role="LcSJf">
+      <property role="TrG5h" value="b1_pushed_b2_pushed" />
+      <node concept="1eoRFB" id="7Nlmy5WDTbD" role="1eoRFC">
         <property role="1eoRFV" value="LOW" />
         <ref role="1eoRF$" node="6AZTindT3sS" resolve="button1" />
-        <ref role="1eoRFA" node="6AZTindTXmy" resolve="button3_pushed" />
+        <ref role="1eoRFA" node="6AZTindT3sz" resolve="initial" />
       </node>
-      <node concept="g7Vrq" id="6AZTindTXnv" role="LcSIm">
-        <ref role="LcSIr" node="6AZTindT3sQ" resolve="speaker" />
-        <ref role="g7Vrp" node="6AZTindT3sp" resolve="fa_majeur" />
-      </node>
-    </node>
-    <node concept="LcSIU" id="6AZTindTXn$" role="LcSJf">
-      <property role="TrG5h" value="button2and3_pushed" />
-      <node concept="1eoRFB" id="6AZTindTXn_" role="1eoRFC">
+      <node concept="1eoRFB" id="7Nlmy5WDTbU" role="1eoRFC">
         <property role="1eoRFV" value="LOW" />
-        <ref role="1eoRF$" node="6AZTindTXmd" resolve="button3" />
-        <ref role="1eoRFA" node="6AZTindT3sG" resolve="button2_pushed" />
+        <ref role="1eoRF$" node="6J7GX9VnJV8" resolve="button2" />
+        <ref role="1eoRFA" node="6AZTindT3sz" resolve="initial" />
       </node>
-      <node concept="1eoRFB" id="6AZTindTXr1" role="1eoRFC">
-        <property role="1eoRFV" value="LOW" />
-        <ref role="1eoRF$" node="6AZTindT3sT" resolve="button2" />
-        <ref role="1eoRFA" node="6AZTindTXmy" resolve="button3_pushed" />
-      </node>
-      <node concept="g7Vrq" id="6AZTindTXnA" role="LcSIm">
-        <ref role="g7Vrp" node="6AZTindTXkZ" resolve="sol_majeur7" />
+      <node concept="g7Vrq" id="7Nlmy5WDTbE" role="LcSIm">
         <ref role="LcSIr" node="6AZTindT3sQ" resolve="speaker" />
+        <ref role="g7Vrp" node="6AZTindT3su" resolve="sol_majeur" />
       </node>
     </node>
     <node concept="gqXVu" id="6AZTindT3sQ" role="LcSJj">
@@ -733,10 +715,6 @@
     <node concept="1ZYdfG" id="6AZTindT3sT" role="LcSJj">
       <property role="TrG5h" value="button2" />
       <property role="1epAaf" value="11" />
-    </node>
-    <node concept="1ZYdfG" id="6AZTindTXmd" role="LcSJj">
-      <property role="TrG5h" value="button3" />
-      <property role="1epAaf" value="12" />
     </node>
   </node>
   <node concept="LcSIH" id="6AZTindT3oF">
@@ -839,7 +817,7 @@
       <node concept="1eoRFB" id="6AZTindUnmX" role="1eoRFC">
         <property role="1eoRFV" value="HIGH" />
         <ref role="1eoRFA" node="6AZTindUnn0" resolve="button3_pushed" />
-        <ref role="1eoRF$" node="6AZTindTXmd" resolve="button3" />
+        <ref role="1eoRF$" node="6AZTindUnnH" resolve="button3" />
       </node>
       <node concept="1eoRFB" id="6AZTindUnmY" role="1eoRFC">
         <property role="1eoRFV" value="HIGH" />
@@ -875,7 +853,7 @@
       <node concept="1eoRFB" id="6AZTindUnn5" role="1eoRFC">
         <property role="1eoRFV" value="HIGH" />
         <ref role="1eoRFA" node="6AZTindUnnb" resolve="button1and3_pushed" />
-        <ref role="1eoRF$" node="6AZTindTXmd" resolve="button3" />
+        <ref role="1eoRF$" node="6AZTindUnnH" resolve="button3" />
       </node>
       <node concept="g7Vrq" id="6AZTindUnn6" role="LcSIm">
         <ref role="LcSIr" node="6AZTindT3sQ" resolve="speaker" />
@@ -904,7 +882,7 @@
       <node concept="1eoRFB" id="6AZTindUnnc" role="1eoRFC">
         <property role="1eoRFV" value="LOW" />
         <ref role="1eoRFA" node="6AZTindUnn3" resolve="button1_pushed" />
-        <ref role="1eoRF$" node="6AZTindTXmd" resolve="button3" />
+        <ref role="1eoRF$" node="6AZTindUnnH" resolve="button3" />
       </node>
       <node concept="1eoRFB" id="6AZTindUnnd" role="1eoRFC">
         <property role="1eoRFV" value="LOW" />
@@ -921,7 +899,7 @@
       <node concept="1eoRFB" id="6AZTindUnng" role="1eoRFC">
         <property role="1eoRFV" value="LOW" />
         <ref role="1eoRFA" node="6AZTindUnn7" resolve="button2_pushed" />
-        <ref role="1eoRF$" node="6AZTindTXmd" resolve="button3" />
+        <ref role="1eoRF$" node="6AZTindUnnH" resolve="button3" />
       </node>
       <node concept="1eoRFB" id="6AZTindUnnh" role="1eoRFC">
         <property role="1eoRFV" value="LOW" />

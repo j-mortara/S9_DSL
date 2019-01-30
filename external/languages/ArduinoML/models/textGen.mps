@@ -262,7 +262,7 @@
         </node>
         <node concept="lc7rE" id="3kQ9GdVlmoW" role="3cqZAp">
           <node concept="la8eA" id="3kQ9GdVlmAQ" role="lcghm">
-            <property role="lacIc" value="long time =0;long debounce=200;" />
+            <property role="lacIc" value="long time =0;long debounce=100;" />
           </node>
           <node concept="l8MVK" id="3kQ9GdVsXTC" role="lcghm" />
         </node>
@@ -977,10 +977,15 @@
           <node concept="l9hG8" id="6J7GX9Vukc1" role="lcghm">
             <node concept="3cpWs3" id="6J7GX9VukOj" role="lb14g">
               <node concept="Xl_RD" id="6J7GX9VukRi" role="3uHU7B" />
-              <node concept="2OqwBi" id="6J7GX9Vuknp" role="3uHU7w">
-                <node concept="117lpO" id="6J7GX9Vukfc" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6J7GX9Vukw_" role="2OqNvi">
-                  <ref role="3TsBF5" to="gpyq:6J7GX9VnB4e" resolve="duration" />
+              <node concept="2OqwBi" id="7Nlmy5WEoff" role="3uHU7w">
+                <node concept="2OqwBi" id="6J7GX9Vuknp" role="2Oq$k0">
+                  <node concept="117lpO" id="6J7GX9Vukfc" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7Nlmy5WEnOH" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gpyq:7Nlmy5WrOQE" resolve="note" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="7Nlmy5WEoEP" role="2OqNvi">
+                  <ref role="3TsBF5" to="gpyq:6J7GX9VNRYH" resolve="duration" />
                 </node>
               </node>
             </node>
