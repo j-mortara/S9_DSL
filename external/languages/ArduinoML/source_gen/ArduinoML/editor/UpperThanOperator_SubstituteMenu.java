@@ -21,13 +21,13 @@ import jetbrains.mps.smodel.ConceptDescendantsCache;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
 import jetbrains.mps.smodel.language.LanguageRegistry;
 
-public class App_SubstituteMenu extends SubstituteMenuBase {
+public class UpperThanOperator_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new App_SubstituteMenu.SMP_ReferenceScope_u5o6fv_a(), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, "ArduinoML.structure.App")));
-    result.add(new App_SubstituteMenu.SMP_Subconcepts_u5o6fv_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new UpperThanOperator_SubstituteMenu.SMP_ReferenceScope_djb83c_a(), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a8a2L, "ArduinoML.structure.UpperThanOperator")));
+    result.add(new UpperThanOperator_SubstituteMenu.SMP_Subconcepts_djb83c_b());
     return result;
   }
 
@@ -35,7 +35,7 @@ public class App_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for App. Generated from implicit smart reference attribute.", new SNodePointer("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)", "243588697374780684")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for UpperThanOperator. Generated from implicit smart reference attribute.", new SNodePointer("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)", "1445630622441056418")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -44,11 +44,11 @@ public class App_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_ReferenceScope_u5o6fv_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_djb83c_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_u5o6fv_a() {
+    public SMP_ReferenceScope_djb83c_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, "ArduinoML.structure.App"), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initialMode"));
+      super((SAbstractConcept) MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a8a2L, "ArduinoML.structure.UpperThanOperator"), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a899L, 0x701814eea43960a4L, "leftOperand"));
     }
     @NotNull
     @Override
@@ -63,15 +63,15 @@ public class App_SubstituteMenu extends SubstituteMenuBase {
     }
 
   }
-  public class SMP_Subconcepts_u5o6fv_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_djb83c_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, "ArduinoML.structure.App"));
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a8a2L, "ArduinoML.structure.UpperThanOperator"));
     }
     @NotNull
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "App", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "UpperThanOperator", null));
       try {
         return super.createItems(context);
       } finally {

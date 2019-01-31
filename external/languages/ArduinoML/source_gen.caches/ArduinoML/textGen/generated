@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-5jwvz2xux7bqx6zm0btc4ieppmc26vz">
-  <files names="Actuator_TextGen.java:App_TextGen.java:Brick_TextGen.java:MelodySetup.java:PlayNoteFromMelody_TextGen.java:PlayNote_TextGen.java:Sensor_TextGen.java:SimpleAction_TextGen.java:State_TextGen.java:TextGenAspectDescriptor.java:Transition_TextGen.java:Utils.java" />
+<product version="3" modelHash="53i3l8xrf8l5lelpgdy63zeft6hzwi2">
+  <files names="Actuator_TextGen.java:App_TextGen.java:Brick_TextGen.java:LowerThanOperator_TextGen.java:MelodySetup.java:Mode_TextGen.java:PlayNoteFromMelody_TextGen.java:PlayNote_TextGen.java:Sensor_TextGen.java:SignalOperator_TextGen.java:SimpleAction_TextGen.java:State_TextGen.java:TextGenAspectDescriptor.java:Transition_TextGen.java:UpperThanOperator_TextGen.java:Utils.java" />
 </product>
 

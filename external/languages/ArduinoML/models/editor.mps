@@ -120,11 +120,11 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="3F0ifn" id="3kQ9GdVkYYg" role="3EZMnx">
-          <property role="3F0ifm" value="initial_state" />
+          <property role="3F0ifm" value="initial_mode" />
           <ref role="1k5W1q" node="6J7GX9W64wh" resolve="parameter" />
         </node>
         <node concept="1iCGBv" id="3kQ9GdVlaQ$" role="3EZMnx">
-          <ref role="1NtTu8" to="gpyq:3kQ9GdVkWQr" resolve="initial_sate" />
+          <ref role="1NtTu8" to="gpyq:3kQ9GdVkWQr" resolve="initialMode" />
           <node concept="1sVBvm" id="3kQ9GdVlaQA" role="1sWHZn">
             <node concept="3F0A7n" id="3kQ9GdVlaQK" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -158,11 +158,11 @@
       <node concept="3EZMnI" id="dxpE4Ml1bc" role="3EZMnx">
         <node concept="VPM3Z" id="dxpE4Ml1be" role="3F10Kt" />
         <node concept="3F2HdR" id="dxpE4Ml1b$" role="3EZMnx">
-          <ref role="1NtTu8" to="gpyq:dxpE4MkIPI" resolve="states" />
+          <ref role="1NtTu8" to="gpyq:dxpE4MkIPI" resolve="modes" />
           <node concept="2iRkQZ" id="dxpE4Ml1bB" role="2czzBx" />
           <node concept="VPM3Z" id="dxpE4Ml1bC" role="3F10Kt" />
           <node concept="3F0ifn" id="dxpE4Ml1bG" role="2czzBI">
-            <property role="3F0ifm" value="no states defined" />
+            <property role="3F0ifm" value="no modes defined" />
           </node>
         </node>
         <node concept="l2Vlx" id="dxpE4Ml1bh" role="2iSdaV" />
@@ -497,6 +497,158 @@
         </node>
       </node>
       <node concept="35HoNQ" id="6J7GX9Wl6iO" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1gfUmhf1ElJ">
+    <ref role="1XX52x" to="gpyq:1gfUmhf1EkG" resolve="Mode" />
+    <node concept="3EZMnI" id="1gfUmhf1ElL" role="2wV5jI">
+      <node concept="3EZMnI" id="1gfUmhf1ElS" role="3EZMnx">
+        <node concept="VPM3Z" id="1gfUmhf1ElU" role="3F10Kt" />
+        <node concept="3F0ifn" id="1gfUmhf1Enj" role="3EZMnx">
+          <property role="3F0ifm" value="mode:" />
+        </node>
+        <node concept="3F0A7n" id="1gfUmhf1Emc" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="1gfUmhf1ElX" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="1gfUmhf1EmT" role="3EZMnx">
+        <node concept="VPM3Z" id="1gfUmhf1EmV" role="3F10Kt" />
+        <node concept="3EZMnI" id="1gfUmhf1En9" role="3EZMnx">
+          <node concept="VPM3Z" id="1gfUmhf1Enb" role="3F10Kt" />
+          <node concept="3F0ifn" id="1gfUmhf1End" role="3EZMnx">
+            <property role="3F0ifm" value="states" />
+          </node>
+          <node concept="3EZMnI" id="1gfUmhf1Enq" role="3EZMnx">
+            <node concept="VPM3Z" id="1gfUmhf1Ens" role="3F10Kt" />
+            <node concept="3F2HdR" id="1gfUmhf1EnA" role="3EZMnx">
+              <ref role="1NtTu8" to="gpyq:1gfUmhf1EkJ" resolve="states" />
+              <node concept="2iRkQZ" id="1gfUmhf35gn" role="2czzBx" />
+            </node>
+            <node concept="l2Vlx" id="1gfUmhf1Env" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="1gfUmhf2Bp9" role="3EZMnx">
+            <node concept="2iRfu4" id="1gfUmhf2Bpa" role="2iSdaV" />
+            <node concept="3F0ifn" id="1gfUmhf2Bou" role="3EZMnx">
+              <property role="3F0ifm" value="initial:" />
+            </node>
+            <node concept="1iCGBv" id="1gfUmhf4zWX" role="3EZMnx">
+              <ref role="1NtTu8" to="gpyq:1gfUmhf4ukO" resolve="initialState" />
+              <node concept="1sVBvm" id="1gfUmhf4zWZ" role="1sWHZn">
+                <node concept="3F0A7n" id="1gfUmhf4zXa" role="2wV5jI">
+                  <property role="1Intyy" value="true" />
+                  <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3F0ifn" id="1gfUmhf1EnT" role="3EZMnx">
+            <property role="3F0ifm" value="transitions" />
+          </node>
+          <node concept="3EZMnI" id="1gfUmhf1Eob" role="3EZMnx">
+            <node concept="VPM3Z" id="1gfUmhf1Eod" role="3F10Kt" />
+            <node concept="3F2HdR" id="1gfUmhf1Eot" role="3EZMnx">
+              <ref role="1NtTu8" to="gpyq:1gfUmhf1Eoz" resolve="transitions" />
+              <node concept="2iRkQZ" id="1gfUmhf35gs" role="2czzBx" />
+            </node>
+            <node concept="2iRkQZ" id="70o5eU$5ZPR" role="2iSdaV" />
+          </node>
+          <node concept="2iRkQZ" id="1gfUmhf1Ene" role="2iSdaV" />
+          <node concept="lj46D" id="1gfUmhf35gu" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="1gfUmhf1EmY" role="2iSdaV" />
+      </node>
+      <node concept="35HoNQ" id="1gfUmhf1Epv" role="3EZMnx" />
+      <node concept="2iRkQZ" id="1gfUmhf1ElO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1gfUmhf1EpT">
+    <ref role="1XX52x" to="gpyq:1gfUmhf1EkP" resolve="ModeTransition" />
+    <node concept="3EZMnI" id="1gfUmhf1EyX" role="2wV5jI">
+      <node concept="l2Vlx" id="1gfUmhf1EyY" role="2iSdaV" />
+      <node concept="3F0ifn" id="1gfUmhf1EEp" role="3EZMnx">
+        <property role="3F0ifm" value="if" />
+      </node>
+      <node concept="3F1sOY" id="70o5eU$7xcx" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:1gfUmhf1EOx" resolve="comparison" />
+      </node>
+      <node concept="3F0ifn" id="1gfUmhf1EPB" role="3EZMnx">
+        <property role="3F0ifm" value="then go to" />
+      </node>
+      <node concept="1iCGBv" id="1gfUmhf1EPX" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:1gfUmhf1EkS" resolve="nextMode" />
+        <node concept="1sVBvm" id="1gfUmhf1EPZ" role="1sWHZn">
+          <node concept="3F0A7n" id="1gfUmhf1EQd" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1gfUmhf1EET">
+    <ref role="1XX52x" to="gpyq:1gfUmhf1Eyy" resolve="UpperThanOperator" />
+    <node concept="3EZMnI" id="1gfUmhf1EEV" role="2wV5jI">
+      <node concept="1iCGBv" id="70o5eU$es1b" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:70o5eU$em2$" resolve="leftOperand" />
+        <node concept="1sVBvm" id="70o5eU$es1d" role="1sWHZn">
+          <node concept="3F0A7n" id="70o5eU$es1p" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1gfUmhf1EFj" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+      </node>
+      <node concept="3F0A7n" id="1gfUmhf1EFA" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:1gfUmhf1Eyu" resolve="rightOperand" />
+      </node>
+      <node concept="l2Vlx" id="1gfUmhf1EEY" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1gfUmhf1EFH">
+    <ref role="1XX52x" to="gpyq:1gfUmhf1Ey_" resolve="LowerThanOperator" />
+    <node concept="3EZMnI" id="1gfUmhf1EFJ" role="2wV5jI">
+      <node concept="1iCGBv" id="70o5eU$es0j" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:70o5eU$em2$" resolve="leftOperand" />
+        <node concept="1sVBvm" id="70o5eU$es0l" role="1sWHZn">
+          <node concept="3F0A7n" id="70o5eU$es0x" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1gfUmhf1EG7" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+      </node>
+      <node concept="3F0A7n" id="1gfUmhf1EGq" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:1gfUmhf1Eyu" resolve="rightOperand" />
+      </node>
+      <node concept="l2Vlx" id="1gfUmhf1EFM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="70o5eU$3WlR">
+    <ref role="1XX52x" to="gpyq:70o5eU$3WlO" resolve="SignalOperator" />
+    <node concept="3EZMnI" id="70o5eU$3WlT" role="2wV5jI">
+      <node concept="1iCGBv" id="70o5eU$es0J" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:70o5eU$em2$" resolve="leftOperand" />
+        <node concept="1sVBvm" id="70o5eU$es0L" role="1sWHZn">
+          <node concept="3F0A7n" id="70o5eU$es0X" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="70o5eU$3Wmp" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
+      <node concept="3F0A7n" id="70o5eU$b7g$" role="3EZMnx">
+        <ref role="1NtTu8" to="gpyq:70o5eU$97Gr" resolve="signal" />
+      </node>
+      <node concept="l2Vlx" id="70o5eU$3WlW" role="2iSdaV" />
     </node>
   </node>
 </model>

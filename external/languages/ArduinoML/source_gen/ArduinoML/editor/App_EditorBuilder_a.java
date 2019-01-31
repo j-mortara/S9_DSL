@@ -133,7 +133,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
   }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "initial_state");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "initial_mode");
     editorCell.setCellId("Constant_g38wqt_c0a");
     Style style = new StyleImpl();
     new parameterStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
@@ -142,14 +142,14 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createRefCell_0() {
-    final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initial_sate");
+    final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initialMode");
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
         EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
           public EditorCell compute() {
             return new App_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initial_sate"));
+        }, targetNode, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initialMode"));
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull_smartReference(cell);
@@ -164,12 +164,12 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
       }
     };
 
-    provider.setNoTargetText("<no initial_sate>");
+    provider.setNoTargetText("<no initialMode>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initial_sate"));
+      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initialMode"));
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfoSmartReferenceDecorator(new SReferenceSubstituteInfo(editorCell, referenceLink)));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute"));
@@ -404,20 +404,20 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createRefNodeList_2() {
-    AbstractCellListHandler handler = new App_EditorBuilder_a.statesListHandler_g38wqt_a6a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new App_EditorBuilder_a.modesListHandler_g38wqt_a6a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_states");
+    editorCell.setCellId("refNodeList_modes");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class statesListHandler_g38wqt_a6a extends RefNodeListHandler {
+  private static class modesListHandler_g38wqt_a6a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public statesListHandler_g38wqt_a6a(SNode ownerNode, EditorContext context) {
+    public modesListHandler_g38wqt_a6a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -427,10 +427,10 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "states");
+      return MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "modes");
     }
     public SAbstractConcept getChildSConcept() {
-      return MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, "ArduinoML.structure.State");
+      return MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, "ArduinoML.structure.Mode");
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -440,7 +440,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(statesListHandler_g38wqt_a6a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "states")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(modesListHandler_g38wqt_a6a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "modes")));
       try {
         EditorCell emptyCell = null;
         emptyCell = createConstant_3();
@@ -464,7 +464,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
       }
     }
     private EditorCell createConstant_3() {
-      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "no states defined");
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "no modes defined");
       editorCell.setCellId("Constant_g38wqt_a0g0");
       editorCell.setDefaultText("");
       return editorCell;

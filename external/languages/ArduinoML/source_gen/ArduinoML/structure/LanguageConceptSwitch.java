@@ -13,15 +13,21 @@ public final class LanguageConceptSwitch {
   public static final int Actuator = 1;
   public static final int App = 2;
   public static final int Brick = 3;
-  public static final int Melody = 4;
-  public static final int MelodyNote = 5;
-  public static final int PlayNote = 6;
-  public static final int PlayNoteFromMelody = 7;
-  public static final int Sensor = 8;
-  public static final int SimpleAction = 9;
-  public static final int Speaker = 10;
-  public static final int State = 11;
-  public static final int Transition = 12;
+  public static final int LowerThanOperator = 4;
+  public static final int Melody = 5;
+  public static final int MelodyNote = 6;
+  public static final int Mode = 7;
+  public static final int ModeTransition = 8;
+  public static final int Operator = 9;
+  public static final int PlayNote = 10;
+  public static final int PlayNoteFromMelody = 11;
+  public static final int Sensor = 12;
+  public static final int SignalOperator = 13;
+  public static final int SimpleAction = 14;
+  public static final int Speaker = 15;
+  public static final int State = 16;
+  public static final int Transition = 17;
+  public static final int UpperThanOperator = 18;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x8a1177a2191f4d85L, 0xb39864536e65e675L);
@@ -29,15 +35,21 @@ public final class LanguageConceptSwitch {
     builder.put(0x36166a13252ed16L, Actuator);
     builder.put(0x36166a13252ed0cL, App);
     builder.put(0x353626c37b504441L, Brick);
+    builder.put(0x140fe9644f06a8a5L, LowerThanOperator);
     builder.put(0x6bc7b3d27b5df11aL, Melody);
     builder.put(0x6bc7b3d27b5df127L, MelodyNote);
+    builder.put(0x140fe9644f06a52cL, Mode);
+    builder.put(0x140fe9644f06a535L, ModeTransition);
+    builder.put(0x140fe9644f06a899L, Operator);
     builder.put(0x6bc7b3d27b5e710bL, PlayNote);
     builder.put(0x6bc7b3d27bd80508L, PlayNoteFromMelody);
     builder.put(0x631acfca1ce21c26L, Sensor);
+    builder.put(0x701814eea40fc574L, SignalOperator);
     builder.put(0x36166a13252ed1eL, SimpleAction);
     builder.put(0x6bc7b3d27bac6d0cL, Speaker);
     builder.put(0x36166a13252ed1bL, State);
     builder.put(0x353626c37b555c24L, Transition);
+    builder.put(0x140fe9644f06a8a2L, UpperThanOperator);
     myIndex = builder.seal();
   }
 

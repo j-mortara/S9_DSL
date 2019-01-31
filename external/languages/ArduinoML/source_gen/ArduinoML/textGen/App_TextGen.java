@@ -11,8 +11,8 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 
 public class App_TextGen extends TextGenDescriptorBase {
   @Override
@@ -42,12 +42,18 @@ public class App_TextGen extends TextGenDescriptorBase {
 
     tgs.append("// Declaring states function headers");
     tgs.newLine();
-    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "states"))).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode it) {
-        tgs.append("void state_");
-        tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-        tgs.append("();");
-        tgs.newLine();
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "modes"))).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode mode) {
+        ListSequence.fromList(SLinkOperations.getChildren(mode, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, 0x140fe9644f06a52fL, "states"))).visitAll(new IVisitor<SNode>() {
+          public void visit(SNode state) {
+            tgs.append("void state_");
+            tgs.append(SPropertyOperations.getString(state, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+            tgs.append("_mode_");
+            tgs.append(SPropertyOperations.getString(SNodeOperations.cast(SNodeOperations.getParent(state), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, "ArduinoML.structure.Mode")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+            tgs.append("();");
+            tgs.newLine();
+          }
+        });
       }
     });
     tgs.newLine();
@@ -67,16 +73,16 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.append("// Declaring states");
     tgs.newLine();
-    {
-      Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "states"));
-      final SNode lastItem = Sequence.fromIterable(collection).last();
-      for (SNode item : collection) {
-        tgs.appendNode(item);
-        if (item != lastItem) {
-          tgs.append("\n");
-        }
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "modes"))).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        ListSequence.fromList(SLinkOperations.getChildren(it, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, 0x140fe9644f06a52fL, "states"))).visitAll(new IVisitor<SNode>() {
+          public void visit(SNode it2) {
+            tgs.appendNode(it2);
+            tgs.newLine();
+          }
+        });
       }
-    }
+    });
     tgs.newLine();
     tgs.newLine();
     tgs.append("void setup()");
@@ -113,7 +119,9 @@ public class App_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
     tgs.append("state_");
-    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initial_sate")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initialMode")), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, 0x140fe9644f11e534L, "initialState")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append("_mode_");
+    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x353626c37b53cd9bL, "initialMode")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append("();");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();

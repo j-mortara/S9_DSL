@@ -13,15 +13,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Actuator;
   private ConceptPresentation props_App;
   private ConceptPresentation props_Brick;
+  private ConceptPresentation props_LowerThanOperator;
   private ConceptPresentation props_Melody;
   private ConceptPresentation props_MelodyNote;
+  private ConceptPresentation props_Mode;
+  private ConceptPresentation props_ModeTransition;
+  private ConceptPresentation props_Operator;
   private ConceptPresentation props_PlayNote;
   private ConceptPresentation props_PlayNoteFromMelody;
   private ConceptPresentation props_Sensor;
+  private ConceptPresentation props_SignalOperator;
   private ConceptPresentation props_SimpleAction;
   private ConceptPresentation props_Speaker;
   private ConceptPresentation props_State;
   private ConceptPresentation props_Transition;
+  private ConceptPresentation props_UpperThanOperator;
 
   @Override
   @Nullable
@@ -54,6 +60,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Brick = cpb.create();
         }
         return props_Brick;
+      case LanguageConceptSwitch.LowerThanOperator:
+        if (props_LowerThanOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_LowerThanOperator = cpb.create();
+        }
+        return props_LowerThanOperator;
       case LanguageConceptSwitch.Melody:
         if (props_Melody == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -68,6 +81,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_MelodyNote = cpb.create();
         }
         return props_MelodyNote;
+      case LanguageConceptSwitch.Mode:
+        if (props_Mode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Mode = cpb.create();
+        }
+        return props_Mode;
+      case LanguageConceptSwitch.ModeTransition:
+        if (props_ModeTransition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a535L, 0x140fe9644f06a538L, "nextMode", "", "");
+          props_ModeTransition = cpb.create();
+        }
+        return props_ModeTransition;
+      case LanguageConceptSwitch.Operator:
+        if (props_Operator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Operator = cpb.create();
+        }
+        return props_Operator;
       case LanguageConceptSwitch.PlayNote:
         if (props_PlayNote == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -91,6 +124,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensor = cpb.create();
         }
         return props_Sensor;
+      case LanguageConceptSwitch.SignalOperator:
+        if (props_SignalOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SignalOperator = cpb.create();
+        }
+        return props_SignalOperator;
       case LanguageConceptSwitch.SimpleAction:
         if (props_SimpleAction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -120,6 +160,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Transition = cpb.create();
         }
         return props_Transition;
+      case LanguageConceptSwitch.UpperThanOperator:
+        if (props_UpperThanOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_UpperThanOperator = cpb.create();
+        }
+        return props_UpperThanOperator;
     }
     return null;
   }

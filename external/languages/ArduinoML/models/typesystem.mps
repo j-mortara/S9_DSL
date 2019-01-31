@@ -472,7 +472,7 @@
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="6J7GX9VC11V" role="2OqNvi">
-                    <ref role="3TtcxE" to="gpyq:dxpE4MkIPI" resolve="states" />
+                    <ref role="3TtcxE" to="gpyq:dxpE4MkIPI" resolve="modes" />
                   </node>
                 </node>
               </node>
