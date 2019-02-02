@@ -256,7 +256,7 @@ import jetbrains.mps.editor.runtime.EditorCell_Empty;
       return MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x353626c37b555c2bL, "transitions");
     }
     public SAbstractConcept getChildSConcept() {
-      return MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b555c24L, "ArduinoML.structure.Transition");
+      return MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b555c24L, "ArduinoML.structure.StateTransition");
     }
 
     public EditorCell createNodeCell(SNode elementNode) {

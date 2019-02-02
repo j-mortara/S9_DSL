@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class NameChecker {
   public static boolean checkName(String name) {
-    return name.matches("[a-zA-Z_][a-zA-Z0-9_]*") && !(Objects.equals(name, "loop")) && !(Objects.equals(name, "setup"));
+    return (name != null && name.length() > 0) && name.matches("[a-zA-Z_][a-zA-Z0-9_]*") && !(Objects.equals(name, "loop")) && !(Objects.equals(name, "setup"));
   }
 
 }

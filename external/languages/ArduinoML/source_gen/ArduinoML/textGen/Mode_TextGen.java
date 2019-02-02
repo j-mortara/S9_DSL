@@ -19,7 +19,7 @@ public class Mode_TextGen extends TextGenDescriptorBase {
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, 0x140fe9644f06a623L, "transitions"))).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         tgs.append("if (");
-        tgs.appendNode(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a535L, 0x140fe9644f06ad21L, "comparison")));
+        tgs.appendNode(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddafed4L, 0x399ea6a0ddafedaL, "condition")));
         tgs.append(") {");
         tgs.newLine();
         ctx.getBuffer().area().increaseIndent();

@@ -16,81 +16,81 @@
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/1445630622441094525">
-    <file name="TextGenAspectDescriptor.java">
-      <node id="1445630622441094525" at="49,51,50,47" concept="7" />
-      <scope id="1445630622441094525" at="49,51,50,47" />
-    </file>
-    <file name="UpperThanOperator_TextGen.java">
+    <file name="GreaterThan_TextGen.java">
       <node id="1445630622441094525" at="14,54,15,55" concept="6" />
-      <node id="1445630622441094678" at="15,55,16,205" concept="2" />
-      <node id="1445630622441098032" at="16,205,17,20" concept="2" />
-      <node id="1445630622441098739" at="17,20,18,207" concept="2" />
-      <node id="1445630622441094525" at="13,0,20,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="1445630622441094525" at="14,54,18,207">
+      <node id="259496194772851710" at="15,55,16,30" concept="2" />
+      <node id="1445630622441094678" at="16,30,17,344" concept="2" />
+      <node id="1445630622441098032" at="17,344,18,23" concept="2" />
+      <node id="1445630622441098739" at="18,23,19,205" concept="2" />
+      <node id="1445630622441094525" at="13,0,21,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1445630622441094525" at="14,54,19,205">
         <var name="tgs" id="1445630622441094525" />
       </scope>
-      <scope id="1445630622441094525" at="13,0,20,0">
+      <scope id="1445630622441094525" at="13,0,21,0">
         <var name="ctx" id="1445630622441094525" />
       </scope>
-      <unit id="1445630622441094525" at="12,0,21,0" name="ArduinoML.textGen.UpperThanOperator_TextGen" />
+      <unit id="1445630622441094525" at="12,0,22,0" name="ArduinoML.textGen.GreaterThan_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="1445630622441094525" at="33,45,34,41" concept="7" />
+      <scope id="1445630622441094525" at="33,45,34,41" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/1445630622441125626">
-    <file name="LowerThanOperator_TextGen.java">
+    <file name="LowerThan_TextGen.java">
       <node id="1445630622441125626" at="14,54,15,55" concept="6" />
-      <node id="1445630622441125683" at="15,55,16,205" concept="2" />
-      <node id="1445630622441128742" at="16,205,17,20" concept="2" />
-      <node id="1445630622441129462" at="17,20,18,207" concept="2" />
-      <node id="1445630622441125626" at="13,0,20,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="1445630622441125626" at="14,54,18,207">
+      <node id="259496194772859671" at="15,55,16,30" concept="2" />
+      <node id="259496194770521594" at="16,30,17,344" concept="2" />
+      <node id="259496194770521598" at="17,344,18,23" concept="2" />
+      <node id="259496194770521599" at="18,23,19,205" concept="2" />
+      <node id="1445630622441125626" at="13,0,21,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1445630622441125626" at="14,54,19,205">
         <var name="tgs" id="1445630622441125626" />
       </scope>
-      <scope id="1445630622441125626" at="13,0,20,0">
+      <scope id="1445630622441125626" at="13,0,21,0">
         <var name="ctx" id="1445630622441125626" />
       </scope>
-      <unit id="1445630622441125626" at="12,0,21,0" name="ArduinoML.textGen.LowerThanOperator_TextGen" />
+      <unit id="1445630622441125626" at="12,0,22,0" name="ArduinoML.textGen.LowerThan_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="1445630622441125626" at="31,51,32,47" concept="7" />
-      <scope id="1445630622441125626" at="31,51,32,47" />
+      <node id="1445630622441125626" at="35,43,36,39" concept="7" />
+      <scope id="1445630622441125626" at="35,43,36,39" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/3834294753782226094">
-    <file name="TextGenAspectDescriptor.java">
-      <node id="3834294753782226094" at="47,44,48,40" concept="7" />
-      <scope id="3834294753782226094" at="47,44,48,40" />
-    </file>
-    <file name="Transition_TextGen.java">
+    <file name="StateTransition_TextGen.java">
       <node id="3834294753782226094" at="15,54,16,55" concept="6" />
-      <node id="3834294753782240271" at="16,55,17,35" concept="2" />
-      <node id="3834294753782240681" at="17,35,18,341" concept="2" />
-      <node id="3834294753782242712" at="18,341,19,24" concept="2" />
-      <node id="3834294753782243316" at="19,24,20,195" concept="2" />
-      <node id="3834294753782246201" at="20,195,21,31" concept="2" />
-      <node id="3834294753782267693" at="21,31,22,18" concept="2" />
-      <node id="3834294753782226094" at="22,18,23,44" concept="2" />
-      <node id="3834294753783924148" at="23,44,24,17" concept="2" />
-      <node id="3834294753782247913" at="24,17,25,35" concept="2" />
-      <node id="3834294753782268795" at="25,35,26,18" concept="2" />
-      <node id="3834294753784162995" at="26,18,27,17" concept="2" />
-      <node id="3834294753782251169" at="27,17,28,25" concept="2" />
-      <node id="3834294753782251241" at="28,25,29,344" concept="2" />
-      <node id="7011599386465843622" at="29,344,30,25" concept="2" />
-      <node id="7011599386467057133" at="30,25,31,515" concept="2" />
-      <node id="3834294753782257209" at="31,515,32,22" concept="2" />
-      <node id="3834294753782269380" at="32,22,33,18" concept="2" />
-      <node id="3834294753782226094" at="33,18,34,44" concept="2" />
-      <node id="3834294753782270667" at="34,44,35,17" concept="2" />
-      <node id="3834294753782265046" at="35,17,36,20" concept="2" />
-      <node id="3834294753782270163" at="36,20,37,18" concept="2" />
-      <node id="3834294753782226094" at="14,0,39,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="3834294753782226094" at="15,54,37,18">
+      <node id="3834294753782240271" at="16,55,17,23" concept="2" />
+      <node id="3834294753782240681" at="17,23,18,203" concept="2" />
+      <node id="3834294753782246201" at="18,203,19,22" concept="2" />
+      <node id="3834294753782267693" at="19,22,20,18" concept="2" />
+      <node id="3834294753782226094" at="20,18,21,44" concept="2" />
+      <node id="3834294753783924148" at="21,44,22,17" concept="2" />
+      <node id="3834294753782247913" at="22,17,23,35" concept="2" />
+      <node id="3834294753782268795" at="23,35,24,18" concept="2" />
+      <node id="3834294753784162995" at="24,18,25,17" concept="2" />
+      <node id="3834294753782251169" at="25,17,26,25" concept="2" />
+      <node id="3834294753782251241" at="26,25,27,344" concept="2" />
+      <node id="7011599386465843622" at="27,344,28,25" concept="2" />
+      <node id="7011599386467057133" at="28,25,29,515" concept="2" />
+      <node id="3834294753782257209" at="29,515,30,22" concept="2" />
+      <node id="3834294753782269380" at="30,22,31,18" concept="2" />
+      <node id="3834294753782226094" at="31,18,32,44" concept="2" />
+      <node id="3834294753782270667" at="32,44,33,17" concept="2" />
+      <node id="3834294753782265046" at="33,17,34,20" concept="2" />
+      <node id="3834294753782270163" at="34,20,35,18" concept="2" />
+      <node id="3834294753782226094" at="14,0,37,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3834294753782226094" at="15,54,35,18">
         <var name="tgs" id="3834294753782226094" />
       </scope>
-      <scope id="3834294753782226094" at="14,0,39,0">
+      <scope id="3834294753782226094" at="14,0,37,0">
         <var name="ctx" id="3834294753782226094" />
       </scope>
-      <unit id="3834294753782226094" at="13,0,40,0" name="ArduinoML.textGen.Transition_TextGen" />
+      <unit id="3834294753782226094" at="13,0,38,0" name="ArduinoML.textGen.StateTransition_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3834294753782226094" at="49,49,50,45" concept="7" />
+      <scope id="3834294753782226094" at="49,49,50,45" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/3834294753783977455">
@@ -111,16 +111,16 @@
       <unit id="3834294753783977455" at="11,0,22,0" name="ArduinoML.textGen.Sensor_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3834294753783977455" at="39,40,40,36" concept="7" />
-      <scope id="3834294753783977455" at="39,40,40,36" />
+      <node id="3834294753783977455" at="43,40,44,36" concept="7" />
+      <scope id="3834294753783977455" at="43,40,44,36" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/6705903169103826211">
     <file name="Mode_TextGen.java">
       <node id="6705903169103826211" at="17,54,18,55" concept="6" />
       <node id="6705903169103859745" at="20,35,21,27" concept="2" />
-      <node id="6705903169103861416" at="21,27,22,191" concept="2" />
-      <node id="6705903169103869892" at="22,191,23,26" concept="2" />
+      <node id="6705903169103861416" at="21,27,22,188" concept="2" />
+      <node id="6705903169103869892" at="22,188,23,26" concept="2" />
       <node id="6705903169103871935" at="23,26,24,22" concept="2" />
       <node id="6705903169103858626" at="24,22,25,48" concept="2" />
       <node id="6705903169103874927" at="25,48,26,21" concept="2" />
@@ -154,8 +154,8 @@
       <unit id="6705903169103826211" at="15,0,44,0" name="ArduinoML.textGen.Mode_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="6705903169103826211" at="33,38,34,34" concept="7" />
-      <scope id="6705903169103826211" at="33,38,34,34" />
+      <node id="6705903169103826211" at="37,38,38,34" concept="7" />
+      <scope id="6705903169103826211" at="37,38,38,34" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/7141248626124266539">
@@ -199,8 +199,8 @@
       <unit id="7766373799018350004" at="12,0,24,0" name="ArduinoML.textGen.SimpleAction_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7766373799018350004" at="43,46,44,42" concept="7" />
-      <scope id="7766373799018350004" at="43,46,44,42" />
+      <node id="7766373799018350004" at="45,46,46,42" concept="7" />
+      <scope id="7766373799018350004" at="45,46,46,42" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/7766373799018707992">
@@ -223,8 +223,8 @@
       <unit id="7766373799018707992" at="12,0,25,0" name="ArduinoML.textGen.PlayNote_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7766373799018707992" at="35,42,36,38" concept="7" />
-      <scope id="7766373799018707992" at="35,42,36,38" />
+      <node id="7766373799018707992" at="39,42,40,38" concept="7" />
+      <scope id="7766373799018707992" at="39,42,40,38" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/7766373799019474024">
@@ -358,30 +358,38 @@
       <unit id="7766373799027802714" at="13,0,36,0" name="ArduinoML.textGen.PlayNoteFromMelody_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7766373799027802714" at="37,52,38,48" concept="7" />
-      <scope id="7766373799027802714" at="37,52,38,48" />
+      <node id="7766373799027802714" at="41,52,42,48" concept="7" />
+      <scope id="7766373799027802714" at="41,52,42,48" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/8077228946876651256">
-    <file name="SignalOperator_TextGen.java">
-      <node id="8077228946876651256" at="14,54,15,55" concept="6" />
-      <node id="8077228946878133908" at="15,55,16,31" concept="2" />
-      <node id="8077228946878134049" at="16,31,17,346" concept="2" />
-      <node id="8077228946878141800" at="17,346,18,24" concept="2" />
-      <node id="8077228946878142465" at="18,24,19,195" concept="2" />
-      <node id="8077228946878145798" at="19,195,20,28" concept="2" />
-      <node id="8077228946876651256" at="13,0,22,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="8077228946876651256" at="14,54,20,28">
+    <file name="Equals_TextGen.java">
+      <node id="8077228946876651256" at="16,54,17,55" concept="6" />
+      <node id="259496194770498921" at="18,409,19,32" concept="2" />
+      <node id="259496194770498922" at="19,32,20,347" concept="2" />
+      <node id="259496194770498928" at="20,347,21,26" concept="2" />
+      <node id="259496194770498929" at="21,26,22,208" concept="2" />
+      <node id="259496194772636471" at="23,12,24,33" concept="2" />
+      <node id="259496194772636472" at="24,33,25,347" concept="2" />
+      <node id="259496194772636478" at="25,347,26,26" concept="2" />
+      <node id="259496194772636479" at="26,26,27,197" concept="2" />
+      <node id="259496194772636483" at="27,197,28,30" concept="2" />
+      <node id="259496194770498345" at="23,10,29,5" concept="0" />
+      <node id="259496194770483777" at="17,55,29,5" concept="4" />
+      <node id="8077228946876651256" at="15,0,31,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="259496194770483779" at="18,409,22,208" />
+      <scope id="259496194770498346" at="23,12,28,30" />
+      <scope id="8077228946876651256" at="16,54,29,5">
         <var name="tgs" id="8077228946876651256" />
       </scope>
-      <scope id="8077228946876651256" at="13,0,22,0">
+      <scope id="8077228946876651256" at="15,0,31,0">
         <var name="ctx" id="8077228946876651256" />
       </scope>
-      <unit id="8077228946876651256" at="12,0,23,0" name="ArduinoML.textGen.SignalOperator_TextGen" />
+      <unit id="8077228946876651256" at="14,0,32,0" name="ArduinoML.textGen.Equals_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8077228946876651256" at="41,48,42,44" concept="7" />
-      <scope id="8077228946876651256" at="41,48,42,44" />
+      <node id="8077228946876651256" at="31,40,32,36" concept="7" />
+      <scope id="8077228946876651256" at="31,40,32,36" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/811505826641579868">
@@ -633,8 +641,8 @@
       <unit id="811505826642040207" at="16,0,63,0" name="ArduinoML.textGen.State_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="811505826642040207" at="45,39,46,35" concept="7" />
-      <scope id="811505826642040207" at="45,39,46,35" />
+      <node id="811505826642040207" at="47,39,48,35" concept="7" />
+      <scope id="811505826642040207" at="47,39,48,35" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/8995194930610546605">

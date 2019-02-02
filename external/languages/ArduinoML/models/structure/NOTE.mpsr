@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="AxPO7" id="6J7GX9VnuVu">
+    <property role="TrG5h" value="NOTE" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <property role="PDuV0" value="true" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="6J7GX9VnuVv" role="M5hS2">
+      <property role="1uS6qo" value="do" />
+      <property role="1uS6qv" value="32.703" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9W$uTT" role="M5hS2">
+      <property role="1uS6qo" value="do#" />
+      <property role="1uS6qv" value="34.648" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9VnuVw" role="M5hS2">
+      <property role="1uS6qo" value="ré" />
+      <property role="1uS6qv" value="36.708" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9W$uUk" role="M5hS2">
+      <property role="1uS6qo" value="ré#" />
+      <property role="1uS6qv" value="38.891" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9VnuVz" role="M5hS2">
+      <property role="1uS6qo" value="mi" />
+      <property role="1uS6qv" value="41.203" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9VnuVB" role="M5hS2">
+      <property role="1uS6qo" value="fa" />
+      <property role="1uS6qv" value="43.654" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9W$uUM" role="M5hS2">
+      <property role="1uS6qo" value="fa#" />
+      <property role="1uS6qv" value="46.249" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9VnuVG" role="M5hS2">
+      <property role="1uS6qo" value="sol" />
+      <property role="1uS6qv" value="48.999" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9W$uVj" role="M5hS2">
+      <property role="1uS6qo" value="sol#" />
+      <property role="1uS6qv" value="51.913" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9VnuVM" role="M5hS2">
+      <property role="1uS6qo" value="la" />
+      <property role="1uS6qv" value="55.0" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9W$uVv" role="M5hS2">
+      <property role="1uS6qo" value="la#" />
+      <property role="1uS6qv" value="58.27" />
+    </node>
+    <node concept="M4N5e" id="6J7GX9VnuVT" role="M5hS2">
+      <property role="1uS6qo" value="si" />
+      <property role="1uS6qv" value="61.735" />
+    </node>
+  </node>
+</model>
+

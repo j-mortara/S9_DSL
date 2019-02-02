@@ -28,8 +28,12 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new App_TextGen();
       case LanguageConceptSwitch.Brick:
         return new Brick_TextGen();
-      case LanguageConceptSwitch.LowerThanOperator:
-        return new LowerThanOperator_TextGen();
+      case LanguageConceptSwitch.Equals:
+        return new Equals_TextGen();
+      case LanguageConceptSwitch.GreaterThan:
+        return new GreaterThan_TextGen();
+      case LanguageConceptSwitch.LowerThan:
+        return new LowerThan_TextGen();
       case LanguageConceptSwitch.Mode:
         return new Mode_TextGen();
       case LanguageConceptSwitch.PlayNote:
@@ -38,16 +42,12 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new PlayNoteFromMelody_TextGen();
       case LanguageConceptSwitch.Sensor:
         return new Sensor_TextGen();
-      case LanguageConceptSwitch.SignalOperator:
-        return new SignalOperator_TextGen();
       case LanguageConceptSwitch.SimpleAction:
         return new SimpleAction_TextGen();
       case LanguageConceptSwitch.State:
         return new State_TextGen();
-      case LanguageConceptSwitch.Transition:
-        return new Transition_TextGen();
-      case LanguageConceptSwitch.UpperThanOperator:
-        return new UpperThanOperator_TextGen();
+      case LanguageConceptSwitch.StateTransition:
+        return new StateTransition_TextGen();
     }
     return null;
   }

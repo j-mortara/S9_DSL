@@ -11,23 +11,26 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Action;
   private ConceptPresentation props_Actuator;
+  private ConceptPresentation props_AnalogCondition;
+  private ConceptPresentation props_AnalogSensor;
   private ConceptPresentation props_App;
   private ConceptPresentation props_Brick;
-  private ConceptPresentation props_LowerThanOperator;
+  private ConceptPresentation props_Condition;
+  private ConceptPresentation props_Equals;
+  private ConceptPresentation props_GreaterThan;
+  private ConceptPresentation props_LowerThan;
   private ConceptPresentation props_Melody;
   private ConceptPresentation props_MelodyNote;
   private ConceptPresentation props_Mode;
   private ConceptPresentation props_ModeTransition;
-  private ConceptPresentation props_Operator;
   private ConceptPresentation props_PlayNote;
   private ConceptPresentation props_PlayNoteFromMelody;
   private ConceptPresentation props_Sensor;
-  private ConceptPresentation props_SignalOperator;
   private ConceptPresentation props_SimpleAction;
   private ConceptPresentation props_Speaker;
   private ConceptPresentation props_State;
+  private ConceptPresentation props_StateTransition;
   private ConceptPresentation props_Transition;
-  private ConceptPresentation props_UpperThanOperator;
 
   @Override
   @Nullable
@@ -47,6 +50,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Actuator = cpb.create();
         }
         return props_Actuator;
+      case LanguageConceptSwitch.AnalogCondition:
+        if (props_AnalogCondition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AnalogCondition = cpb.create();
+        }
+        return props_AnalogCondition;
+      case LanguageConceptSwitch.AnalogSensor:
+        if (props_AnalogSensor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_AnalogSensor = cpb.create();
+        }
+        return props_AnalogSensor;
       case LanguageConceptSwitch.App:
         if (props_App == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -60,13 +76,33 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Brick = cpb.create();
         }
         return props_Brick;
-      case LanguageConceptSwitch.LowerThanOperator:
-        if (props_LowerThanOperator == null) {
+      case LanguageConceptSwitch.Condition:
+        if (props_Condition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_LowerThanOperator = cpb.create();
+          props_Condition = cpb.create();
         }
-        return props_LowerThanOperator;
+        return props_Condition;
+      case LanguageConceptSwitch.Equals:
+        if (props_Equals == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("equals");
+          props_Equals = cpb.create();
+        }
+        return props_Equals;
+      case LanguageConceptSwitch.GreaterThan:
+        if (props_GreaterThan == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("greater than");
+          props_GreaterThan = cpb.create();
+        }
+        return props_GreaterThan;
+      case LanguageConceptSwitch.LowerThan:
+        if (props_LowerThan == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("lower than");
+          props_LowerThan = cpb.create();
+        }
+        return props_LowerThan;
       case LanguageConceptSwitch.Melody:
         if (props_Melody == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -91,16 +127,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ModeTransition:
         if (props_ModeTransition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a535L, 0x140fe9644f06a538L, "nextMode", "", "");
+          cpb.rawPresentation("transition");
           props_ModeTransition = cpb.create();
         }
         return props_ModeTransition;
-      case LanguageConceptSwitch.Operator:
-        if (props_Operator == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_Operator = cpb.create();
-        }
-        return props_Operator;
       case LanguageConceptSwitch.PlayNote:
         if (props_PlayNote == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -124,13 +154,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensor = cpb.create();
         }
         return props_Sensor;
-      case LanguageConceptSwitch.SignalOperator:
-        if (props_SignalOperator == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_SignalOperator = cpb.create();
-        }
-        return props_SignalOperator;
       case LanguageConceptSwitch.SimpleAction:
         if (props_SimpleAction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -153,20 +176,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_State = cpb.create();
         }
         return props_State;
+      case LanguageConceptSwitch.StateTransition:
+        if (props_StateTransition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("transition");
+          props_StateTransition = cpb.create();
+        }
+        return props_StateTransition;
       case LanguageConceptSwitch.Transition:
         if (props_Transition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Transition");
           props_Transition = cpb.create();
         }
         return props_Transition;
-      case LanguageConceptSwitch.UpperThanOperator:
-        if (props_UpperThanOperator == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_UpperThanOperator = cpb.create();
-        }
-        return props_UpperThanOperator;
     }
     return null;
   }
