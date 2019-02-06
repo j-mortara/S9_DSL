@@ -22,6 +22,7 @@
         <reference id="3834294753782123931" name="initialMode" index="1epuHo" />
         <child id="243588697374780782" name="modes" index="LcSJf" />
         <child id="243588697374780786" name="bricks" index="LcSJj" />
+        <child id="4613052548080483813" name="watches" index="2UyesW" />
       </concept>
       <concept id="243588697374780694" name="ArduinoML.structure.Actuator" flags="ng" index="LcSIR" />
       <concept id="243588697374780699" name="ArduinoML.structure.State" flags="ng" index="LcSIU">
@@ -30,6 +31,9 @@
       </concept>
       <concept id="243588697374780702" name="ArduinoML.structure.SimpleAction" flags="ng" index="LcSIZ">
         <property id="243588697374780709" name="signal" index="LcSI4" />
+      </concept>
+      <concept id="4613052548080164576" name="ArduinoML.structure.Watch" flags="ng" index="2UwSgT">
+        <reference id="4613052548081876770" name="sensor" index="2UDqnV" />
       </concept>
       <concept id="3834294753782225956" name="ArduinoML.structure.StateTransition" flags="ng" index="1eoRFB">
         <reference id="3834294753782225957" name="nextState" index="1eoRFA" />
@@ -62,6 +66,12 @@
   <node concept="LcSIH" id="3kQ9GdVkHLQ">
     <property role="TrG5h" value="simple" />
     <ref role="1epuHo" node="70o5eU$4sAn" resolve="first" />
+    <node concept="2UwSgT" id="404QHBUDzUy" role="2UyesW">
+      <ref role="2UDqnV" node="epUACdPKdt" resolve="x_axis" />
+    </node>
+    <node concept="2UwSgT" id="404QHBULPOE" role="2UyesW">
+      <ref role="2UDqnV" node="epUACdQJR1" resolve="y_axis" />
+    </node>
     <node concept="1r2kL8" id="70o5eU$4sAn" role="LcSJf">
       <property role="TrG5h" value="first" />
       <ref role="1r7wLg" node="70o5eU$4sAv" resolve="off" />

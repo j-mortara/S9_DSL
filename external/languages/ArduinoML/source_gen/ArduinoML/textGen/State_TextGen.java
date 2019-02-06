@@ -38,6 +38,9 @@ public class State_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
+    tgs.append("watch();");
+    tgs.newLine();
+    tgs.indent();
     tgs.append("boolean guard = millis() - time > debounce;");
     tgs.newLine();
     tgs.indent();

@@ -48,6 +48,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new State_TextGen();
       case LanguageConceptSwitch.StateTransition:
         return new StateTransition_TextGen();
+      case LanguageConceptSwitch.Watch:
+        return new Watch_TextGen();
     }
     return null;
   }
