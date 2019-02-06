@@ -1,0 +1,12 @@
+sensors:
+  sensor1:
+    title: "My Live Streaming Sensor Data"
+    axis_label: "Sensor value"
+    min_value: 0
+    max_value: 1023
+
+max_displayed_values : 20
+
+display_state: true
+
+display_mode: true
