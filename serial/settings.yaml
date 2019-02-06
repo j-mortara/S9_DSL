@@ -4,6 +4,11 @@ sensors:
     axis_label: "Sensor value"
     min_value: 0
     max_value: 1023
+  sensor2:
+    title: "Second live"
+    axis_label: "lol"
+    min_value: 0
+    max_value: 1023
 
 max_displayed_values : 20
 
