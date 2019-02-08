@@ -1,25 +1,12 @@
+import json
+
 import serial.tools.list_ports
 import matplotlib.pyplot as plot
-from drawnow import *
 import yaml
 
 sensors = []
 
 cnt = 0
-
-
-def buildGraph():  # Create a function that makes our desired plot
-    plot.ylim(min_value, max_value)  # Set y min and max values
-    plot.title(title)  # Plot the title NEED THIS
-    plot.grid(True)  # Turn the grid on
-    plot.ylabel(axis_label)  # Set ylabels NEED THIS
-    plot.plot(sensor_values, 'ro-', label=sensor_name)  # plot the temperature
-    plot.legend(loc='upper left')  # plot the legend
-
-
-# état courant
-# mode
-
 
 ports = list(serial.tools.list_ports.comports())
 
@@ -35,8 +22,9 @@ plot.ion()
 with serial.Serial(port.device, 9600) as ser, open("settings.yaml", 'r') as config_file:
     data = yaml.load(config_file.read())
     while True:
-        next_value = int(ser.readline())
-        print(next_value)
+        next_value = ser.readline()
+        print(next_value.decode("utf-8"))
+        print(json.loads(next_value.decode("utf-8")))
         sensor_values.append(next_value)
         cnt += 1
         if cnt > data["max_displayed_values"]:
@@ -56,5 +44,5 @@ with serial.Serial(port.device, 9600) as ser, open("settings.yaml", 'r') as conf
             plot.ylabel(axis_label)  # Set ylabels NEED THIS
             plot.plot(sensor_values, 'ro-', label=sensor_name)  # plot the temperature
             plot.legend(loc='upper left')  # plot the legend
-        plt.pause(.000001)
+        plot.pause(.000001)
         plot.show()
