@@ -2115,7 +2115,7 @@
       <node concept="3clFbS" id="404QHBUxPV_" role="2VODD2">
         <node concept="lc7rE" id="404QHBUxQcc" role="3cqZAp">
           <node concept="la8eA" id="404QHBUQ2JM" role="lcghm">
-            <property role="lacIc" value="&quot;" />
+            <property role="lacIc" value="&quot;\\\&quot;" />
           </node>
           <node concept="l9hG8" id="404QHBUDPli" role="lcghm">
             <node concept="2OqwBi" id="404QHBUDQd9" role="lb14g">
@@ -2131,7 +2131,7 @@
             </node>
           </node>
           <node concept="la8eA" id="404QHBUDR3z" role="lcghm">
-            <property role="lacIc" value=":" />
+            <property role="lacIc" value="\\\&quot;:" />
           </node>
           <node concept="la8eA" id="404QHBUEV6i" role="lcghm">
             <property role="lacIc" value="&quot;+analogRead(" />

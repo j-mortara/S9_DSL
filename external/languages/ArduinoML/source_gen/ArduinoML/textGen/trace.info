@@ -122,10 +122,10 @@
     </file>
     <file name="Watch_TextGen.java">
       <node id="4613052548080164579" at="14,54,15,55" concept="6" />
-      <node id="4613052548085459954" at="15,55,16,21" concept="2" />
-      <node id="4613052548082259282" at="16,21,17,341" concept="2" />
-      <node id="4613052548082266339" at="17,341,18,20" concept="2" />
-      <node id="4613052548082545042" at="18,20,19,33" concept="2" />
+      <node id="4613052548085459954" at="15,55,16,25" concept="2" />
+      <node id="4613052548082259282" at="16,25,17,341" concept="2" />
+      <node id="4613052548082266339" at="17,341,18,24" concept="2" />
+      <node id="4613052548082545042" at="18,24,19,33" concept="2" />
       <node id="4613052548082545724" at="19,33,20,341" concept="2" />
       <node id="4613052548082552557" at="20,341,21,20" concept="2" />
       <node id="4613052548080164579" at="13,0,23,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />

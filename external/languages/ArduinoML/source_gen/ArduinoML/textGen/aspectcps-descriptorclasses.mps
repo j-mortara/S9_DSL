@@ -16422,7 +16422,7 @@
             <node concept="liA8E" id="1zA" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
               <node concept="Xl_RD" id="1zE" role="37wK5m">
-                <property role="Xl_RC" value="&quot;" />
+                <property role="Xl_RC" value="&quot;\\\&quot;" />
                 <node concept="cd27G" id="1zG" role="lGtFl">
                   <node concept="3u3nmq" id="1zH" role="cd27D">
                     <property role="3u3nmv" value="4613052548085459954" />
@@ -16533,7 +16533,7 @@
             <node concept="liA8E" id="1$g" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
               <node concept="Xl_RD" id="1$k" role="37wK5m">
-                <property role="Xl_RC" value=":" />
+                <property role="Xl_RC" value="\\\&quot;:" />
                 <node concept="cd27G" id="1$m" role="lGtFl">
                   <node concept="3u3nmq" id="1$n" role="cd27D">
                     <property role="3u3nmv" value="4613052548082266339" />
