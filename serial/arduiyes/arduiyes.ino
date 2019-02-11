@@ -6,7 +6,11 @@ void setup() {
 }
 
 void loop() {
-  String str = "{sensor1:\""+String(val1)+"\",sensor2:\""+String(val2)+"\"}";
+  String str = "{";
+  str.concat("\"sensor1\":"+String(val1));
+  str.concat(",");
+  str.concat("\"sensor2\":"+String(val2));
+  str.concat("}");
   Serial.println(str);
   val1 += 5;
   val2 += 10;
