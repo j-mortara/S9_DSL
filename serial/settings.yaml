@@ -1,16 +1,14 @@
 sensors:
-  sensor1:
-    title: "My Live Streaming Sensor Data"
+  x_axis:
     axis_label: "Sensor value"
     min_value: 0
     max_value: 1023
-  sensor2:
-    title: "Second live"
+  y_axis:
     axis_label: "lol"
     min_value: 0
     max_value: 1023
 
-max_displayed_values : 20
+max_displayed_values : 25000
 
 display_state: true
 
