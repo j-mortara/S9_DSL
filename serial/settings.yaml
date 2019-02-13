@@ -1,14 +1,10 @@
 sensors:
-  x_axis:
-    axis_label: "Sensor value"
-    min_value: 0
-    max_value: 1023
-  y_axis:
-    axis_label: "lol"
-    min_value: 0
+  analog:
+    axis_label: "analog"
+    min_value : 0
     max_value: 1023
 
-max_displayed_values : 25000
+max_displayed_values: 30
 
 display_state: true
 
