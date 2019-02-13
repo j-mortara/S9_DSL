@@ -108,6 +108,9 @@ public class App_TextGen extends TextGenDescriptorBase {
         }
       }
     });
+    tgs.indent();
+    tgs.append("Serial.begin(9600);");
+    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
     tgs.newLine();
@@ -159,5 +162,56 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
+    tgs.newLine();
+    tgs.newLine();
+    tgs.newLine();
+    tgs.newLine();
+    tgs.newLine();
+    tgs.append("/** Yaml configuration file");
+    tgs.newLine();
+    tgs.append("sensors:");
+    tgs.newLine();
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x4004dad9fa8c3de5L, "watches"))).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+
+        ctx.getBuffer().area().increaseIndent();
+        tgs.indent();
+        tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x4004dad9fa875ee0L, 0x4004dad9faa17f22L, "sensor")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+        tgs.append(":");
+        tgs.newLine();
+        ctx.getBuffer().area().increaseIndent();
+        tgs.indent();
+        tgs.append("axis_label: \"");
+        tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x4004dad9fa875ee0L, 0x4004dad9faa17f22L, "sensor")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+        tgs.append("\"");
+        tgs.newLine();
+        ctx.getBuffer().area().decreaseIndent();
+        ctx.getBuffer().area().increaseIndent();
+        tgs.indent();
+        tgs.append("min_value : 0");
+        tgs.newLine();
+        ctx.getBuffer().area().decreaseIndent();
+        ctx.getBuffer().area().increaseIndent();
+        tgs.indent();
+        tgs.append("max_value: 1023");
+        tgs.newLine();
+        ctx.getBuffer().area().decreaseIndent();
+        ctx.getBuffer().area().decreaseIndent();
+      }
+    });
+    tgs.indent();
+    tgs.newLine();
+    tgs.append("max_displayed_values: 30");
+    tgs.newLine();
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("display_state: true");
+    tgs.newLine();
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("display_mode: true");
+    tgs.newLine();
+    tgs.append("**/");
+
   }
 }
