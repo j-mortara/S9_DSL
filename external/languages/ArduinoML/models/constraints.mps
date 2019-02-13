@@ -92,6 +92,12 @@
         <ref role="1dDu$A" to="gpyq:6J7GX9VF6Oc" resolve="Speaker" />
       </node>
     </node>
+    <node concept="1N5Pfh" id="Bk0Dl7lz28" role="1Mr941">
+      <ref role="1N5Vy1" to="gpyq:1l$sGUhe4Cl" resolve="dj" />
+      <node concept="1dDu$B" id="Bk0Dl7lz2e" role="1N6uqs">
+        <ref role="1dDu$A" to="gpyq:epUACdO2SJ" resolve="AnalogSensor" />
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="epUACdS8br">
     <ref role="1M2myG" to="gpyq:epUACdRbw2" resolve="AnalogCondition" />

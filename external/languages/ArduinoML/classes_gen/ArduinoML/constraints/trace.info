@@ -318,39 +318,57 @@
       <node id="259496194770764531" at="62,63,63,58" concept="4" />
       <node id="259496194770764531" at="66,122,67,248" concept="3" />
       <node id="259496194770764531" at="67,248,68,62" concept="4" />
-      <node id="259496194770764526" at="72,7,73,22" concept="4" />
-      <node id="259496194770764526" at="75,0,76,0" concept="5" trace="breakingNode_m0peq3_a0a0a0a0a1a0b0a1a2" />
-      <node id="259496194770764526" at="76,0,77,0" concept="5" trace="breakingNode_m0peq3_a0a0a0a0a1a0b0a2a2" />
+      <node id="708193881574224008" at="75,44,76,20" concept="4" />
+      <node id="708193881574224008" at="83,63,84,58" concept="4" />
+      <node id="708193881574224008" at="87,122,88,252" concept="3" />
+      <node id="708193881574224008" at="88,252,89,62" concept="4" />
+      <node id="259496194770764526" at="93,7,94,22" concept="4" />
+      <node id="259496194770764526" at="96,0,97,0" concept="5" trace="breakingNode_m0peq3_a0a0a0a0a1a0b0a1a2" />
+      <node id="259496194770764526" at="97,0,98,0" concept="5" trace="breakingNode_m0peq3_a0a0a0a0a1a0b0a2a2" />
+      <node id="259496194770764526" at="98,0,99,0" concept="5" trace="breakingNode_m0peq3_a0a0a0a0a1a0b0a3a2" />
       <node id="259496194770764526" at="24,0,27,0" concept="0" trace="PlayNoteFromMelody_Constraints#()V" />
       <node id="259496194770764527" at="32,0,36,0" concept="2" trace="hasOwnScopeProvider#()Z" />
       <node id="259496194770764527" at="40,0,44,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
       <node id="259496194770764531" at="53,0,57,0" concept="2" trace="hasOwnScopeProvider#()Z" />
       <node id="259496194770764531" at="61,0,65,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="708193881574224008" at="74,0,78,0" concept="2" trace="hasOwnScopeProvider#()Z" />
+      <node id="708193881574224008" at="82,0,86,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
       <node id="259496194770764527" at="44,0,49,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
       <node id="259496194770764531" at="65,0,70,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="708193881574224008" at="86,0,91,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
       <node id="259496194770764527" at="38,56,49,10" concept="4" />
       <node id="259496194770764531" at="59,56,70,10" concept="4" />
+      <node id="708193881574224008" at="80,56,91,10" concept="4" />
       <node id="259496194770764527" at="36,0,51,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
       <node id="259496194770764531" at="57,0,72,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="708193881574224008" at="78,0,93,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
       <node id="259496194770764527" at="30,131,51,7" concept="1" />
       <node id="259496194770764531" at="51,7,72,7" concept="1" />
-      <node id="259496194770764526" at="28,0,75,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="708193881574224008" at="72,7,93,7" concept="1" />
+      <node id="259496194770764526" at="28,0,96,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="259496194770764526" at="24,43,25,146" />
       <scope id="259496194770764527" at="33,44,34,20" />
       <scope id="259496194770764527" at="41,63,42,58" />
       <scope id="259496194770764531" at="54,44,55,20" />
       <scope id="259496194770764531" at="62,63,63,58" />
+      <scope id="708193881574224008" at="75,44,76,20" />
+      <scope id="708193881574224008" at="83,63,84,58" />
       <scope id="259496194770764527" at="45,122,47,62">
         <var name="scope" id="259496194770764527" />
       </scope>
       <scope id="259496194770764531" at="66,122,68,62">
         <var name="scope" id="259496194770764531" />
       </scope>
+      <scope id="708193881574224008" at="87,122,89,62">
+        <var name="scope" id="708193881574224008" />
+      </scope>
       <scope id="259496194770764526" at="24,0,27,0" />
       <scope id="259496194770764527" at="32,0,36,0" />
       <scope id="259496194770764527" at="40,0,44,0" />
       <scope id="259496194770764531" at="53,0,57,0" />
       <scope id="259496194770764531" at="61,0,65,0" />
+      <scope id="708193881574224008" at="74,0,78,0" />
+      <scope id="708193881574224008" at="82,0,86,0" />
       <scope id="259496194770764527" at="44,0,49,0">
         <var name="_context" id="259496194770764527" />
         <var name="operationContext" id="259496194770764527" />
@@ -359,19 +377,27 @@
         <var name="_context" id="259496194770764531" />
         <var name="operationContext" id="259496194770764531" />
       </scope>
+      <scope id="708193881574224008" at="86,0,91,0">
+        <var name="_context" id="708193881574224008" />
+        <var name="operationContext" id="708193881574224008" />
+      </scope>
       <scope id="259496194770764527" at="38,56,49,10" />
       <scope id="259496194770764531" at="59,56,70,10" />
+      <scope id="708193881574224008" at="80,56,91,10" />
       <scope id="259496194770764527" at="36,0,51,0" />
       <scope id="259496194770764531" at="57,0,72,0" />
-      <scope id="259496194770764526" at="29,90,73,22">
+      <scope id="708193881574224008" at="78,0,93,0" />
+      <scope id="259496194770764526" at="29,90,94,22">
         <var name="references" id="259496194770764526" />
       </scope>
-      <scope id="259496194770764526" at="28,0,75,0" />
+      <scope id="259496194770764526" at="28,0,96,0" />
       <unit id="259496194770764527" at="39,19,49,9" name="ArduinoML.constraints.PlayNoteFromMelody_Constraints$1$1" />
       <unit id="259496194770764531" at="60,19,70,9" name="ArduinoML.constraints.PlayNoteFromMelody_Constraints$2$1" />
+      <unit id="708193881574224008" at="81,19,91,9" name="ArduinoML.constraints.PlayNoteFromMelody_Constraints$3$1" />
       <unit id="259496194770764527" at="31,154,51,5" name="ArduinoML.constraints.PlayNoteFromMelody_Constraints$1" />
       <unit id="259496194770764531" at="52,153,72,5" name="ArduinoML.constraints.PlayNoteFromMelody_Constraints$2" />
-      <unit id="259496194770764526" at="23,0,78,0" name="ArduinoML.constraints.PlayNoteFromMelody_Constraints" />
+      <unit id="708193881574224008" at="73,150,93,5" name="ArduinoML.constraints.PlayNoteFromMelody_Constraints$3" />
+      <unit id="259496194770764526" at="23,0,100,0" name="ArduinoML.constraints.PlayNoteFromMelody_Constraints" />
     </file>
   </root>
 </debug-info>

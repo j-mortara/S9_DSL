@@ -10,7 +10,6 @@
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="ArduinoML.textGen.App_TextGen">
-    <classNode dependClassName="ArduinoML.textGen.MelodySetup" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
@@ -64,8 +63,16 @@
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="ArduinoML.textGen.MelodySetup">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="ArduinoML.textGen.Melody_TextGen">
     <classNode dependClassName="ArduinoML.textGen.Utils" />
     <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
@@ -76,6 +83,7 @@
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="ArduinoML.textGen.Mode_TextGen">
     <classNode dependClassName="java.lang.Override" />
@@ -159,6 +167,7 @@
     <classNode dependClassName="ArduinoML.textGen.Equals_TextGen" />
     <classNode dependClassName="ArduinoML.textGen.GreaterThan_TextGen" />
     <classNode dependClassName="ArduinoML.textGen.LowerThan_TextGen" />
+    <classNode dependClassName="ArduinoML.textGen.Melody_TextGen" />
     <classNode dependClassName="ArduinoML.textGen.Mode_TextGen" />
     <classNode dependClassName="ArduinoML.textGen.PlayNoteFromMelody_TextGen" />
     <classNode dependClassName="ArduinoML.textGen.PlayNote_TextGen" />

@@ -15,11 +15,25 @@
         <reference id="259496194770515978" name="leftOperand" index="ehl9w" />
       </concept>
       <concept id="259496194769694255" name="ArduinoML.structure.AnalogSensor" flags="ng" index="eish5" />
+      <concept id="7766373799025968392" name="ArduinoML.structure.PlayNoteFromMelody" flags="ng" index="g7Vrq">
+        <reference id="1541483203992766997" name="dj" index="24n3zr" />
+        <reference id="7766373799025968395" name="melody" index="g7Vrp" />
+      </concept>
+      <concept id="7766373799023111436" name="ArduinoML.structure.Speaker" flags="ng" index="gqXVu" />
+      <concept id="7766373799017967898" name="ArduinoML.structure.Melody" flags="ng" index="gA$b8">
+        <child id="7766373799017967965" name="notes" index="gA$af" />
+      </concept>
+      <concept id="7766373799017967911" name="ArduinoML.structure.MelodyNote" flags="ng" index="gA$bP">
+        <property id="8995194930607398889" name="octave" index="0UGn8" />
+        <property id="7766373799025409965" name="duration" index="g2cLZ" />
+        <property id="7766373799017967950" name="value" index="gA$as" />
+      </concept>
       <concept id="7766373799018170162" name="ArduinoML.structure.Action" flags="ng" index="gDFjw">
         <reference id="243588697374780730" name="target" index="LcSIr" />
       </concept>
       <concept id="243588697374780684" name="ArduinoML.structure.App" flags="ng" index="LcSIH">
         <reference id="3834294753782123931" name="initialMode" index="1epuHo" />
+        <child id="7766373799023903866" name="melodies" index="gvNuC" />
         <child id="243588697374780782" name="modes" index="LcSJf" />
         <child id="243588697374780786" name="bricks" index="LcSJj" />
       </concept>
@@ -163,6 +177,84 @@
     <node concept="eish5" id="epUACdQJR1" role="LcSJj">
       <property role="TrG5h" value="y_axis" />
       <property role="1epAaf" value="1" />
+    </node>
+  </node>
+  <node concept="LcSIH" id="Bk0Dl7a6is">
+    <property role="TrG5h" value="simple_melody" />
+    <ref role="1epuHo" node="Bk0Dl7a6iu" resolve="initial" />
+    <node concept="gqXVu" id="Bk0Dl7cvQt" role="LcSJj">
+      <property role="TrG5h" value="speaker" />
+      <property role="1epAaf" value="10" />
+    </node>
+    <node concept="1ZYdfG" id="Bk0Dl7dvLA" role="LcSJj">
+      <property role="TrG5h" value="button" />
+      <property role="1epAaf" value="11" />
+    </node>
+    <node concept="eish5" id="Bk0Dl7mygR" role="LcSJj">
+      <property role="TrG5h" value="analog" />
+      <property role="1epAaf" value="1" />
+    </node>
+    <node concept="1r2kL8" id="Bk0Dl7a6iu" role="LcSJf">
+      <property role="TrG5h" value="initial" />
+      <ref role="1r7wLg" node="Bk0Dl7a6iv" resolve="hello" />
+      <node concept="LcSIU" id="Bk0Dl7a6iv" role="1r2kLb">
+        <property role="TrG5h" value="hello" />
+        <node concept="1eoRFB" id="Bk0Dl7cwpq" role="1eoRFC">
+          <ref role="1eoRFA" node="Bk0Dl7a6iv" resolve="hello" />
+          <node concept="3k5X6q" id="Bk0Dl7dvLE" role="egLiK">
+            <property role="3kf6ZP" value="HIGH" />
+            <ref role="egCti" node="Bk0Dl7dvLA" resolve="button" />
+          </node>
+        </node>
+        <node concept="g7Vrq" id="Bk0Dl7dvLL" role="LcSIm">
+          <ref role="g7Vrp" node="Bk0Dl7cvQw" resolve="melody" />
+          <ref role="LcSIr" node="Bk0Dl7cvQt" resolve="speaker" />
+          <ref role="24n3zr" node="Bk0Dl7mygR" resolve="analog" />
+        </node>
+      </node>
+    </node>
+    <node concept="gA$b8" id="Bk0Dl7cvQw" role="gvNuC">
+      <property role="TrG5h" value="melody" />
+      <node concept="gA$bP" id="Bk0Dl7cvQx" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="2" />
+        <property role="gA$as" value="32.703" />
+      </node>
+      <node concept="gA$bP" id="Bk0Dl7cvQ$" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="2" />
+        <property role="gA$as" value="36.708" />
+      </node>
+      <node concept="gA$bP" id="Bk0Dl7cvQB" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="2" />
+        <property role="gA$as" value="41.203" />
+      </node>
+      <node concept="gA$bP" id="Bk0Dl7cvQF" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="2" />
+        <property role="gA$as" value="43.654" />
+      </node>
+      <node concept="gA$bP" id="Bk0Dl7cvQK" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="2" />
+        <property role="gA$as" value="48.999" />
+      </node>
+      <node concept="gA$bP" id="Bk0Dl7cvQQ" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="2" />
+        <property role="gA$as" value="55.0" />
+      </node>
+      <node concept="gA$bP" id="Bk0Dl7cvQX" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="2" />
+        <property role="gA$as" value="61.735" />
+      </node>
+      <node concept="gA$bP" id="Bk0Dl7cvR5" role="gA$af">
+        <property role="g2cLZ" value="250" />
+        <property role="0UGn8" value="2" />
+        <property role="gA$as" value="32.703" />
+      </node>
     </node>
   </node>
 </model>

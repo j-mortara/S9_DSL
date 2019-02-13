@@ -236,7 +236,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.associate("initialState", 0x140fe9644f11e534L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL).optional(false).origin("1445630622441792820").done();
     b.aggregate("states", 0x140fe9644f06a52fL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL).optional(false).ordered(true).multiple(true).origin("1445630622441055535").done();
-    b.aggregate("transitions", 0x140fe9644f06a623L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a535L).optional(false).ordered(true).multiple(true).origin("1445630622441055779").done();
+    b.aggregate("transitions", 0x140fe9644f06a623L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a535L).optional(true).ordered(true).multiple(true).origin("1445630622441055779").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForModeTransition() {
@@ -266,6 +266,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7766373799025968392");
     b.version(2);
     b.associate("melody", 0x6bc7b3d27bd8050bL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(false).origin("7766373799025968395").done();
+    b.associate("dj", 0x156472ce91384a15L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0dd02e2fL).optional(true).origin("1541483203992766997").done();
     b.alias("play note from melody");
     return b.create();
   }

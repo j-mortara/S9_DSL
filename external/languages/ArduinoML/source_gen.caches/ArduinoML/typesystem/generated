@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-e5wf5fw9hl010cl7wo3tups9fqu3kro">
-  <files names="Constants.java:NameChecker.java:TypesystemDescriptor.java:check_Action_NonTypesystemRule.java:check_AnalogCondition_NonTypesystemRule.java:check_AnalogSensor_NonTypesystemRule.java:check_Brick_NonTypesystemRule.java:check_MelodyNote_NonTypesystemRule.java:check_Melody_NonTypesystemRule.java:check_Mode_NonTypesystemRule.java:check_Named_NonTypesystemRule.java:check_PlayNote_NonTypesystemRule.java:check_State_NonTypesystemRule.java" />
+<product version="3" modelHash="-99q69oekn99rv3zceb9qxwh9b4ajelw">
+  <files names="Constants.java:NameChecker.java:TypesystemDescriptor.java:check_Action_NonTypesystemRule.java:check_AnalogCondition_NonTypesystemRule.java:check_AnalogSensor_NonTypesystemRule.java:check_Brick_NonTypesystemRule.java:check_MelodyNote_NonTypesystemRule.java:check_Melody_NonTypesystemRule.java:check_Mode_NonTypesystemRule.java:check_Named_NonTypesystemRule.java:check_PlayNoteFromMelody_NonTypesystemRule.java:check_PlayNote_NonTypesystemRule.java:check_State_NonTypesystemRule.java" />
 </product>
 

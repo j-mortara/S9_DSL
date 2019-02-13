@@ -54,6 +54,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -104,6 +105,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -142,6 +146,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -1400,6 +1405,89 @@
     <node concept="1YaCAy" id="epUACdYeGx" role="1YuTPh">
       <property role="TrG5h" value="analogCondition" />
       <ref role="1YaFvo" to="gpyq:epUACdRbw2" resolve="AnalogCondition" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="Bk0Dl7mFrM">
+    <property role="TrG5h" value="check_PlayNoteFromMelody" />
+    <node concept="3clFbS" id="Bk0Dl7mFrN" role="18ibNy">
+      <node concept="3clFbJ" id="Bk0Dl7mFrT" role="3cqZAp">
+        <node concept="2OqwBi" id="Bk0Dl7mH2K" role="3clFbw">
+          <node concept="2OqwBi" id="Bk0Dl7mF_A" role="2Oq$k0">
+            <node concept="1YBJjd" id="Bk0Dl7mFs5" role="2Oq$k0">
+              <ref role="1YBMHb" node="Bk0Dl7mFrP" resolve="playNoteFromMelody" />
+            </node>
+            <node concept="3TrEf2" id="Bk0Dl7mFIl" role="2OqNvi">
+              <ref role="3Tt5mk" to="gpyq:1l$sGUhe4Cl" resolve="dj" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="Bk0Dl7mIof" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="Bk0Dl7mFrV" role="3clFbx">
+          <node concept="3clFbJ" id="Bk0Dl7mP5E" role="3cqZAp">
+            <node concept="3clFbS" id="Bk0Dl7mP5G" role="3clFbx">
+              <node concept="a7r0C" id="3MI$QstFVo2" role="3cqZAp">
+                <node concept="Xl_RD" id="3MI$QstFVo4" role="a7wSD">
+                  <property role="Xl_RC" value="The melody's octave should start from 2 to have a better sound" />
+                </node>
+                <node concept="2OqwBi" id="3MI$QstFVo5" role="2OEOjV">
+                  <node concept="1YBJjd" id="3MI$QstFVo6" role="2Oq$k0">
+                    <ref role="1YBMHb" node="Bk0Dl7mFrP" resolve="playNoteFromMelody" />
+                  </node>
+                  <node concept="3TrEf2" id="3MI$QstFVo7" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gpyq:6J7GX9VQ0kb" resolve="melody" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="Bk0Dl7mSKB" role="3clFbw">
+              <node concept="2OqwBi" id="Bk0Dl7mSKD" role="3fr31v">
+                <node concept="2OqwBi" id="Bk0Dl7mSKE" role="2Oq$k0">
+                  <node concept="2OqwBi" id="Bk0Dl7mSKF" role="2Oq$k0">
+                    <node concept="1YBJjd" id="Bk0Dl7mSKG" role="2Oq$k0">
+                      <ref role="1YBMHb" node="Bk0Dl7mFrP" resolve="playNoteFromMelody" />
+                    </node>
+                    <node concept="3TrEf2" id="Bk0Dl7mSKH" role="2OqNvi">
+                      <ref role="3Tt5mk" to="gpyq:6J7GX9VQ0kb" resolve="melody" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="Bk0Dl7mSKI" role="2OqNvi">
+                    <ref role="3TtcxE" to="gpyq:6J7GX9Vnv5t" resolve="notes" />
+                  </node>
+                </node>
+                <node concept="2HwmR7" id="3MI$QstFXJq" role="2OqNvi">
+                  <node concept="1bVj0M" id="3MI$QstFXJs" role="23t8la">
+                    <node concept="3clFbS" id="3MI$QstFXJt" role="1bW5cS">
+                      <node concept="3clFbF" id="3MI$QstFXJu" role="3cqZAp">
+                        <node concept="3clFbC" id="3MI$QstIg5j" role="3clFbG">
+                          <node concept="2OqwBi" id="3MI$QstFXJx" role="3uHU7B">
+                            <node concept="37vLTw" id="3MI$QstFXJy" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3MI$QstFXJ$" resolve="it" />
+                            </node>
+                            <node concept="3TrcHB" id="3MI$QstFXJz" role="2OqNvi">
+                              <ref role="3TsBF5" to="gpyq:7Nlmy5WfTZD" resolve="octave" />
+                            </node>
+                          </node>
+                          <node concept="3cmrfG" id="3MI$QstIfvH" role="3uHU7w">
+                            <property role="3cmrfH" value="2" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="3MI$QstFXJ$" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="3MI$QstFXJ_" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="Bk0Dl7mFrP" role="1YuTPh">
+      <property role="TrG5h" value="playNoteFromMelody" />
+      <ref role="1YaFvo" to="gpyq:6J7GX9VQ0k8" resolve="PlayNoteFromMelody" />
     </node>
   </node>
 </model>

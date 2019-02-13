@@ -18,16 +18,16 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
     if (LANGUAGE_FQ_NAME.equals(concept.getLanguage().getQualifiedName())) {
       switch (Arrays.binarySearch(stringSwitchCases_tpto26_a0a0a0c, concept.getName())) {
         case 0:
-          return Collections.<NodeFactory>singletonList(new Factories.NodeFactory_259496194775366934());
-        case 1:
           return Collections.<NodeFactory>singletonList(new Factories.NodeFactory_7766373799025626317());
-        case 2:
+        case 1:
           return Collections.<NodeFactory>singletonList(new Factories.NodeFactory_7766373799022837159());
+        case 2:
+          return Collections.<NodeFactory>singletonList(new Factories.NodeFactory_708193881572167624());
         default:
       }
     }
     return Collections.<NodeFactory>emptyList();
   }
 
-  private static String[] stringSwitchCases_tpto26_a0a0a0c = new String[]{"GreaterThan", "MelodyNote", "PlayNote"};
+  private static String[] stringSwitchCases_tpto26_a0a0a0c = new String[]{"MelodyNote", "PlayNote", "Sensor"};
 }

@@ -70,8 +70,30 @@ public class PlayNoteFromMelody_Constraints extends BaseConstraintsDescriptor {
         };
       }
     });
+    references.put(MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bd80508L, 0x156472ce91384a15L, "dj"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bd80508L, 0x156472ce91384a15L), this) {
+      @Override
+      public boolean hasOwnScopeProvider() {
+        return true;
+      }
+      @Nullable
+      @Override
+      public ReferenceScopeProvider getScopeProvider() {
+        return new BaseScopeProvider() {
+          @Override
+          public SNodeReference getSearchScopeValidatorNode() {
+            return breakingNode_m0peq3_a0a0a0a0a1a0b0a3a2;
+          }
+          @Override
+          public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
+            Scope scope = Scope.getScope(_context.getContextNode(), _context.getContainmentLink(), _context.getPosition(), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0dd02e2fL, "ArduinoML.structure.AnalogSensor"));
+            return (scope == null ? new EmptyScope() : scope);
+          }
+        };
+      }
+    });
     return references;
   }
   private static SNodePointer breakingNode_m0peq3_a0a0a0a0a1a0b0a1a2 = new SNodePointer("r:6173561a-742f-46f0-99c0-4b4dcbe72334(ArduinoML.constraints)", "259496194770764529");
   private static SNodePointer breakingNode_m0peq3_a0a0a0a0a1a0b0a2a2 = new SNodePointer("r:6173561a-742f-46f0-99c0-4b4dcbe72334(ArduinoML.constraints)", "259496194770764535");
+  private static SNodePointer breakingNode_m0peq3_a0a0a0a0a1a0b0a3a2 = new SNodePointer("r:6173561a-742f-46f0-99c0-4b4dcbe72334(ArduinoML.constraints)", "708193881574224014");
 }

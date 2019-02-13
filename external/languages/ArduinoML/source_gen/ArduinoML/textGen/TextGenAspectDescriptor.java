@@ -34,6 +34,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new GreaterThan_TextGen();
       case LanguageConceptSwitch.LowerThan:
         return new LowerThan_TextGen();
+      case LanguageConceptSwitch.Melody:
+        return new Melody_TextGen();
       case LanguageConceptSwitch.Mode:
         return new Mode_TextGen();
       case LanguageConceptSwitch.PlayNote:

@@ -49,6 +49,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6J7GX9Vnv4q" resolve="Melody" />
     </node>
+    <node concept="1TJgyj" id="1l$sGUhe4Cl" role="1TKVEi">
+      <property role="IQ2ns" value="1541483203992766997" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="dj" />
+      <ref role="20lvS9" node="epUACdO2SJ" resolve="AnalogSensor" />
+    </node>
   </node>
 </model>
 

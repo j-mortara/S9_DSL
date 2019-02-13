@@ -11,7 +11,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 
 public class Factories {
   public static class NodeFactory_7766373799022837159 implements NodeFactory {
@@ -29,19 +28,14 @@ public class Factories {
       }), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bac6d0cL, "ArduinoML.structure.Speaker")));
     }
   }
+  public static class NodeFactory_708193881572167624 implements NodeFactory {
+    public void setup(SNode newNode, SNode sampleNode, SNode enclosingNode, SModel model) {
+    }
+  }
   public static class NodeFactory_7766373799025626317 implements NodeFactory {
     public void setup(SNode newNode, SNode sampleNode, SNode enclosingNode, SModel model) {
       SPropertyOperations.set(newNode, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L, 0x6bc7b3d27bcf7fadL, "duration"), 250);
       SPropertyOperations.set(newNode, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df127L, 0x7cd55a217c3f9fe9L, "octave"), 5);
-    }
-  }
-  public static class NodeFactory_259496194775366934 implements NodeFactory {
-    public void setup(SNode newNode, SNode sampleNode, SNode enclosingNode, SModel model) {
-      SPropertyOperations.assign(newNode, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, 0x399ea6a0ddcb815L, "rightOperand"), 45);
-      if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(sampleNode)), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a8a5L, "ArduinoML.structure.LowerThan"))) {
-        SLinkOperations.setTarget(newNode, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, 0x399ea6a0ddcb80aL, "leftOperand"), SLinkOperations.getTarget(SNodeOperations.cast(sampleNode, MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a8a5L, "ArduinoML.structure.LowerThan")), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, 0x399ea6a0ddcb80aL, "leftOperand")));
-        SPropertyOperations.assign(newNode, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, 0x399ea6a0ddcb815L, "rightOperand"), SPropertyOperations.getInteger(SNodeOperations.cast(sampleNode, MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a8a5L, "ArduinoML.structure.LowerThan")), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, 0x399ea6a0ddcb815L, "rightOperand")));
-      }
     }
   }
 }
