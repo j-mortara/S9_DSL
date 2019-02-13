@@ -108,5 +108,14 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3MI$QstL81f">
+    <ref role="1M2myG" to="gpyq:404QHBUxPVw" resolve="Watch" />
+    <node concept="1N5Pfh" id="3MI$QstL81g" role="1Mr941">
+      <ref role="1N5Vy1" to="gpyq:404QHBUCnWy" resolve="sensor" />
+      <node concept="1dDu$B" id="3MI$QstL81i" role="1N6uqs">
+        <ref role="1dDu$A" to="gpyq:6cqNWCsSxKA" resolve="Sensor" />
+      </node>
+    </node>
+  </node>
 </model>
 

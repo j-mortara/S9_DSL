@@ -34,9 +34,11 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
         return new PlayNoteFromMelody_Constraints();
       case 7:
         return new StateTransition_Constraints();
+      case 8:
+        return new Watch_Constraints();
       default:
     }
     return new BaseConstraintsDescriptor(concept);
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x701814eea40fc574L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a535L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bd80508L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b555c24L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b610732L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x701814eea40fc574L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a535L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bd80508L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b555c24L), MetaIdFactory.conceptId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x4004dad9fa875ee0L)).seal();
 }

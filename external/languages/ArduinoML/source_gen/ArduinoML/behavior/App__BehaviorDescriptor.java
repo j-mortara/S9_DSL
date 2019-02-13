@@ -40,6 +40,9 @@ public final class App__BehaviorDescriptor extends BaseBHDescriptor {
     if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getInterfaceConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b504441L, "ArduinoML.structure.Brick"))) {
       return SimpleRoleScope.forNamedElements(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed72L, "bricks"));
     }
+    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x4004dad9fa875ee0L, "ArduinoML.structure.Watch"))) {
+      return SimpleRoleScope.forNamedElements(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x4004dad9fa8c3de5L, "watches"));
+    }
     if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL, "ArduinoML.structure.Melody"))) {
       return SimpleRoleScope.forNamedElements(__thisNode__, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies"));
     }

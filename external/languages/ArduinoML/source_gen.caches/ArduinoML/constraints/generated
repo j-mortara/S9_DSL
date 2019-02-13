@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="en8k72ncpeani1tte534tg9r8cjxoka">
-  <files names="Action_Constraints.java:AnalogCondition_Constraints.java:App_Constraints.java:ConstraintsAspectDescriptor.java:Equals_Constraints.java:ModeTransition_Constraints.java:Mode_Constraints.java:PlayNoteFromMelody_Constraints.java:StateTransition_Constraints.java" />
+<product version="3" modelHash="-19ziddl2zc6bqzl3ekz462hz7wp18oh">
+  <files names="Action_Constraints.java:AnalogCondition_Constraints.java:App_Constraints.java:ConstraintsAspectDescriptor.java:Equals_Constraints.java:ModeTransition_Constraints.java:Mode_Constraints.java:PlayNoteFromMelody_Constraints.java:StateTransition_Constraints.java:Watch_Constraints.java" />
 </product>
 

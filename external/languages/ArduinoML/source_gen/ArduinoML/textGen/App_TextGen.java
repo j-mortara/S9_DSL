@@ -115,6 +115,39 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("}");
     tgs.newLine();
     tgs.newLine();
+    tgs.append("void watch(void)");
+    tgs.newLine();
+    tgs.append("{");
+    tgs.newLine();
+    tgs.indent();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("String str = \"{\";");
+    tgs.newLine();
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x4004dad9fa8c3de5L, "watches"))).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        tgs.indent();
+        tgs.append("str.concat(");
+        tgs.appendNode(it);
+        tgs.append(");");
+        tgs.newLine();
+        if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x4004dad9fa8c3de5L, "watches"))).last() != it) {
+          tgs.indent();
+          tgs.append("str.concat(\",\");");
+          tgs.newLine();
+        }
+      }
+    });
+    tgs.indent();
+    tgs.append("str.concat(\"}\");");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("Serial.println(str);");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.append("}");
+    tgs.newLine();
+    tgs.newLine();
     tgs.append("void loop(void)");
     tgs.newLine();
     tgs.append("{");

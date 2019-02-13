@@ -31,6 +31,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_State;
   private ConceptPresentation props_StateTransition;
   private ConceptPresentation props_Transition;
+  private ConceptPresentation props_Watch;
 
   @Override
   @Nullable
@@ -189,6 +190,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Transition = cpb.create();
         }
         return props_Transition;
+      case LanguageConceptSwitch.Watch:
+        if (props_Watch == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x4004dad9fa875ee0L, 0x4004dad9faa17f22L, "sensor", "", "");
+          props_Watch = cpb.create();
+        }
+        return props_Watch;
     }
     return null;
   }

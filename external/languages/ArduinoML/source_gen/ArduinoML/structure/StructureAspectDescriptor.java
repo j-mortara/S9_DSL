@@ -38,6 +38,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptState = createDescriptorForState();
   /*package*/ final ConceptDescriptor myConceptStateTransition = createDescriptorForStateTransition();
   /*package*/ final ConceptDescriptor myConceptTransition = createDescriptorForTransition();
+  /*package*/ final ConceptDescriptor myConceptWatch = createDescriptorForWatch();
   /*package*/ final EnumerationDescriptor myEnumerationNOTE = new EnumerationDescriptor_NOTE();
   /*package*/ final EnumerationDescriptor myEnumerationSIGNAL = new EnumerationDescriptor_SIGNAL();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -48,7 +49,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptAnalogCondition, myConceptAnalogSensor, myConceptApp, myConceptBrick, myConceptCondition, myConceptEquals, myConceptGreaterThan, myConceptLowerThan, myConceptMelody, myConceptMelodyNote, myConceptMode, myConceptModeTransition, myConceptPlayNote, myConceptPlayNoteFromMelody, myConceptSensor, myConceptSimpleAction, myConceptSpeaker, myConceptState, myConceptStateTransition, myConceptTransition);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptAnalogCondition, myConceptAnalogSensor, myConceptApp, myConceptBrick, myConceptCondition, myConceptEquals, myConceptGreaterThan, myConceptLowerThan, myConceptMelody, myConceptMelodyNote, myConceptMode, myConceptModeTransition, myConceptPlayNote, myConceptPlayNoteFromMelody, myConceptSensor, myConceptSimpleAction, myConceptSpeaker, myConceptState, myConceptStateTransition, myConceptTransition, myConceptWatch);
   }
 
   @Override
@@ -99,6 +100,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptStateTransition;
       case LanguageConceptSwitch.Transition:
         return myConceptTransition;
+      case LanguageConceptSwitch.Watch:
+        return myConceptWatch;
       default:
         return null;
     }
@@ -158,6 +161,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.associate("initialMode", 0x353626c37b53cd9bL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL).optional(false).origin("3834294753782123931").done();
     b.aggregate("bricks", 0x36166a13252ed72L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b504441L).optional(false).ordered(true).multiple(true).origin("243588697374780786").done();
+    b.aggregate("watches", 0x4004dad9fa8c3de5L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x4004dad9fa875ee0L).optional(true).ordered(true).multiple(true).origin("4613052548080483813").done();
     b.aggregate("melodies", 0x6bc7b3d27bb8847aL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(true).ordered(true).multiple(true).origin("7766373799023903866").done();
     b.aggregate("modes", 0x36166a13252ed6eL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL).optional(false).ordered(true).multiple(true).origin("243588697374780782").done();
     return b.create();
@@ -324,6 +328,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/259496194770403028");
     b.version(2);
     b.aggregate("condition", 0x399ea6a0ddafedaL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a899L).optional(false).ordered(true).multiple(false).origin("259496194770403034").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWatch() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Watch", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x4004dad9fa875ee0L);
+    b.class_(false, false, false);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/4613052548080164576");
+    b.version(2);
+    b.associate("sensor", 0x4004dad9faa17f22L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0dd02e2fL).optional(false).origin("4613052548081876770").done();
     return b.create();
   }
 }
