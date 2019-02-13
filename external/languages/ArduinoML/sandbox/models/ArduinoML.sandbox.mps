@@ -204,6 +204,10 @@
       <property role="TrG5h" value="analog" />
       <property role="1epAaf" value="1" />
     </node>
+    <node concept="eish5" id="3MI$QstO1d6" role="LcSJj">
+      <property role="TrG5h" value="baton_de_joie_x" />
+      <property role="1epAaf" value="2" />
+    </node>
     <node concept="1r2kL8" id="Bk0Dl7a6iu" role="LcSJf">
       <property role="TrG5h" value="initial" />
       <ref role="1r7wLg" node="Bk0Dl7a6iv" resolve="hello" />
@@ -268,6 +272,9 @@
     </node>
     <node concept="2UwSgT" id="3MI$QstL81d" role="2UyesW">
       <ref role="2UDqnV" node="Bk0Dl7mygR" resolve="analog" />
+    </node>
+    <node concept="2UwSgT" id="3MI$QstO1db" role="2UyesW">
+      <ref role="2UDqnV" node="3MI$QstO1d6" resolve="baton_de_joie_x" />
     </node>
   </node>
 </model>
