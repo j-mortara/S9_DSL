@@ -13,6 +13,7 @@
     <import index="gpyq" ref="r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -91,7 +92,6 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
-        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -186,7 +186,6 @@
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
-      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -197,9 +196,6 @@
       </concept>
       <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
         <reference id="1139867957129" name="concept" index="1_rbq0" />
-      </concept>
-      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
-        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -313,6 +309,7 @@
       </node>
       <node concept="3F0A7n" id="dxpE4Ml6TL" role="3EZMnx">
         <ref role="1NtTu8" to="gpyq:dxpE4MkIO_" resolve="signal" />
+        <ref role="1k5W1q" node="7vJY8ve3h_Y" resolve="enumeration" />
       </node>
     </node>
   </node>
@@ -351,10 +348,12 @@
         <node concept="3F0A7n" id="6J7GX9Vnv5q" role="3EZMnx">
           <property role="1$x2rV" value="note" />
           <ref role="1NtTu8" to="gpyq:6J7GX9Vnv5e" resolve="value" />
+          <ref role="1k5W1q" node="7vJY8ve3h_Y" resolve="enumeration" />
         </node>
         <node concept="3F0A7n" id="7Nlmy5Whnv$" role="3EZMnx">
           <property role="1$x2rV" value="octave" />
           <ref role="1NtTu8" to="gpyq:7Nlmy5WfTZD" resolve="octave" />
+          <ref role="1k5W1q" to="tpen:hshT4rC" resolve="NumericLiteral" />
           <node concept="VPXOz" id="7Nlmy5Wuy$Z" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -367,6 +366,7 @@
         <property role="1$x2rV" value="duration in ms" />
         <property role="1cu_pB" value="0" />
         <ref role="1NtTu8" to="gpyq:6J7GX9VNRYH" resolve="duration" />
+        <ref role="1k5W1q" to="tpen:hshT4rC" resolve="NumericLiteral" />
       </node>
       <node concept="VPXOz" id="7Nlmy5WtIrD" role="3F10Kt">
         <property role="VOm3f" value="true" />
@@ -464,6 +464,12 @@
       <property role="TrG5h" value="condition" />
       <node concept="VechU" id="6J7GX9W6E92" role="3F10Kt">
         <property role="Vb096" value="blue" />
+      </node>
+    </node>
+    <node concept="14StLt" id="7vJY8ve3h_Y" role="V601i">
+      <property role="TrG5h" value="enumeration" />
+      <node concept="VechU" id="7vJY8ve3h_Z" role="3F10Kt">
+        <property role="Vb096" value="orange" />
       </node>
     </node>
   </node>
@@ -598,6 +604,7 @@
         <node concept="VPM3Z" id="1gfUmhf1ElU" role="3F10Kt" />
         <node concept="3F0ifn" id="1gfUmhf1Enj" role="3EZMnx">
           <property role="3F0ifm" value="mode:" />
+          <ref role="1k5W1q" node="6J7GX9VI7yk" resolve="keyword" />
         </node>
         <node concept="3F0A7n" id="1gfUmhf1Emc" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -710,6 +717,7 @@
         </node>
         <node concept="3F0A7n" id="epUACe52gI" role="3EZMnx">
           <ref role="1NtTu8" to="gpyq:3kQ9GdVk4hc" resolve="pin" />
+          <ref role="1k5W1q" to="tpen:hshT4rC" resolve="NumericLiteral" />
         </node>
       </node>
       <node concept="2iRfu4" id="epUACe52gJ" role="2iSdaV" />
@@ -721,7 +729,7 @@
       <node concept="3EZMnI" id="6cqNWCsSAVF" role="3EZMnx">
         <node concept="VPM3Z" id="6cqNWCsSAVH" role="3F10Kt" />
         <node concept="3F0ifn" id="6cqNWCsSAVQ" role="3EZMnx">
-          <property role="3F0ifm" value="sensor:" />
+          <property role="3F0ifm" value="digital sensor:" />
           <ref role="1k5W1q" node="6J7GX9VI7yk" resolve="keyword" />
         </node>
         <node concept="3F0A7n" id="6cqNWCsTxqd" role="3EZMnx">
@@ -733,6 +741,7 @@
         </node>
         <node concept="3F0A7n" id="6cqNWCsSAX3" role="3EZMnx">
           <ref role="1NtTu8" to="gpyq:3kQ9GdVk4hc" resolve="pin" />
+          <ref role="1k5W1q" to="tpen:hshT4rC" resolve="NumericLiteral" />
         </node>
         <node concept="l2Vlx" id="6cqNWCsSAVK" role="2iSdaV" />
       </node>
@@ -761,6 +770,7 @@
         </node>
         <node concept="3F0A7n" id="6J7GX9VF6OM" role="3EZMnx">
           <ref role="1NtTu8" to="gpyq:3kQ9GdVk4hc" resolve="pin" />
+          <ref role="1k5W1q" to="tpen:hshT4rC" resolve="NumericLiteral" />
         </node>
       </node>
       <node concept="2iRfu4" id="6J7GX9VF6ON" role="2iSdaV" />
@@ -784,6 +794,7 @@
         </node>
         <node concept="3F0A7n" id="epUACdO3cx" role="3EZMnx">
           <ref role="1NtTu8" to="gpyq:3kQ9GdVk4hc" resolve="pin" />
+          <ref role="1k5W1q" to="tpen:hshT4rC" resolve="NumericLiteral" />
         </node>
         <node concept="l2Vlx" id="epUACdO3cy" role="2iSdaV" />
       </node>
@@ -811,6 +822,7 @@
       </node>
       <node concept="3F0A7n" id="1gfUmhf1EGq" role="3EZMnx">
         <ref role="1NtTu8" to="gpyq:epUACdRbwl" resolve="rightOperand" />
+        <ref role="1k5W1q" to="tpen:hshT4rC" resolve="NumericLiteral" />
       </node>
       <node concept="l2Vlx" id="1gfUmhf1EFM" role="2iSdaV" />
       <node concept="A1WHr" id="epUACehZ82" role="3vIgyS">
@@ -839,6 +851,7 @@
       </node>
       <node concept="3F0A7n" id="1gfUmhf1EFA" role="3EZMnx">
         <ref role="1NtTu8" to="gpyq:epUACdRbwl" resolve="rightOperand" />
+        <ref role="1k5W1q" to="tpen:hshT4rC" resolve="NumericLiteral" />
       </node>
       <node concept="l2Vlx" id="1gfUmhf1EEY" role="2iSdaV" />
     </node>
@@ -860,58 +873,9 @@
         <ref role="1k5W1q" node="6J7GX9W6E8T" resolve="condition" />
       </node>
       <node concept="3F0A7n" id="70o5eU$b7g$" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="no value" />
         <ref role="1NtTu8" to="gpyq:70o5eU$97Gr" resolve="signal" />
-        <node concept="pkWqt" id="epUACdQQOU" role="pqm2j">
-          <node concept="3clFbS" id="epUACdQQOV" role="2VODD2">
-            <node concept="3clFbF" id="epUACdQQWg" role="3cqZAp">
-              <node concept="2OqwBi" id="epUACdQTLL" role="3clFbG">
-                <node concept="2OqwBi" id="epUACdQS4r" role="2Oq$k0">
-                  <node concept="2OqwBi" id="epUACdQRaj" role="2Oq$k0">
-                    <node concept="pncrf" id="epUACdQQWf" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="epUACdQRxI" role="2OqNvi">
-                      <ref role="3Tt5mk" to="gpyq:epUACdQQOS" resolve="leftOperand" />
-                    </node>
-                  </node>
-                  <node concept="2yIwOk" id="epUACdQT4j" role="2OqNvi" />
-                </node>
-                <node concept="3O6GUB" id="epUACdQWey" role="2OqNvi">
-                  <node concept="chp4Y" id="epUACdQWH9" role="3QVz_e">
-                    <ref role="cht4Q" to="gpyq:6cqNWCsSxKA" resolve="DigitalSensor" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0A7n" id="epUACdQXpF" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <property role="1$x2rV" value="no value" />
-        <ref role="1NtTu8" to="gpyq:epUACdQQOP" resolve="rightOperand" />
-        <node concept="pkWqt" id="epUACdQXBn" role="pqm2j">
-          <node concept="3clFbS" id="epUACdQXBo" role="2VODD2">
-            <node concept="3clFbF" id="epUACdQXXh" role="3cqZAp">
-              <node concept="2OqwBi" id="epUACdR1PY" role="3clFbG">
-                <node concept="2OqwBi" id="epUACdR0qd" role="2Oq$k0">
-                  <node concept="2OqwBi" id="epUACdQYbi" role="2Oq$k0">
-                    <node concept="pncrf" id="epUACdQXXg" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="epUACdQYZ_" role="2OqNvi">
-                      <ref role="3Tt5mk" to="gpyq:epUACdQQOS" resolve="leftOperand" />
-                    </node>
-                  </node>
-                  <node concept="2yIwOk" id="epUACdR0Va" role="2OqNvi" />
-                </node>
-                <node concept="3O6GUB" id="epUACdR2ui" role="2OqNvi">
-                  <node concept="chp4Y" id="epUACdR2WT" role="3QVz_e">
-                    <ref role="cht4Q" to="gpyq:epUACdO2SJ" resolve="AnalogSensor" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <ref role="1k5W1q" node="7vJY8ve3h_Y" resolve="enumeration" />
       </node>
       <node concept="l2Vlx" id="70o5eU$3WlW" role="2iSdaV" />
     </node>
@@ -1261,7 +1225,8 @@
       <node concept="3EZMnI" id="404QHBUxQda" role="3EZMnx">
         <node concept="VPM3Z" id="404QHBUxQdc" role="3F10Kt" />
         <node concept="3F0ifn" id="404QHBUxQdl" role="3EZMnx">
-          <property role="3F0ifm" value="watch" />
+          <property role="3F0ifm" value="watch:" />
+          <ref role="1k5W1q" node="6J7GX9VI7yk" resolve="keyword" />
         </node>
         <node concept="1iCGBv" id="404QHBUCxSX" role="3EZMnx">
           <ref role="1NtTu8" to="gpyq:404QHBUCnWy" resolve="sensor" />

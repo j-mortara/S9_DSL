@@ -27,7 +27,7 @@
   <node concept="1TIwiD" id="6cqNWCsSxKA">
     <property role="EcuMT" value="7141248626124266534" />
     <property role="TrG5h" value="DigitalSensor" />
-    <property role="34LRSv" value="sensor" />
+    <property role="34LRSv" value="digital sensor" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3kQ9GdVk4he" role="PzmwI">
       <ref role="PrY4T" node="3kQ9GdVk4h1" resolve="Brick" />

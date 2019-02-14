@@ -188,7 +188,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b504441L);
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7141248626124266534");
     b.version(2);
-    b.alias("sensor");
+    b.alias("digital sensor");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEquals() {
@@ -198,7 +198,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/8077228946876253556");
     b.version(2);
     b.property("signal", 0x701814eea4247b1bL).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed20L)).origin("8077228946877610779").done();
-    b.property("rightOperand", 0x399ea6a0ddb6d35L).type(PrimitiveTypeId.INTEGER).origin("259496194770431285").done();
     b.associate("leftOperand", 0x399ea6a0ddb6d38L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L).optional(false).origin("259496194770431288").done();
     b.alias("equals");
     return b.create();
