@@ -3625,7 +3625,7 @@
                                             </node>
                                           </node>
                                           <node concept="35c_gC" id="kU" role="37wK5m">
-                                            <ref role="35c_gD" to="gpyq:6cqNWCsSxKA" resolve="Sensor" />
+                                            <ref role="35c_gD" to="gpyq:6cqNWCsSxKA" resolve="DigitalSensor" />
                                             <node concept="cd27G" id="lk" role="lGtFl">
                                               <node concept="3u3nmq" id="ll" role="cd27D">
                                                 <property role="3u3nmv" value="259496194770764520" />
@@ -9241,7 +9241,7 @@
                                             </node>
                                           </node>
                                           <node concept="35c_gC" id="QF" role="37wK5m">
-                                            <ref role="35c_gD" to="gpyq:6cqNWCsSxKA" resolve="Sensor" />
+                                            <ref role="35c_gD" to="gpyq:6cqNWCsSxKA" resolve="DigitalSensor" />
                                             <node concept="cd27G" id="R5" role="lGtFl">
                                               <node concept="3u3nmq" id="R6" role="cd27D">
                                                 <property role="3u3nmv" value="4372594359313662034" />

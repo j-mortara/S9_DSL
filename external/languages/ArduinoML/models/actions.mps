@@ -184,7 +184,7 @@
       </node>
     </node>
     <node concept="37WvkG" id="Bk0Dl7dGZ8" role="37WGs$">
-      <ref role="37XkoT" to="gpyq:6cqNWCsSxKA" resolve="Sensor" />
+      <ref role="37XkoT" to="gpyq:6cqNWCsSxKA" resolve="DigitalSensor" />
       <node concept="37Y9Zx" id="Bk0Dl7dGZ9" role="37ZfLb">
         <node concept="3clFbS" id="Bk0Dl7dGZa" role="2VODD2" />
       </node>

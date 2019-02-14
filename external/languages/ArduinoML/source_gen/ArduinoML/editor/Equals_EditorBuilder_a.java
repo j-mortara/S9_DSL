@@ -76,7 +76,7 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSPropertyO
     return editorCell;
   }
   private boolean nodeCondition_m20fzq_a2a() {
-    return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x701814eea40fc574L, 0x399ea6a0ddb6d38L, "leftOperand")))), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L, "ArduinoML.structure.Sensor"));
+    return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x701814eea40fc574L, 0x399ea6a0ddb6d38L, "leftOperand")))), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L, "ArduinoML.structure.DigitalSensor"));
   }
   private boolean nodeCondition_m20fzq_a3a() {
     return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x701814eea40fc574L, 0x399ea6a0ddb6d38L, "leftOperand")))), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0dd02e2fL, "ArduinoML.structure.AnalogSensor"));

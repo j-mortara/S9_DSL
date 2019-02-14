@@ -16,6 +16,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_App;
   private ConceptPresentation props_Brick;
   private ConceptPresentation props_Condition;
+  private ConceptPresentation props_DigitalSensor;
   private ConceptPresentation props_Equals;
   private ConceptPresentation props_GreaterThan;
   private ConceptPresentation props_LowerThan;
@@ -25,7 +26,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ModeTransition;
   private ConceptPresentation props_PlayNote;
   private ConceptPresentation props_PlayNoteFromMelody;
-  private ConceptPresentation props_Sensor;
   private ConceptPresentation props_SimpleAction;
   private ConceptPresentation props_Speaker;
   private ConceptPresentation props_State;
@@ -83,6 +83,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Condition = cpb.create();
         }
         return props_Condition;
+      case LanguageConceptSwitch.DigitalSensor:
+        if (props_DigitalSensor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_DigitalSensor = cpb.create();
+        }
+        return props_DigitalSensor;
       case LanguageConceptSwitch.Equals:
         if (props_Equals == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -148,13 +155,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PlayNoteFromMelody = cpb.create();
         }
         return props_PlayNoteFromMelody;
-      case LanguageConceptSwitch.Sensor:
-        if (props_Sensor == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_Sensor = cpb.create();
-        }
-        return props_Sensor;
       case LanguageConceptSwitch.SimpleAction:
         if (props_SimpleAction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

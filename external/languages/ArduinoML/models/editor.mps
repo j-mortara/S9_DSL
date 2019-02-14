@@ -716,7 +716,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6cqNWCsSAVv">
-    <ref role="1XX52x" to="gpyq:6cqNWCsSxKA" resolve="Sensor" />
+    <ref role="1XX52x" to="gpyq:6cqNWCsSxKA" resolve="DigitalSensor" />
     <node concept="3EZMnI" id="6cqNWCsSAV$" role="2wV5jI">
       <node concept="3EZMnI" id="6cqNWCsSAVF" role="3EZMnx">
         <node concept="VPM3Z" id="6cqNWCsSAVH" role="3F10Kt" />
@@ -878,7 +878,7 @@
                 </node>
                 <node concept="3O6GUB" id="epUACdQWey" role="2OqNvi">
                   <node concept="chp4Y" id="epUACdQWH9" role="3QVz_e">
-                    <ref role="cht4Q" to="gpyq:6cqNWCsSxKA" resolve="Sensor" />
+                    <ref role="cht4Q" to="gpyq:6cqNWCsSxKA" resolve="DigitalSensor" />
                   </node>
                 </node>
               </node>

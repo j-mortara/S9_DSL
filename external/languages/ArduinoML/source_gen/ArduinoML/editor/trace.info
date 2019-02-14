@@ -3185,18 +3185,18 @@
     </file>
   </root>
   <root nodeRef="r:d07cdc7e-ab6e-4c77-9df4-19bd95da7d31(ArduinoML.editor)/7141248626124287711">
-    <file name="Sensor_Editor.java">
-      <node id="7141248626124287711" at="11,79,12,72" concept="6" />
+    <file name="DigitalSensor_Editor.java">
+      <node id="7141248626124287711" at="11,79,12,79" concept="6" />
       <node id="7141248626124287711" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="7141248626124287711" at="11,79,12,72" />
+      <scope id="7141248626124287711" at="11,79,12,79" />
       <scope id="7141248626124287711" at="11,0,14,0">
         <var name="editorContext" id="7141248626124287711" />
         <var name="node" id="7141248626124287711" />
       </scope>
-      <unit id="7141248626124287711" at="10,0,15,0" name="ArduinoML.editor.Sensor_Editor" />
+      <unit id="7141248626124287711" at="10,0,15,0" name="ArduinoML.editor.DigitalSensor_Editor" />
     </file>
-    <file name="Sensor_EditorBuilder_a.java">
-      <node id="7141248626124287711" at="42,86,43,19" concept="9" />
+    <file name="DigitalSensor_EditorBuilder_a.java">
+      <node id="7141248626124287711" at="42,93,43,19" concept="9" />
       <node id="7141248626124287711" at="43,19,44,18" concept="1" />
       <node id="7141248626124287711" at="49,26,50,18" concept="6" />
       <node id="7141248626124287711" at="53,39,54,32" concept="6" />
@@ -3266,7 +3266,7 @@
       <node id="7141248626124287711" at="53,0,56,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7141248626124527245" at="100,0,103,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="7141248626124287811" at="136,0,139,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="7141248626124287711" at="42,0,46,0" concept="0" trace="Sensor_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7141248626124287711" at="42,0,46,0" concept="0" trace="DigitalSensor_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7141248626124287711" at="47,0,52,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="7141248626124527245" at="98,306,103,9" concept="5" />
       <node id="7141248626124527245" at="103,9,108,24" concept="3" />
@@ -3286,7 +3286,7 @@
       <scope id="7141248626124527245" at="109,15,110,40" />
       <scope id="7141248626124287811" at="136,41,137,118" />
       <scope id="7141248626124287811" at="145,15,146,40" />
-      <scope id="7141248626124287711" at="42,86,44,18" />
+      <scope id="7141248626124287711" at="42,93,44,18" />
       <scope id="7141248626124527245" at="104,74,106,145">
         <var name="manager" id="7141248626124527245" />
       </scope>
@@ -3340,9 +3340,9 @@
       <scope id="7141248626124287811" at="122,41,147,5" />
       <scope id="7141248626124527245" at="86,0,113,0" />
       <scope id="7141248626124287811" at="122,0,149,0" />
-      <unit id="7141248626124527245" at="99,102,103,7" name="ArduinoML.editor.Sensor_EditorBuilder_a$1" />
-      <unit id="7141248626124287811" at="135,102,139,7" name="ArduinoML.editor.Sensor_EditorBuilder_a$2" />
-      <unit id="7141248626124287711" at="38,0,150,0" name="ArduinoML.editor.Sensor_EditorBuilder_a" />
+      <unit id="7141248626124527245" at="99,102,103,7" name="ArduinoML.editor.DigitalSensor_EditorBuilder_a$1" />
+      <unit id="7141248626124287811" at="135,102,139,7" name="ArduinoML.editor.DigitalSensor_EditorBuilder_a$2" />
+      <unit id="7141248626124287711" at="38,0,150,0" name="ArduinoML.editor.DigitalSensor_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:d07cdc7e-ab6e-4c77-9df4-19bd95da7d31(ArduinoML.editor)/7766373799017967960">
@@ -5138,7 +5138,7 @@
       <node id="8077228946878133284" at="70,37,71,51" concept="1" />
       <node id="259496194770458219" at="73,37,74,51" concept="1" />
       <node id="8077228946876253559" at="75,5,76,22" concept="6" />
-      <node id="259496194770431760" at="78,46,79,390" concept="6" />
+      <node id="259496194770431760" at="78,46,79,397" concept="6" />
       <node id="259496194770460497" at="81,46,82,395" concept="6" />
       <node id="8077228946876253559" at="84,40,85,175" concept="5" />
       <node id="8077228946876253559" at="89,39,90,118" concept="6" />
@@ -5261,7 +5261,7 @@
       <scope id="8077228946876253559" at="59,39,60,32" />
       <scope id="8077228946878133284" at="70,37,71,51" />
       <scope id="259496194770458219" at="73,37,74,51" />
-      <scope id="259496194770431291" at="78,46,79,390" />
+      <scope id="259496194770431291" at="78,46,79,397" />
       <scope id="259496194770459096" at="81,46,82,395" />
       <scope id="8077228946876253559" at="89,39,90,118" />
       <scope id="8077228946876253559" at="110,39,111,113" />

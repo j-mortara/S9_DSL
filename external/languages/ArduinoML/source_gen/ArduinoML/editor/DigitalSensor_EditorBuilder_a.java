@@ -35,11 +35,11 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
 import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
 
-/*package*/ class Sensor_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class DigitalSensor_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public Sensor_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public DigitalSensor_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -56,7 +56,7 @@ import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_qb70eh_a");
+    editorCell.setCellId("Collection_c5youl_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createCollection_1());
@@ -64,7 +64,7 @@ import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
   }
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_qb70eh_a0");
+    editorCell.setCellId("Collection_c5youl_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -76,7 +76,7 @@ import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "sensor:");
-    editorCell.setCellId("Constant_qb70eh_a0a");
+    editorCell.setCellId("Constant_c5youl_a0a");
     Style style = new StyleImpl();
     new keywordStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
@@ -112,7 +112,7 @@ import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "on pin");
-    editorCell.setCellId("Constant_qb70eh_c0a");
+    editorCell.setCellId("Constant_c5youl_c0a");
     Style style = new StyleImpl();
     new parameterStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     editorCell.getStyle().putAll(style);

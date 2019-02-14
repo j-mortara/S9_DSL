@@ -23,6 +23,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
   /*package*/ final ConceptDescriptor myConceptBrick = createDescriptorForBrick();
   /*package*/ final ConceptDescriptor myConceptCondition = createDescriptorForCondition();
+  /*package*/ final ConceptDescriptor myConceptDigitalSensor = createDescriptorForDigitalSensor();
   /*package*/ final ConceptDescriptor myConceptEquals = createDescriptorForEquals();
   /*package*/ final ConceptDescriptor myConceptGreaterThan = createDescriptorForGreaterThan();
   /*package*/ final ConceptDescriptor myConceptLowerThan = createDescriptorForLowerThan();
@@ -32,7 +33,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptModeTransition = createDescriptorForModeTransition();
   /*package*/ final ConceptDescriptor myConceptPlayNote = createDescriptorForPlayNote();
   /*package*/ final ConceptDescriptor myConceptPlayNoteFromMelody = createDescriptorForPlayNoteFromMelody();
-  /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
   /*package*/ final ConceptDescriptor myConceptSimpleAction = createDescriptorForSimpleAction();
   /*package*/ final ConceptDescriptor myConceptSpeaker = createDescriptorForSpeaker();
   /*package*/ final ConceptDescriptor myConceptState = createDescriptorForState();
@@ -49,7 +49,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptAnalogCondition, myConceptAnalogSensor, myConceptApp, myConceptBrick, myConceptCondition, myConceptEquals, myConceptGreaterThan, myConceptLowerThan, myConceptMelody, myConceptMelodyNote, myConceptMode, myConceptModeTransition, myConceptPlayNote, myConceptPlayNoteFromMelody, myConceptSensor, myConceptSimpleAction, myConceptSpeaker, myConceptState, myConceptStateTransition, myConceptTransition, myConceptWatch);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptAnalogCondition, myConceptAnalogSensor, myConceptApp, myConceptBrick, myConceptCondition, myConceptDigitalSensor, myConceptEquals, myConceptGreaterThan, myConceptLowerThan, myConceptMelody, myConceptMelodyNote, myConceptMode, myConceptModeTransition, myConceptPlayNote, myConceptPlayNoteFromMelody, myConceptSimpleAction, myConceptSpeaker, myConceptState, myConceptStateTransition, myConceptTransition, myConceptWatch);
   }
 
   @Override
@@ -70,6 +70,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBrick;
       case LanguageConceptSwitch.Condition:
         return myConceptCondition;
+      case LanguageConceptSwitch.DigitalSensor:
+        return myConceptDigitalSensor;
       case LanguageConceptSwitch.Equals:
         return myConceptEquals;
       case LanguageConceptSwitch.GreaterThan:
@@ -88,8 +90,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPlayNote;
       case LanguageConceptSwitch.PlayNoteFromMelody:
         return myConceptPlayNoteFromMelody;
-      case LanguageConceptSwitch.Sensor:
-        return myConceptSensor;
       case LanguageConceptSwitch.SimpleAction:
         return myConceptSimpleAction;
       case LanguageConceptSwitch.Speaker:
@@ -146,7 +146,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAnalogSensor() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "AnalogSensor", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0dd02e2fL);
     b.class_(false, false, false);
-    b.super_("ArduinoML.structure.Sensor", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L);
+    b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b504441L);
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/259496194769694255");
     b.version(2);
     b.alias("analog sensor");
@@ -180,6 +180,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.interface_();
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/1445630622441056409");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDigitalSensor() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "DigitalSensor", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L);
+    b.class_(false, false, false);
+    b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b504441L);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7141248626124266534");
+    b.version(2);
+    b.alias("sensor");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEquals() {
@@ -272,15 +281,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("melody", 0x6bc7b3d27bd8050bL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(false).origin("7766373799025968395").done();
     b.associate("dj", 0x156472ce91384a15L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0dd02e2fL).optional(true).origin("1541483203992766997").done();
     b.alias("play note from melody");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForSensor() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Sensor", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L);
-    b.class_(false, false, false);
-    b.parent(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x353626c37b504441L);
-    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/7141248626124266534");
-    b.version(2);
-    b.alias("sensor");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSimpleAction() {

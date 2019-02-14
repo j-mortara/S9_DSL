@@ -12,6 +12,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 
 public class State_TextGen extends TextGenDescriptorBase {
   @Override
@@ -34,26 +35,43 @@ public class State_TextGen extends TextGenDescriptorBase {
       }
     });
     tgs.indent();
+    tgs.append("long watchTime = millis();");
+    tgs.newLine();
+    tgs.indent();
     tgs.append("while (true){");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
+    tgs.append("if(millis() - watchTime > ");
+    tgs.append(Utils.watchInterval + "");
+    tgs.append("){");
+    tgs.newLine();
+    tgs.increaseIndent();
+    tgs.indent();
     tgs.append("watch();");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("watchTime = millis();");
+    tgs.newLine();
+    tgs.decreaseIndent();
+    tgs.indent();
+    tgs.append("}");
     tgs.newLine();
     tgs.indent();
     tgs.append("boolean guard = millis() - time > debounce;");
     tgs.newLine();
     tgs.indent();
-    tgs.appendNode(SNodeOperations.cast(SNodeOperations.getParent(ctx.getPrimaryInput()), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, "ArduinoML.structure.Mode")));
-    tgs.indent();
-    tgs.appendNode(ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x353626c37b555c2bL, "transitions"))).first());
-    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x353626c37b555c2bL, "transitions"))).skip(1).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode it) {
-        tgs.indent();
-        tgs.append("else ");
-        tgs.appendNode(it);
-      }
-    });
+    Iterable<SNode> transistions = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(ctx.getPrimaryInput()), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, "ArduinoML.structure.Mode")), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, 0x140fe9644f06a623L, "transitions"))).concat(ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed1bL, 0x353626c37b555c2bL, "transitions"))));
+    if (Sequence.fromIterable(transistions).isNotEmpty()) {
+      tgs.appendNode(Sequence.fromIterable(transistions).first());
+      Sequence.fromIterable(transistions).skip(1).visitAll(new IVisitor<SNode>() {
+        public void visit(SNode it) {
+          tgs.indent();
+          tgs.append("else ");
+          tgs.appendNode(it);
+        }
+      });
+    }
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("}");

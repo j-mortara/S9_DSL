@@ -69,7 +69,7 @@
       <concept id="1445630622441055541" name="ArduinoML.structure.ModeTransition" flags="ng" index="1r2kLh">
         <reference id="1445630622441055544" name="nextMode" index="1r2kLs" />
       </concept>
-      <concept id="7141248626124266534" name="ArduinoML.structure.Sensor" flags="ng" index="1ZYdfG" />
+      <concept id="7141248626124266534" name="ArduinoML.structure.DigitalSensor" flags="ng" index="1ZYdfG" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -161,6 +161,13 @@
         <node concept="1r2k76" id="epUACenBms" role="egLiK">
           <property role="ehl9Z" value="500" />
           <ref role="ehl9w" node="epUACdPKdt" resolve="button_x_axis" />
+        </node>
+      </node>
+      <node concept="1r2kLh" id="4V9BsOqAPyX" role="1r2kX7">
+        <ref role="1r2kLs" node="70o5eU$4sAn" resolve="first" />
+        <node concept="1r2k76" id="4V9BsOqAPyY" role="egLiK">
+          <property role="ehl9Z" value="500" />
+          <ref role="ehl9w" node="epUACdQJR1" resolve="button_y_axis" />
         </node>
       </node>
     </node>
