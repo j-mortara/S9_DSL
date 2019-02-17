@@ -102,7 +102,7 @@ public class App_TextGen extends TextGenDescriptorBase {
           tgs.append(", ");
           tgs.append("OUTPUT);");
           tgs.newLine();
-        } else if (SNodeOperations.getConcept(it).isSubConceptOf(MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L, "ArduinoML.structure.Sensor"))) {
+        } else if (SNodeOperations.getConcept(it).isSubConceptOf(MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L, "ArduinoML.structure.DigitalSensor"))) {
           tgs.append("pinMode(");
           tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
           tgs.append(", ");

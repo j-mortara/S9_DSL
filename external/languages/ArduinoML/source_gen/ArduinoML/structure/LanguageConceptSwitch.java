@@ -16,23 +16,22 @@ public final class LanguageConceptSwitch {
   public static final int App = 4;
   public static final int Brick = 5;
   public static final int Condition = 6;
-  public static final int Equals = 7;
-  public static final int GreaterThan = 8;
-  public static final int LowerThan = 9;
-  public static final int Melody = 10;
-  public static final int MelodyNote = 11;
-  public static final int Mode = 12;
-  public static final int ModeTransition = 13;
-  public static final int Parameter = 14;
+  public static final int DigitalSensor = 7;
+  public static final int Equals = 8;
+  public static final int GreaterThan = 9;
+  public static final int LowerThan = 10;
+  public static final int Melody = 11;
+  public static final int MelodyNote = 12;
+  public static final int Mode = 13;
+  public static final int ModeTransition = 14;
   public static final int PlayNote = 15;
   public static final int PlayNoteFromMelody = 16;
-  public static final int Sensor = 17;
-  public static final int SimpleAction = 18;
-  public static final int Speaker = 19;
-  public static final int State = 20;
-  public static final int StateTransition = 21;
-  public static final int Transition = 22;
-  public static final int Watch = 23;
+  public static final int SimpleAction = 17;
+  public static final int Speaker = 18;
+  public static final int State = 19;
+  public static final int StateTransition = 20;
+  public static final int Transition = 21;
+  public static final int Watch = 22;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x8a1177a2191f4d85L, 0xb39864536e65e675L);
@@ -43,6 +42,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x36166a13252ed0cL, App);
     builder.put(0x353626c37b504441L, Brick);
     builder.put(0x140fe9644f06a899L, Condition);
+    builder.put(0x631acfca1ce21c26L, DigitalSensor);
     builder.put(0x701814eea40fc574L, Equals);
     builder.put(0x140fe9644f06a8a2L, GreaterThan);
     builder.put(0x140fe9644f06a8a5L, LowerThan);
@@ -50,10 +50,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x6bc7b3d27b5df127L, MelodyNote);
     builder.put(0x140fe9644f06a52cL, Mode);
     builder.put(0x140fe9644f06a535L, ModeTransition);
-    builder.put(0x601b82c1a3a75680L, Parameter);
     builder.put(0x6bc7b3d27b5e710bL, PlayNote);
     builder.put(0x6bc7b3d27bd80508L, PlayNoteFromMelody);
-    builder.put(0x631acfca1ce21c26L, Sensor);
     builder.put(0x36166a13252ed1eL, SimpleAction);
     builder.put(0x6bc7b3d27bac6d0cL, Speaker);
     builder.put(0x36166a13252ed1bL, State);

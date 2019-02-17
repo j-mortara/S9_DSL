@@ -1,4 +1,4 @@
-tcl
-tk
+matplotlib
 drawnow
 pyaml
+pyserial

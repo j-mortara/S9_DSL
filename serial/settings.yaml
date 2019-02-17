@@ -3,6 +3,10 @@ sensors:
     axis_label: "analog"
     min_value : 0
     max_value: 1023
+  baton_de_joie_x:
+    axis_label: "baton_de_joie_x"
+    min_value : 0
+    max_value: 1023
 
 max_displayed_values: 30
 

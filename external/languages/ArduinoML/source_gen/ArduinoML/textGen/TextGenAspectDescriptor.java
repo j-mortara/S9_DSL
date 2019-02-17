@@ -24,10 +24,14 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     switch (myIndex.index(concept)) {
       case LanguageConceptSwitch.Actuator:
         return new Actuator_TextGen();
+      case LanguageConceptSwitch.AnalogSensor:
+        return new AnalogSensor_TextGen();
       case LanguageConceptSwitch.App:
         return new App_TextGen();
       case LanguageConceptSwitch.Brick:
         return new Brick_TextGen();
+      case LanguageConceptSwitch.DigitalSensor:
+        return new DigitalSensor_TextGen();
       case LanguageConceptSwitch.Equals:
         return new Equals_TextGen();
       case LanguageConceptSwitch.GreaterThan:
@@ -36,16 +40,12 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new LowerThan_TextGen();
       case LanguageConceptSwitch.Melody:
         return new Melody_TextGen();
-      case LanguageConceptSwitch.Mode:
-        return new Mode_TextGen();
-      case LanguageConceptSwitch.Parameter:
-        return new Parameter_TextGen();
+      case LanguageConceptSwitch.ModeTransition:
+        return new ModeTransition_TextGen();
       case LanguageConceptSwitch.PlayNote:
         return new PlayNote_TextGen();
       case LanguageConceptSwitch.PlayNoteFromMelody:
         return new PlayNoteFromMelody_TextGen();
-      case LanguageConceptSwitch.Sensor:
-        return new Sensor_TextGen();
       case LanguageConceptSwitch.SimpleAction:
         return new SimpleAction_TextGen();
       case LanguageConceptSwitch.State:

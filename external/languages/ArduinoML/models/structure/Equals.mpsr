@@ -50,17 +50,12 @@
       <property role="TrG5h" value="signal" />
       <ref role="AX2Wp" node="dxpE4MkIOw" resolve="SIGNAL" />
     </node>
-    <node concept="1TJgyi" id="epUACdQQOP" role="1TKVEl">
-      <property role="IQ2nx" value="259496194770431285" />
-      <property role="TrG5h" value="rightOperand" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="1TJgyj" id="epUACdQQOS" role="1TKVEi">
       <property role="IQ2ns" value="259496194770431288" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="leftOperand" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6cqNWCsSxKA" resolve="Sensor" />
+      <ref role="20lvS9" node="6cqNWCsSxKA" resolve="DigitalSensor" />
     </node>
   </node>
 </model>

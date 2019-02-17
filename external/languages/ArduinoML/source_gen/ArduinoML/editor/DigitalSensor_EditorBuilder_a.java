@@ -34,12 +34,13 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
 import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
+import jetbrains.mps.baseLanguage.editor.BaseLanguageStyle_StyleSheet.NumericLiteralStyleClass;
 
-/*package*/ class Sensor_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class DigitalSensor_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public Sensor_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public DigitalSensor_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -56,7 +57,7 @@ import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_qb70eh_a");
+    editorCell.setCellId("Collection_c5youl_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createCollection_1());
@@ -64,7 +65,7 @@ import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
   }
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_qb70eh_a0");
+    editorCell.setCellId("Collection_c5youl_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -75,8 +76,8 @@ import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "sensor:");
-    editorCell.setCellId("Constant_qb70eh_a0a");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "digital sensor:");
+    editorCell.setCellId("Constant_c5youl_a0a");
     Style style = new StyleImpl();
     new keywordStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
@@ -112,7 +113,7 @@ import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "on pin");
-    editorCell.setCellId("Constant_qb70eh_c0a");
+    editorCell.setCellId("Constant_c5youl_c0a");
     Style style = new StyleImpl();
     new parameterStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
@@ -129,6 +130,9 @@ import ArduinoML.editor.stylesheet_StyleSheet.parameterStyleClass;
       editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
       editorCell.setCellId("property_pin");
+      Style style = new StyleImpl();
+      new NumericLiteralStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute"));

@@ -52,6 +52,16 @@ public class stylesheet_StyleSheet {
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     new stylesheet_StyleSheet.conditionStyleClass(editorContext, node).apply(style, editorCell);
   }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_enumeration(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new stylesheet_StyleSheet.enumerationStyleClass(editorContext, node).apply(style, editorCell);
+  }
 
   public static class keywordStyleClass extends AbstractStyleClass {
     public keywordStyleClass(EditorContext editorContext, SNode node) {
@@ -94,6 +104,17 @@ public class stylesheet_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.blue));
+    }
+
+  }
+  public static class enumerationStyleClass extends AbstractStyleClass {
+    public enumerationStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.orange));
     }
 
   }
