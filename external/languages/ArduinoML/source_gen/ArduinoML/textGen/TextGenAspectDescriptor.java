@@ -42,6 +42,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Melody_TextGen();
       case LanguageConceptSwitch.ModeTransition:
         return new ModeTransition_TextGen();
+      case LanguageConceptSwitch.Parameter:
+        return new Parameter_TextGen();
       case LanguageConceptSwitch.PlayNote:
         return new PlayNote_TextGen();
       case LanguageConceptSwitch.PlayNoteFromMelody:

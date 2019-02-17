@@ -31,6 +31,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMelodyNote = createDescriptorForMelodyNote();
   /*package*/ final ConceptDescriptor myConceptMode = createDescriptorForMode();
   /*package*/ final ConceptDescriptor myConceptModeTransition = createDescriptorForModeTransition();
+  /*package*/ final ConceptDescriptor myConceptParameter = createDescriptorForParameter();
   /*package*/ final ConceptDescriptor myConceptPlayNote = createDescriptorForPlayNote();
   /*package*/ final ConceptDescriptor myConceptPlayNoteFromMelody = createDescriptorForPlayNoteFromMelody();
   /*package*/ final ConceptDescriptor myConceptSimpleAction = createDescriptorForSimpleAction();
@@ -40,6 +41,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptTransition = createDescriptorForTransition();
   /*package*/ final ConceptDescriptor myConceptWatch = createDescriptorForWatch();
   /*package*/ final EnumerationDescriptor myEnumerationNOTE = new EnumerationDescriptor_NOTE();
+  /*package*/ final EnumerationDescriptor myEnumerationPARAMETER_TYPE = new EnumerationDescriptor_PARAMETER_TYPE();
   /*package*/ final EnumerationDescriptor myEnumerationSIGNAL = new EnumerationDescriptor_SIGNAL();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -49,7 +51,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptAnalogCondition, myConceptAnalogSensor, myConceptApp, myConceptBrick, myConceptCondition, myConceptDigitalSensor, myConceptEquals, myConceptGreaterThan, myConceptLowerThan, myConceptMelody, myConceptMelodyNote, myConceptMode, myConceptModeTransition, myConceptPlayNote, myConceptPlayNoteFromMelody, myConceptSimpleAction, myConceptSpeaker, myConceptState, myConceptStateTransition, myConceptTransition, myConceptWatch);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptAnalogCondition, myConceptAnalogSensor, myConceptApp, myConceptBrick, myConceptCondition, myConceptDigitalSensor, myConceptEquals, myConceptGreaterThan, myConceptLowerThan, myConceptMelody, myConceptMelodyNote, myConceptMode, myConceptModeTransition, myConceptParameter, myConceptPlayNote, myConceptPlayNoteFromMelody, myConceptSimpleAction, myConceptSpeaker, myConceptState, myConceptStateTransition, myConceptTransition, myConceptWatch);
   }
 
   @Override
@@ -86,6 +88,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMode;
       case LanguageConceptSwitch.ModeTransition:
         return myConceptModeTransition;
+      case LanguageConceptSwitch.Parameter:
+        return myConceptParameter;
       case LanguageConceptSwitch.PlayNote:
         return myConceptPlayNote;
       case LanguageConceptSwitch.PlayNoteFromMelody:
@@ -109,7 +113,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationNOTE, myEnumerationSIGNAL);
+    return Arrays.asList(myEnumerationNOTE, myEnumerationPARAMETER_TYPE, myEnumerationSIGNAL);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -164,6 +168,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("watches", 0x4004dad9fa8c3de5L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x4004dad9fa875ee0L).optional(true).ordered(true).multiple(true).origin("4613052548080483813").done();
     b.aggregate("melodies", 0x6bc7b3d27bb8847aL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL).optional(true).ordered(true).multiple(true).origin("7766373799023903866").done();
     b.aggregate("modes", 0x36166a13252ed6eL).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL).optional(false).ordered(true).multiple(true).origin("243588697374780782").done();
+    b.aggregate("parameters", 0x601b82c1a3a75832L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75680L).optional(true).ordered(true).multiple(true).origin("6925272620198221874").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBrick() {
@@ -259,6 +264,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.associate("nextMode", 0x140fe9644f06a538L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL).optional(false).origin("1445630622441055544").done();
     b.alias("transition");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForParameter() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Parameter", 0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75680L);
+    b.class_(false, false, false);
+    b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/6925272620198221440");
+    b.version(2);
+    b.property("parameter", 0x601b82c1a3a7581cL).type(MetaIdFactory.dataTypeId(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75839L)).origin("6925272620198221852").done();
+    b.property("value", 0x601b82c1a3a7581eL).type(PrimitiveTypeId.BOOLEAN).origin("6925272620198221854").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPlayNote() {

@@ -407,27 +407,21 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
   private EditorCell createCollection_4() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_g38wqt_g0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.SELECTABLE, false);
-    editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createRefNodeList_2());
     return editorCell;
   }
   private EditorCell createRefNodeList_2() {
-    AbstractCellListHandler handler = new App_EditorBuilder_a.parametersListHandler_g38wqt_a6a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new App_EditorBuilder_a.melodiesListHandler_g38wqt_a6a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_parameters");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.SELECTABLE, false);
-    editorCell.getStyle().putAll(style);
+    editorCell.setCellId("refNodeList_melodies");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class parametersListHandler_g38wqt_a6a extends RefNodeListHandler {
+  private static class melodiesListHandler_g38wqt_a6a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public parametersListHandler_g38wqt_a6a(SNode ownerNode, EditorContext context) {
+    public melodiesListHandler_g38wqt_a6a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -437,10 +431,10 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x601b82c1a3a75832L, "parameters");
+      return MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies");
     }
     public SAbstractConcept getChildSConcept() {
-      return MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75680L, "ArduinoML.structure.Parameter");
+      return MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL, "ArduinoML.structure.Melody");
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -450,7 +444,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(parametersListHandler_g38wqt_a6a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x601b82c1a3a75832L, "parameters")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(melodiesListHandler_g38wqt_a6a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -484,21 +478,27 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
   private EditorCell createCollection_5() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_g38wqt_i0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createRefNodeList_3());
     return editorCell;
   }
   private EditorCell createRefNodeList_3() {
-    AbstractCellListHandler handler = new App_EditorBuilder_a.melodiesListHandler_g38wqt_a8a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new App_EditorBuilder_a.parametersListHandler_g38wqt_a8a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_melodies");
+    editorCell.setCellId("refNodeList_parameters");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class melodiesListHandler_g38wqt_a8a extends RefNodeListHandler {
+  private static class parametersListHandler_g38wqt_a8a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public melodiesListHandler_g38wqt_a8a(SNode ownerNode, EditorContext context) {
+    public parametersListHandler_g38wqt_a8a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -508,10 +508,10 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies");
+      return MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x601b82c1a3a75832L, "parameters");
     }
     public SAbstractConcept getChildSConcept() {
-      return MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27b5df11aL, "ArduinoML.structure.Melody");
+      return MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75680L, "ArduinoML.structure.Parameter");
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -521,7 +521,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(melodiesListHandler_g38wqt_a8a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(parametersListHandler_g38wqt_a8a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x601b82c1a3a75832L, "parameters")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();

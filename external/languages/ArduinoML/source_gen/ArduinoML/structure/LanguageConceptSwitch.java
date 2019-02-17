@@ -24,14 +24,15 @@ public final class LanguageConceptSwitch {
   public static final int MelodyNote = 12;
   public static final int Mode = 13;
   public static final int ModeTransition = 14;
-  public static final int PlayNote = 15;
-  public static final int PlayNoteFromMelody = 16;
-  public static final int SimpleAction = 17;
-  public static final int Speaker = 18;
-  public static final int State = 19;
-  public static final int StateTransition = 20;
-  public static final int Transition = 21;
-  public static final int Watch = 22;
+  public static final int Parameter = 15;
+  public static final int PlayNote = 16;
+  public static final int PlayNoteFromMelody = 17;
+  public static final int SimpleAction = 18;
+  public static final int Speaker = 19;
+  public static final int State = 20;
+  public static final int StateTransition = 21;
+  public static final int Transition = 22;
+  public static final int Watch = 23;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x8a1177a2191f4d85L, 0xb39864536e65e675L);
@@ -50,6 +51,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x6bc7b3d27b5df127L, MelodyNote);
     builder.put(0x140fe9644f06a52cL, Mode);
     builder.put(0x140fe9644f06a535L, ModeTransition);
+    builder.put(0x601b82c1a3a75680L, Parameter);
     builder.put(0x6bc7b3d27b5e710bL, PlayNote);
     builder.put(0x6bc7b3d27bd80508L, PlayNoteFromMelody);
     builder.put(0x36166a13252ed1eL, SimpleAction);
