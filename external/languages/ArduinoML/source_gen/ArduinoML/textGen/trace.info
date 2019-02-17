@@ -12,7 +12,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="15,0,77,0" name="ArduinoML.textGen.TextGenAspectDescriptor" />
+      <unit at="15,0,79,0" name="ArduinoML.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/1445630622441094525">
@@ -89,8 +89,8 @@
       <unit id="3834294753782226094" at="13,0,38,0" name="ArduinoML.textGen.StateTransition_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3834294753782226094" at="51,49,52,45" concept="7" />
-      <scope id="3834294753782226094" at="51,49,52,45" />
+      <node id="3834294753782226094" at="53,49,54,45" concept="7" />
+      <scope id="3834294753782226094" at="53,49,54,45" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/3834294753783977455">
@@ -111,14 +111,14 @@
       <unit id="3834294753783977455" at="11,0,22,0" name="ArduinoML.textGen.Sensor_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3834294753783977455" at="45,40,46,36" concept="7" />
-      <scope id="3834294753783977455" at="45,40,46,36" />
+      <node id="3834294753783977455" at="47,40,48,36" concept="7" />
+      <scope id="3834294753783977455" at="47,40,48,36" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/4613052548080164579">
     <file name="TextGenAspectDescriptor.java">
-      <node id="4613052548080164579" at="53,39,54,35" concept="7" />
-      <scope id="4613052548080164579" at="53,39,54,35" />
+      <node id="4613052548080164579" at="55,39,56,35" concept="7" />
+      <scope id="4613052548080164579" at="55,39,56,35" />
     </file>
     <file name="Watch_TextGen.java">
       <node id="4613052548080164579" at="14,54,15,55" concept="6" />
@@ -179,6 +179,26 @@
     <file name="TextGenAspectDescriptor.java">
       <node id="6705903169103826211" at="39,38,40,34" concept="7" />
       <scope id="6705903169103826211" at="39,38,40,34" />
+    </file>
+  </root>
+  <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/6925272620198221441">
+    <file name="Parameter_TextGen.java">
+      <node id="6925272620198221441" at="13,54,14,55" concept="6" />
+      <node id="6925272620198222292" at="14,55,15,198" concept="2" />
+      <node id="6925272620198234865" at="15,198,16,21" concept="2" />
+      <node id="6925272620198227189" at="16,21,17,211" concept="2" />
+      <node id="6925272620198221441" at="12,0,19,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6925272620198221441" at="13,54,17,211">
+        <var name="tgs" id="6925272620198221441" />
+      </scope>
+      <scope id="6925272620198221441" at="12,0,19,0">
+        <var name="ctx" id="6925272620198221441" />
+      </scope>
+      <unit id="6925272620198221441" at="11,0,20,0" name="ArduinoML.textGen.Parameter_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="6925272620198221441" at="41,43,42,39" concept="7" />
+      <scope id="6925272620198221441" at="41,43,42,39" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/708193881574493210">
@@ -288,8 +308,8 @@
       <unit id="7766373799018350004" at="12,0,24,0" name="ArduinoML.textGen.SimpleAction_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7766373799018350004" at="47,46,48,42" concept="7" />
-      <scope id="7766373799018350004" at="47,46,48,42" />
+      <node id="7766373799018350004" at="49,46,50,42" concept="7" />
+      <scope id="7766373799018350004" at="49,46,50,42" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/7766373799018707992">
@@ -312,8 +332,8 @@
       <unit id="7766373799018707992" at="12,0,25,0" name="ArduinoML.textGen.PlayNote_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7766373799018707992" at="41,42,42,38" concept="7" />
-      <scope id="7766373799018707992" at="41,42,42,38" />
+      <node id="7766373799018707992" at="43,42,44,38" concept="7" />
+      <scope id="7766373799018707992" at="43,42,44,38" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/7766373799019474024">
@@ -386,8 +406,8 @@
       <unit id="7766373799027802714" at="13,0,44,0" name="ArduinoML.textGen.PlayNoteFromMelody_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7766373799027802714" at="43,52,44,48" concept="7" />
-      <scope id="7766373799027802714" at="43,52,44,48" />
+      <node id="7766373799027802714" at="45,52,46,48" concept="7" />
+      <scope id="7766373799027802714" at="45,52,46,48" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/8077228946876651256">
@@ -584,20 +604,19 @@
       <node id="6925272620197544148" at="199,38,200,22" concept="2" />
       <node id="6925272620195766988" at="200,22,201,48" concept="2" />
       <node id="6925272620195766988" at="201,48,202,48" concept="2" />
-      <node id="6925272620196091572" at="204,7,205,17" concept="2" />
-      <node id="6925272620197756811" at="205,17,206,18" concept="2" />
-      <node id="6925272620195835686" at="206,18,207,43" concept="2" />
-      <node id="6925272620195847832" at="207,43,208,18" concept="2" />
-      <node id="6925272620197059148" at="208,18,209,18" concept="2" />
-      <node id="6925272620196097539" at="209,18,210,17" concept="2" />
-      <node id="6925272620195841689" at="210,17,211,38" concept="2" />
-      <node id="6925272620195847789" at="211,38,212,18" concept="2" />
-      <node id="6925272620197059193" at="212,18,213,18" concept="2" />
-      <node id="6925272620196103647" at="213,18,214,17" concept="2" />
-      <node id="6925272620195847651" at="214,17,215,37" concept="2" />
-      <node id="6925272620197766021" at="215,37,216,18" concept="2" />
-      <node id="6925272620197772126" at="216,18,217,22" concept="2" />
-      <node id="6925272620197763003" at="217,22,218,0" concept="8" />
+      <node id="4313430457288457682" at="202,48,203,21" concept="2" />
+      <node id="4313430457288459443" at="203,21,204,47" concept="2" />
+      <node id="4313430457288463662" at="204,47,205,22" concept="2" />
+      <node id="4313430457288464838" at="205,22,206,22" concept="2" />
+      <node id="6925272620195766988" at="206,22,207,48" concept="2" />
+      <node id="6925272620195766988" at="207,48,208,48" concept="2" />
+      <node id="6925272620198268820" at="212,35,213,21" concept="2" />
+      <node id="6925272620198280782" at="213,21,214,27" concept="2" />
+      <node id="6925272620198284484" at="214,27,215,22" concept="2" />
+      <node id="6925272620198285348" at="215,22,216,22" concept="2" />
+      <node id="6925272620196097539" at="218,7,219,17" concept="2" />
+      <node id="6925272620197772126" at="219,17,220,22" concept="2" />
+      <node id="6925272620197763003" at="220,22,221,0" concept="8" />
       <node id="708193881574514740" at="40,0,43,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="811505826641862187" at="69,29,72,9" concept="4" />
       <node id="6705903169105443565" at="82,0,86,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -605,9 +624,11 @@
       <node id="4613052548086013844" at="136,22,141,9" concept="4" />
       <node id="811505826641862187" at="67,70,73,7" concept="3" />
       <node id="6705903169105410720" at="80,35,86,11" concept="2" />
+      <node id="6925272620198268438" at="212,0,218,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7766373799025973753" at="37,18,44,5" concept="4" />
       <node id="7011599386465597143" at="51,0,59,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6705903169104246737" at="80,0,88,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6925272620198246632" at="210,7,218,7" concept="2" />
       <node id="7011599386465561116" at="49,37,59,11" concept="2" />
       <node id="811505826641862187" at="64,18,74,5" concept="0" />
       <node id="6705903169104224379" at="78,18,88,7" concept="2" />
@@ -618,9 +639,9 @@
       <node id="4613052548080185018" at="129,18,143,7" concept="2" />
       <node id="811505826641894419" at="97,0,113,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="811505826641880081" at="95,44,113,7" concept="2" />
-      <node id="6925272620195766987" at="178,0,204,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="6925272620195745447" at="176,18,204,7" concept="2" />
-      <node id="811505826641813508" at="18,0,220,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="6925272620195766987" at="178,0,210,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6925272620195745447" at="176,18,210,7" concept="2" />
+      <node id="811505826641813508" at="18,0,223,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="708193881574514741" at="40,37,41,29" />
       <scope id="811505826641862187" at="70,31,71,27" />
       <scope id="6705903169105443566" at="82,40,84,26" />
@@ -632,6 +653,7 @@
       <scope id="6705903169105443565" at="82,0,86,0">
         <var name="it2" id="6705903169105443565" />
       </scope>
+      <scope id="6925272620198268439" at="212,35,216,22" />
       <scope id="7766373799025973755" at="38,231,43,9" />
       <scope id="3834294753784280387" at="99,185,104,24" />
       <scope id="8052818196377117886" at="105,191,110,24" />
@@ -640,6 +662,9 @@
         <var name="item" id="811505826641862187" />
       </scope>
       <scope id="6705903169104246738" at="80,35,86,11" />
+      <scope id="6925272620198268438" at="212,0,218,0">
+        <var name="it" id="6925272620198268438" />
+      </scope>
       <scope id="7011599386465597143" at="51,0,59,0">
         <var name="state" id="7011599386465597143" />
       </scope>
@@ -662,47 +687,48 @@
       <scope id="811505826641894419" at="97,0,113,0">
         <var name="it" id="811505826641894419" />
       </scope>
-      <scope id="6925272620195766988" at="178,35,202,48" />
-      <scope id="6925272620195766987" at="178,0,204,0">
+      <scope id="6925272620195766988" at="178,35,208,48" />
+      <scope id="6925272620195766987" at="178,0,210,0">
         <var name="it" id="6925272620195766987" />
       </scope>
-      <scope id="811505826641813508" at="19,54,218,0">
+      <scope id="811505826641813508" at="19,54,221,0">
         <var name="tgs" id="811505826641813508" />
       </scope>
-      <scope id="811505826641813508" at="18,0,220,0">
+      <scope id="811505826641813508" at="18,0,223,0">
         <var name="ctx" id="811505826641813508" />
       </scope>
       <unit id="708193881574514740" at="39,227,43,7" name="ArduinoML.textGen.App_TextGen$1" />
       <unit id="6705903169105443565" at="81,209,86,9" name="ArduinoML.textGen.App_TextGen$3$1" />
+      <unit id="6925272620198268438" at="211,227,218,5" name="ArduinoML.textGen.App_TextGen$7" />
       <unit id="7011599386465597143" at="50,211,59,9" name="ArduinoML.textGen.App_TextGen$2$1" />
       <unit id="6705903169104246737" at="79,221,88,5" name="ArduinoML.textGen.App_TextGen$3" />
       <unit id="7011599386465557969" at="48,221,61,5" name="ArduinoML.textGen.App_TextGen$2" />
       <unit id="4613052548080203984" at="130,224,143,5" name="ArduinoML.textGen.App_TextGen$5" />
       <unit id="811505826641894419" at="96,222,113,5" name="ArduinoML.textGen.App_TextGen$4" />
-      <unit id="6925272620195766987" at="177,224,204,5" name="ArduinoML.textGen.App_TextGen$6" />
-      <unit id="811505826641813508" at="17,0,221,0" name="ArduinoML.textGen.App_TextGen" />
+      <unit id="6925272620195766987" at="177,224,210,5" name="ArduinoML.textGen.App_TextGen$6" />
+      <unit id="811505826641813508" at="17,0,224,0" name="ArduinoML.textGen.App_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="811505826641813508" at="27,37,28,33" concept="7" />
-      <node id="811505826641813508" at="62,157,63,45" concept="6" />
-      <node id="811505826641813508" at="63,45,64,48" concept="6" />
-      <node id="811505826641813508" at="64,48,65,84" concept="2" />
-      <node id="811505826641813508" at="65,84,66,17" concept="1" />
-      <node id="811505826641814061" at="70,53,71,18" concept="7" />
-      <node id="811505826641818802" at="73,58,74,15" concept="7" />
-      <node id="811505826641813508" at="70,0,73,0" concept="9" trace="getFileName_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="811505826641813508" at="73,0,76,0" concept="9" trace="getFileExtension_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="811505826641813508" at="61,58,67,7" concept="4" />
+      <node id="811505826641813508" at="64,157,65,45" concept="6" />
+      <node id="811505826641813508" at="65,45,66,48" concept="6" />
+      <node id="811505826641813508" at="66,48,67,84" concept="2" />
+      <node id="811505826641813508" at="67,84,68,17" concept="1" />
+      <node id="811505826641814061" at="72,53,73,18" concept="7" />
+      <node id="811505826641818802" at="75,58,76,15" concept="7" />
+      <node id="811505826641813508" at="72,0,75,0" concept="9" trace="getFileName_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="811505826641813508" at="75,0,78,0" concept="9" trace="getFileExtension_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="811505826641813508" at="63,58,69,7" concept="4" />
       <scope id="811505826641813508" at="27,37,28,33" />
-      <scope id="811505826641813508" at="70,53,71,18" />
-      <scope id="811505826641813508" at="73,58,74,15" />
-      <scope id="811505826641813508" at="70,0,73,0">
+      <scope id="811505826641813508" at="72,53,73,18" />
+      <scope id="811505826641813508" at="75,58,76,15" />
+      <scope id="811505826641813508" at="72,0,75,0">
         <var name="node" id="811505826641813508" />
       </scope>
-      <scope id="811505826641813508" at="73,0,76,0">
+      <scope id="811505826641813508" at="75,0,78,0">
         <var name="node" id="811505826641813508" />
       </scope>
-      <scope id="811505826641813508" at="62,157,66,17">
+      <scope id="811505826641813508" at="64,157,68,17">
         <var name="ext" id="811505826641813508" />
         <var name="fname" id="811505826641813508" />
       </scope>
@@ -771,8 +797,8 @@
       <unit id="811505826642040207" at="16,0,66,0" name="ArduinoML.textGen.State_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="811505826642040207" at="49,39,50,35" concept="7" />
-      <scope id="811505826642040207" at="49,39,50,35" />
+      <node id="811505826642040207" at="51,39,52,35" concept="7" />
+      <scope id="811505826642040207" at="51,39,52,35" />
     </file>
   </root>
   <root nodeRef="r:50127172-4b98-407a-98ef-15f1289c6497(ArduinoML.textGen)/8995194930610546605">

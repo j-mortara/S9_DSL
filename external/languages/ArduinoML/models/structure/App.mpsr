@@ -71,6 +71,13 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1gfUmhf1EkG" resolve="Mode" />
     </node>
+    <node concept="1TJgyj" id="60rwG6zDPwM" role="1TKVEi">
+      <property role="IQ2ns" value="6925272620198221874" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="60rwG6zDPq0" resolve="Parameter" />
+    </node>
     <node concept="1TJgyj" id="3kQ9GdVkWQr" role="1TKVEi">
       <property role="IQ2ns" value="3834294753782123931" />
       <property role="20lmBu" value="reference" />

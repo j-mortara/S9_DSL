@@ -23,6 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_MelodyNote;
   private ConceptPresentation props_Mode;
   private ConceptPresentation props_ModeTransition;
+  private ConceptPresentation props_Parameter;
   private ConceptPresentation props_PlayNote;
   private ConceptPresentation props_PlayNoteFromMelody;
   private ConceptPresentation props_Sensor;
@@ -132,6 +133,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ModeTransition = cpb.create();
         }
         return props_ModeTransition;
+      case LanguageConceptSwitch.Parameter:
+        if (props_Parameter == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Parameter");
+          props_Parameter = cpb.create();
+        }
+        return props_Parameter;
       case LanguageConceptSwitch.PlayNote:
         if (props_PlayNote == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
