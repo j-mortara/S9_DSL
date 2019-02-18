@@ -13,6 +13,7 @@ import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 
 public class App_TextGen extends TextGenDescriptorBase {
@@ -237,8 +238,13 @@ public class App_TextGen extends TextGenDescriptorBase {
         ctx.getBuffer().area().decreaseIndent();
         ctx.getBuffer().area().increaseIndent();
         tgs.indent();
-        tgs.append("max_value: 1023");
-        tgs.newLine();
+        if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x4004dad9fa875ee0L, 0x4004dad9faa17f22L, "sensor")))), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L, "ArduinoML.structure.DigitalSensor"))) {
+          tgs.append("max_value: 1");
+          tgs.newLine();
+        } else {
+          tgs.append("max_value: 1023");
+          tgs.newLine();
+        }
         ctx.getBuffer().area().decreaseIndent();
         ctx.getBuffer().area().increaseIndent();
         tgs.indent();

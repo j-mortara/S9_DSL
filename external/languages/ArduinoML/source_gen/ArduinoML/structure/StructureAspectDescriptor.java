@@ -359,7 +359,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:b2310a53-b5df-477e-9bab-f808bca79a57(ArduinoML.structure)/4613052548080164576");
     b.version(2);
-    b.associate("sensor", 0x4004dad9faa17f22L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0dd02e2fL).optional(false).origin("4613052548081876770").done();
+    b.associate("sensor", 0x4004dad9faa17f22L).target(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x488b19789b3af475L).optional(false).origin("4613052548081876770").done();
     return b.create();
   }
 }

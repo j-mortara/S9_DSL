@@ -8,8 +8,14 @@ sensors:
     axis_label: "button_y_axis"
     min_value : 0
     max_value: 1023
+    max_displayed_values: 30
+  button:
+    axis_label: "button"
+    min_value : 0
+    max_value: 1
 
 max_displayed_values: 30
+
 display_state: false
 
 display_mode: false
