@@ -36,7 +36,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="sensor" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="epUACdO2SJ" resolve="AnalogSensor" />
+      <ref role="20lvS9" node="4yb6nyreJhP" resolve="Sensor" />
     </node>
   </node>
 </model>

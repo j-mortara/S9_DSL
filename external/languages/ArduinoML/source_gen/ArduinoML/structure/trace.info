@@ -580,8 +580,8 @@
       <node id="4613052548080164576" at="358,149,359,34" concept="1" />
       <node id="4613052548080164576" at="359,34,360,96" concept="1" />
       <node id="4613052548080164576" at="360,96,361,17" concept="1" />
-      <node id="4613052548081876770" at="361,17,362,169" concept="1" />
-      <node id="4613052548080164576" at="362,169,363,22" concept="6" />
+      <node id="4613052548081876770" at="361,17,362,170" concept="1" />
+      <node id="4613052548080164576" at="362,170,363,22" concept="6" />
       <node id="4613052548080164576" at="357,0,365,0" concept="8" trace="createDescriptorForWatch#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4613052548080164576" at="110,39,111,30" />
       <scope id="4613052548080164576" at="357,63,363,22">
