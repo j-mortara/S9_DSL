@@ -14,6 +14,7 @@ next_line = None
 config_file = open("settings.yaml", 'r')
 data = yaml.load(config_file.read())
 sensor_values = defaultdict(lambda: [])
+steps_values = defaultdict(lambda: [])
 close_app = threading.Event()
 
 
@@ -21,7 +22,15 @@ def main():
     # plot.ion()
     t = threading.Thread(target=display_graphs)
     t.start()
-    get_data()
+    ports = list(serial.tools.list_ports.comports())
+    try:
+        port = [p for p in ports if "Arduino" in p[1]][0]
+    except IndexError:
+        port = ports[0]
+    with serial.Serial(port.device, 19200) as ser:
+        global steps_values
+        steps_values = get_steps(ser.readline().decode("utf8").rstrip())
+        get_data(ser)
 
 
 def display_graphs():
@@ -49,30 +58,26 @@ def display_graphs():
                 plot.title(sensor_name)  # Plot the title
                 plot.grid(True)  # Turn the grid on
                 plot.ylabel(axis_label)  # Set ylabels
+                for step_values in steps_values[sensor_name]:
+                    plot.axhline(step_values["step"], label=step_values["description"])
+                plot.legend(loc='upper left')
                 plot.plot(sensor_values[sensor_name], 'r-', label=sensor_name)
             plot.pause(.000001)
 
 
-def get_data():
-    ports = list(serial.tools.list_ports.comports())
-    try:
-        port = [p for p in ports if "Arduino" in p[1]][0]
-    except IndexError:
-        port = ports[0]
-    with serial.Serial(port.device, 14400) as ser:
-        while True:
-            line = ser.readline()
-            global next_line
-            next_line = line.decode("utf8").rstrip()
-            print()
-            print(next_line)
-            print()
-            # When beginning to read data, it sometimes happens that the first line is not the complete sent JSON.
-            # This is a little workaround to prevent reading this line.
+def get_data(ser):
+    while True:
+        line = ser.readline()
+        global next_line
+        next_line = line.decode("utf8").rstrip()
+        print()
+        print(next_line)
+        print()
+        # When beginning to read data, it sometimes happens that the first line is not the complete sent JSON.
+        # This is a little workaround to prevent reading this line.
 
 
-def get_steps():
-    steps_string = "[{\"from\":\"first\",\"to\":\"second\",\"step\":500,\"greater\":true,\"sensor\":\"sensor1\"}, {\"from\":\"second\",\"to\":\"first\",\"step\":500,\"greater\":false,\"sensor\":\"sensor1\"}, {\"from\":\"second\",\"to\":\"first\",\"step\":500,\"greater\":false,\"sensor\":\"sensor2\"}]"
+def get_steps(steps_string):
     steps_json = json.loads(steps_string.rstrip())
     steps_dict = {step.get("sensor"): [] for step in steps_json}
     print(steps_json)
