@@ -84,10 +84,10 @@
   <node concept="LcSIH" id="3kQ9GdVkHLQ">
     <property role="TrG5h" value="simple" />
     <ref role="1epuHo" node="70o5eU$4sAn" resolve="first" />
-    <node concept="33Jdh1" id="21Da$FB2LwU" role="33JdFN" />
-    <node concept="33Jdh1" id="21Da$FB3Y0G" role="33JdFN">
+    <node concept="33Jdh1" id="37sGB3JVuTf" role="33JdFN">
       <property role="33JdFt" value="display_state" />
     </node>
+    <node concept="33Jdh1" id="37sGB3JVuTh" role="33JdFN" />
     <node concept="2UwSgT" id="404QHBUDzUy" role="2UyesW">
       <ref role="2UDqnV" node="epUACdPKdt" resolve="button_x_axis" />
     </node>

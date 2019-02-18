@@ -13,6 +13,7 @@ import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 
 public class App_TextGen extends TextGenDescriptorBase {
   @Override
@@ -199,13 +200,14 @@ public class App_TextGen extends TextGenDescriptorBase {
         tgs.append("max_value: 1023");
         tgs.newLine();
         ctx.getBuffer().area().decreaseIndent();
+        ctx.getBuffer().area().increaseIndent();
+        tgs.indent();
+        tgs.append("max_displayed_values: 30");
+        tgs.newLine();
+        ctx.getBuffer().area().decreaseIndent();
         ctx.getBuffer().area().decreaseIndent();
       }
     });
-    tgs.indent();
-    tgs.newLine();
-    tgs.append("max_displayed_values: 30");
-    tgs.newLine();
     tgs.newLine();
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x601b82c1a3a75832L, "parameters"))).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
@@ -215,6 +217,26 @@ public class App_TextGen extends TextGenDescriptorBase {
         tgs.newLine();
       }
     });
+    if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x601b82c1a3a75832L, "parameters"))).findFirst(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75680L, 0x601b82c1a3a7581cL, "parameter")) == "display_mode";
+      }
+    }) == null) {
+      tgs.append("display_mode");
+      tgs.append(": false");
+      tgs.newLine();
+      tgs.newLine();
+    }
+    if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x601b82c1a3a75832L, "parameters"))).findFirst(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75680L, 0x601b82c1a3a7581cL, "parameter")) == "display_state";
+      }
+    }) == null) {
+      tgs.append("display_state");
+      tgs.append(": false");
+      tgs.newLine();
+      tgs.newLine();
+    }
     tgs.indent();
     tgs.append("**/");
 
