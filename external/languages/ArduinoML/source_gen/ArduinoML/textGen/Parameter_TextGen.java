@@ -14,6 +14,6 @@ public class Parameter_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75680L, 0x601b82c1a3a7581cL, "parameter")));
     tgs.append(": ");
-    tgs.append(String.valueOf(SPropertyOperations.getBoolean(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75680L, 0x601b82c1a3a7581eL, "value"))));
+    tgs.append(String.valueOf(SPropertyOperations.getBoolean(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x601b82c1a3a75680L, 0x488b19789b356755L, "value"))));
   }
 }

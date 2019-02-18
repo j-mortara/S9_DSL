@@ -27,12 +27,13 @@ public final class LanguageConceptSwitch {
   public static final int Parameter = 15;
   public static final int PlayNote = 16;
   public static final int PlayNoteFromMelody = 17;
-  public static final int SimpleAction = 18;
-  public static final int Speaker = 19;
-  public static final int State = 20;
-  public static final int StateTransition = 21;
-  public static final int Transition = 22;
-  public static final int Watch = 23;
+  public static final int Sensor = 18;
+  public static final int SimpleAction = 19;
+  public static final int Speaker = 20;
+  public static final int State = 21;
+  public static final int StateTransition = 22;
+  public static final int Transition = 23;
+  public static final int Watch = 24;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x8a1177a2191f4d85L, 0xb39864536e65e675L);
@@ -54,6 +55,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x601b82c1a3a75680L, Parameter);
     builder.put(0x6bc7b3d27b5e710bL, PlayNote);
     builder.put(0x6bc7b3d27bd80508L, PlayNoteFromMelody);
+    builder.put(0x488b19789b3af475L, Sensor);
     builder.put(0x36166a13252ed1eL, SimpleAction);
     builder.put(0x6bc7b3d27bac6d0cL, Speaker);
     builder.put(0x36166a13252ed1bL, State);

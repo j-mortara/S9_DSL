@@ -171,13 +171,6 @@
           <ref role="ehl9w" node="epUACdPKdt" resolve="button_x_axis" />
         </node>
       </node>
-      <node concept="1r2kLh" id="4V9BsOqAPyX" role="1r2kX7">
-        <ref role="1r2kLs" node="70o5eU$4sAn" resolve="first" />
-        <node concept="1r2k76" id="4V9BsOqAPyY" role="egLiK">
-          <property role="ehl9Z" value="500" />
-          <ref role="ehl9w" node="epUACdQJR1" resolve="button_y_axis" />
-        </node>
-      </node>
     </node>
     <node concept="LcSIR" id="3kQ9GdVkItk" role="LcSJj">
       <property role="TrG5h" value="led" />
@@ -197,11 +190,11 @@
     </node>
     <node concept="eish5" id="epUACdPKdt" role="LcSJj">
       <property role="TrG5h" value="button_x_axis" />
-      <property role="1epAaf" value="0" />
+      <property role="1epAaf" value="4" />
     </node>
     <node concept="eish5" id="epUACdQJR1" role="LcSJj">
       <property role="TrG5h" value="button_y_axis" />
-      <property role="1epAaf" value="1" />
+      <property role="1epAaf" value="5" />
     </node>
   </node>
   <node concept="LcSIH" id="Bk0Dl7a6is">

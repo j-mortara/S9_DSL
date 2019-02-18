@@ -1,15 +1,15 @@
 sensors:
-  analog:
-    axis_label: "analog"
+  button_x_axis:
+    axis_label: "button_x_axis"
     min_value : 0
     max_value: 1023
-  baton_de_joie_x:
-    axis_label: "baton_de_joie_x"
+    max_displayed_values: 30
+  button_y_axis:
+    axis_label: "button_y_axis"
     min_value : 0
     max_value: 1023
 
 max_displayed_values: 30
+display_state: false
 
-display_state: true
-
-display_mode: true
+display_mode: false

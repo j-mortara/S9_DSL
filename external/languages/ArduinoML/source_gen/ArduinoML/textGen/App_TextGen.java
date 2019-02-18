@@ -96,14 +96,15 @@ public class App_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().increaseIndent();
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed72L, "bricks"))).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
-        tgs.indent();
         if (SNodeOperations.getConcept(it).isSubConceptOf(MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed16L, "ArduinoML.structure.Actuator"))) {
+          tgs.indent();
           tgs.append("pinMode(");
           tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
           tgs.append(", ");
           tgs.append("OUTPUT);");
           tgs.newLine();
         } else if (SNodeOperations.getConcept(it).isSubConceptOf(MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x631acfca1ce21c26L, "ArduinoML.structure.DigitalSensor"))) {
+          tgs.indent();
           tgs.append("pinMode(");
           tgs.append(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
           tgs.append(", ");

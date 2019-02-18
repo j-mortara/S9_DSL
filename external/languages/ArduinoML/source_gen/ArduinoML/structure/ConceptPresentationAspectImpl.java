@@ -27,6 +27,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Parameter;
   private ConceptPresentation props_PlayNote;
   private ConceptPresentation props_PlayNoteFromMelody;
+  private ConceptPresentation props_Sensor;
   private ConceptPresentation props_SimpleAction;
   private ConceptPresentation props_Speaker;
   private ConceptPresentation props_State;
@@ -163,6 +164,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PlayNoteFromMelody = cpb.create();
         }
         return props_PlayNoteFromMelody;
+      case LanguageConceptSwitch.Sensor:
+        if (props_Sensor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Sensor = cpb.create();
+        }
+        return props_Sensor;
       case LanguageConceptSwitch.SimpleAction:
         if (props_SimpleAction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
