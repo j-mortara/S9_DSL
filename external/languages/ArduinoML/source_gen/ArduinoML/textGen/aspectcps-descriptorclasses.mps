@@ -5943,7 +5943,7 @@
             <node concept="liA8E" id="zL" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
               <node concept="Xl_RD" id="zP" role="37wK5m">
-                <property role="Xl_RC" value="String str = &quot;{\\\&quot;timestamp\\\&quot;:&quot;+millis();" />
+                <property role="Xl_RC" value="String str = &quot;{\\\&quot;timestamp\\\&quot;:&quot;+String(millis())+&quot;,&quot;;" />
                 <node concept="cd27G" id="zR" role="lGtFl">
                   <node concept="3u3nmq" id="zS" role="cd27D">
                     <property role="3u3nmv" value="4613052548083158750" />
