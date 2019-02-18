@@ -35,13 +35,12 @@ def main():
         t.join()
 
 
-
 def refresh_screen():
     while True:
         if next_line and next_line[0] == '{' and next_line[-1] == '}':
             try:
                 received_json = json.loads(next_line)
-        #                print(received_json)
+                # print(received_json)
                 global cnt
                 cnt += 1
                 pos = 0
@@ -60,11 +59,25 @@ def refresh_screen():
                     plot.grid(True)  # Turn the grid on
                     plot.ylabel(axis_label)  # Set ylabels
                     plot.plot(sensor_values[sensor_name], 'r-', label=sensor_name)
-        #                    plot.legend(loc='upper left')  # plot the legend
+                # plot.legend(loc='upper left')  # plot the legend
                 plot.pause(.000001)
                 plot.show()
             except Exception as e:
                 print(e)
+
+
+def get_steps():
+    steps_string = "[{\"from\":\"first\",\"to\":\"second\",\"step\":500,\"greater\":true,\"sensor\":\"sensor1\"}, {\"from\":\"second\",\"to\":\"first\",\"step\":500,\"greater\":false,\"sensor\":\"sensor1\"}, {\"from\":\"second\",\"to\":\"first\",\"step\":500,\"greater\":false,\"sensor\":\"sensor2\"}]"
+    steps_json = json.loads(steps_string.rstrip())
+    steps_dict = {step.get("sensor"): [] for step in steps_json}
+    print(steps_json)
+    for step in steps_json:
+        steps_dict.get(step.get("sensor")).append(
+            {"description": step.get("from") + " → " + step.get("to") + (" ↑" if step.get("greater") else " ↓"),
+             "step": step.get("step")})
+    print(steps_dict)
+    return steps_dict
+
 
 if __name__ == "__main__":
     main()
