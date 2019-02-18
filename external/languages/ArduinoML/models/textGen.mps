@@ -747,6 +747,34 @@
                                       </node>
                                     </node>
                                   </node>
+                                  <node concept="la8eA" id="37sGB3Kb2KH" role="lcghm">
+                                    <property role="lacIc" value=", \\\&quot;sensor\\\&quot;:" />
+                                  </node>
+                                  <node concept="l9hG8" id="37sGB3Kbb5K" role="lcghm">
+                                    <node concept="2OqwBi" id="37sGB3KcyhK" role="lb14g">
+                                      <node concept="2OqwBi" id="37sGB3KbmuV" role="2Oq$k0">
+                                        <node concept="1PxgMI" id="37sGB3Kbj2o" role="2Oq$k0">
+                                          <node concept="chp4Y" id="37sGB3KblvW" role="3oSUPX">
+                                            <ref role="cht4Q" to="gpyq:epUACdRbw2" resolve="AnalogCondition" />
+                                          </node>
+                                          <node concept="2OqwBi" id="37sGB3KbdKl" role="1m5AlR">
+                                            <node concept="37vLTw" id="37sGB3KbcI$" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="37sGB3K5lm3" resolve="transition" />
+                                            </node>
+                                            <node concept="3TrEf2" id="37sGB3KbgvF" role="2OqNvi">
+                                              <ref role="3Tt5mk" to="gpyq:epUACdQJVq" resolve="condition" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3TrEf2" id="37sGB3Kbq3z" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="gpyq:epUACdRbwa" resolve="leftOperand" />
+                                        </node>
+                                      </node>
+                                      <node concept="3TrcHB" id="37sGB3Kczii" role="2OqNvi">
+                                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                      </node>
+                                    </node>
+                                  </node>
                                   <node concept="la8eA" id="37sGB3K690F" role="lcghm">
                                     <property role="lacIc" value=", \\\&quot;greater\\\&quot;:" />
                                   </node>
