@@ -4618,7 +4618,7 @@
                                 <node concept="liA8E" id="s5" role="2OqNvi">
                                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
                                   <node concept="Xl_RD" id="s9" role="37wK5m">
-                                    <property role="Xl_RC" value=", \\\&quot;sensor\\\&quot;:" />
+                                    <property role="Xl_RC" value=", \\\&quot;sensor\\\&quot;:\\\&quot;" />
                                     <node concept="cd27G" id="sb" role="lGtFl">
                                       <node concept="3u3nmq" id="sc" role="cd27D">
                                         <property role="3u3nmv" value="3592942800870321197" />
@@ -4754,7 +4754,7 @@
                                 <node concept="liA8E" id="sT" role="2OqNvi">
                                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
                                   <node concept="Xl_RD" id="sX" role="37wK5m">
-                                    <property role="Xl_RC" value=", \\\&quot;greater\\\&quot;:" />
+                                    <property role="Xl_RC" value="\\\&quot;, \\\&quot;greater\\\&quot;:" />
                                     <node concept="cd27G" id="sZ" role="lGtFl">
                                       <node concept="3u3nmq" id="t0" role="cd27D">
                                         <property role="3u3nmv" value="3592942800869036075" />

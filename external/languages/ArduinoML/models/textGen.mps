@@ -748,7 +748,7 @@
                                     </node>
                                   </node>
                                   <node concept="la8eA" id="37sGB3Kb2KH" role="lcghm">
-                                    <property role="lacIc" value=", \\\&quot;sensor\\\&quot;:" />
+                                    <property role="lacIc" value=", \\\&quot;sensor\\\&quot;:\\\&quot;" />
                                   </node>
                                   <node concept="l9hG8" id="37sGB3Kbb5K" role="lcghm">
                                     <node concept="2OqwBi" id="37sGB3KcyhK" role="lb14g">
@@ -776,7 +776,7 @@
                                     </node>
                                   </node>
                                   <node concept="la8eA" id="37sGB3K690F" role="lcghm">
-                                    <property role="lacIc" value=", \\\&quot;greater\\\&quot;:" />
+                                    <property role="lacIc" value="\\\&quot;, \\\&quot;greater\\\&quot;:" />
                                   </node>
                                 </node>
                                 <node concept="3clFbJ" id="37sGB3K6h$t" role="3cqZAp">

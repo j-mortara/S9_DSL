@@ -129,9 +129,9 @@ public class App_TextGen extends TextGenDescriptorBase {
             tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(transition, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a535L, 0x140fe9644f06a538L, "nextMode")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
             tgs.append("\\\", \\\"step\\\":");
             tgs.append(String.valueOf(SPropertyOperations.getInteger(SNodeOperations.cast(SLinkOperations.getTarget(transition, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddafed4L, 0x399ea6a0ddafedaL, "condition")), MetaAdapterFactory.getInterfaceConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, "ArduinoML.structure.AnalogCondition")), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, 0x399ea6a0ddcb815L, "rightOperand"))));
-            tgs.append(", \\\"sensor\\\":");
+            tgs.append(", \\\"sensor\\\":\\\"");
             tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(transition, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddafed4L, 0x399ea6a0ddafedaL, "condition")), MetaAdapterFactory.getInterfaceConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, "ArduinoML.structure.AnalogCondition")), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, 0x399ea6a0ddcb80aL, "leftOperand")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-            tgs.append(", \\\"greater\\\":");
+            tgs.append("\\\", \\\"greater\\\":");
             if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(transition, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddafed4L, 0x399ea6a0ddafedaL, "condition")), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a8a2L, "ArduinoML.structure.GreaterThan"))) {
               tgs.append("true}\");");
               tgs.newLine();
