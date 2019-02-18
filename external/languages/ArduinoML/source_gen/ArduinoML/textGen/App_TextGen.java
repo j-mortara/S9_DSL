@@ -115,6 +115,43 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("Serial.begin(14400);");
     tgs.newLine();
+    tgs.indent();
+    tgs.append("String str = \"[\";");
+    tgs.newLine();
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "modes"))).visitAll(new IVisitor<SNode>() {
+      public void visit(final SNode mode) {
+        ListSequence.fromList(SLinkOperations.getChildren(mode, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, 0x140fe9644f06a623L, "transitions"))).visitAll(new IVisitor<SNode>() {
+          public void visit(SNode transition) {
+            tgs.indent();
+            tgs.append("str.concat(\"{\\\"from\\\":\\\"");
+            tgs.append(SPropertyOperations.getString(mode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+            tgs.append("\\\", \\\"to\\\":\\\"");
+            tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(transition, MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a535L, 0x140fe9644f06a538L, "nextMode")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+            tgs.append("\\\", \\\"step\\\":");
+            tgs.append(String.valueOf(SPropertyOperations.getInteger(SNodeOperations.cast(SLinkOperations.getTarget(transition, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddafed4L, 0x399ea6a0ddafedaL, "condition")), MetaAdapterFactory.getInterfaceConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, "ArduinoML.structure.AnalogCondition")), MetaAdapterFactory.getProperty(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddcb802L, 0x399ea6a0ddcb815L, "rightOperand"))));
+            tgs.append(", \\\"greater\\\":");
+            if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(transition, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x399ea6a0ddafed4L, 0x399ea6a0ddafedaL, "condition")), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a8a2L, "ArduinoML.structure.GreaterThan"))) {
+              tgs.append("true}\");");
+              tgs.newLine();
+            } else {
+              tgs.append("false}\");");
+              tgs.newLine();
+            }
+            if (!((transition == ListSequence.fromList(SLinkOperations.getChildren(mode, MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, 0x140fe9644f06a623L, "transitions"))).last() && mode == ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x36166a13252ed6eL, "modes"))).last()))) {
+              tgs.indent();
+              tgs.append("str.concat(\",\");");
+              tgs.newLine();
+            }
+          }
+        });
+      }
+    });
+    tgs.indent();
+    tgs.append("str.concat(\"]\");");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("Serial.println(str);");
+    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
     tgs.newLine();
@@ -126,7 +163,7 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("String str = \"{\";");
+    tgs.append("String str = \"{\\\"timestamp\\\":\"+millis();");
     tgs.newLine();
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x4004dad9fa8c3de5L, "watches"))).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
