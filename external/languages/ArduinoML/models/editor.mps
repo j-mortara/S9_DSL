@@ -1258,14 +1258,17 @@
       <node concept="3EZMnI" id="21Da$FB2LGZ" role="3EZMnx">
         <node concept="VPM3Z" id="21Da$FB2LH1" role="3F10Kt" />
         <node concept="3F0ifn" id="21Da$FB2LHd" role="3EZMnx">
-          <property role="3F0ifm" value="parametrise" />
+          <property role="3F0ifm" value="parameter" />
+          <ref role="1k5W1q" node="6J7GX9VI7yk" resolve="keyword" />
         </node>
         <node concept="3F0A7n" id="21Da$FB2LHj" role="3EZMnx">
           <ref role="1NtTu8" to="gpyq:60rwG6zDPws" resolve="parameter" />
+          <ref role="1k5W1q" node="7vJY8ve3h_Y" resolve="enumeration" />
         </node>
         <node concept="l2Vlx" id="21Da$FB2LH4" role="2iSdaV" />
         <node concept="3F0A7n" id="21Da$FB2LHr" role="3EZMnx">
           <ref role="1NtTu8" to="gpyq:4yb6nyrdmtl" resolve="value" />
+          <ref role="1k5W1q" node="6J7GX9W64wh" resolve="parameter" />
         </node>
       </node>
       <node concept="2iRfu4" id="21Da$FB2LGV" role="2iSdaV" />

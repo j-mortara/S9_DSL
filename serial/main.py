@@ -36,9 +36,9 @@ def display_graphs():
     plot.show()
     fig, axes = plot.subplots(nrows=sensor_nb, ncols=1)
     fig.tight_layout()
+    fig.subplots_adjust(top=0.85)
     timestamps = {sensor_name: [] for sensor_name in data["sensors"]}
     cnt = 0
-    fig.subplots_adjust(top=0.85)
     while True:
         if close_app.is_set():
             exit(0)
@@ -48,7 +48,7 @@ def display_graphs():
             cnt += 1
             pos = 0
             # fig.suptitle("state : %s, mode : %s" % (received_json["state"], received_json["mode"]), fontsize=14)
-            fig.suptitle("state : %s, mode : %s" % ("st", "md"), fontsize=14)
+            fig.suptitle(f"state : {received_json['state']}, mode : {received_json['mode']}", fontsize=14)
             for sensor_name, sensor_params in data["sensors"].items():
                 sensor_timestamps = timestamps[sensor_name]
                 if cnt > sensor_params["max_displayed_values"]:
@@ -103,5 +103,8 @@ def get_steps(steps_string):
 if __name__ == "__main__":
     try:
         main()
-    except KeyboardInterrupt:
+    except Exception as e:
+        print(e)
+        pass
+    finally:
         close_app.set()
