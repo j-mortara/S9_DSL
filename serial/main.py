@@ -38,6 +38,7 @@ def display_graphs():
     fig.tight_layout()
     timestamps = {sensor_name: [] for sensor_name in data["sensors"]}
     cnt = 0
+    fig.subplots_adjust(top=0.85)
     while True:
         if close_app.is_set():
             exit(0)
@@ -46,9 +47,11 @@ def display_graphs():
             received_json = json.loads(next_line)
             cnt += 1
             pos = 0
+            # fig.suptitle("state : %s, mode : %s" % (received_json["state"], received_json["mode"]), fontsize=14)
+            fig.suptitle("state : %s, mode : %s" % ("st", "md"), fontsize=14)
             for sensor_name, sensor_params in data["sensors"].items():
                 sensor_timestamps = timestamps[sensor_name]
-                if cnt > data["max_displayed_values"]:
+                if cnt > sensor_params["max_displayed_values"]:
                     sensor_values[sensor_name].pop(0)
                     sensor_timestamps.pop(0)
                 sensor_values[sensor_name].append(received_json[sensor_name])
@@ -63,6 +66,7 @@ def display_graphs():
                 plot.title(sensor_name)  # Plot the title
                 plot.grid(True)  # Turn the grid on
                 plot.ylabel(axis_label)  # Set ylabels
+                # plot.subplots_adjust(left=0.25)
                 if sensor_name in steps_values:
                     for step_values in steps_values[sensor_name]:
                         plot.hlines(step_values["step"], sensor_timestamps[0] - 10, sensor_timestamps[-1] + 10,

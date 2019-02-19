@@ -18,8 +18,8 @@ int led = 10;
 int led2 = 9;
 int button = 11;
 int button2 = 12;
-int button_x_axis = 0;
-int button_y_axis = 1;
+int button_x_axis = 4;
+int button_y_axis = 5;
 
 // Declaring states
 void state_on_mode_first()
@@ -27,7 +27,7 @@ void state_on_mode_first()
   digitalWrite(led, HIGH);
   long watchTime = millis();
   while (true){
-    if(millis() - watchTime > 500){
+    if(millis() - watchTime > 100){
       watch();
       watchTime = millis();
     }
@@ -50,7 +50,7 @@ void state_off_mode_first()
   digitalWrite(led, LOW);
   long watchTime = millis();
   while (true){
-    if(millis() - watchTime > 500){
+    if(millis() - watchTime > 100){
       watch();
       watchTime = millis();
     }
@@ -73,17 +73,12 @@ void state_on_mode_second()
   digitalWrite(led2, HIGH);
   long watchTime = millis();
   while (true){
-    if(millis() - watchTime > 500){
+    if(millis() - watchTime > 100){
       watch();
       watchTime = millis();
     }
     boolean guard = millis() - time > debounce;
     if (analogRead(button_x_axis) > 500) {
-      watch();
-      time = millis();
-      state_off_mode_first();
-    }
-    else if (analogRead(button_y_axis) > 500) {
       watch();
       time = millis();
       state_off_mode_first();
@@ -101,17 +96,12 @@ void state_off_mode_second()
   digitalWrite(led2, LOW);
   long watchTime = millis();
   while (true){
-    if(millis() - watchTime > 500){
+    if(millis() - watchTime > 100){
       watch();
       watchTime = millis();
     }
     boolean guard = millis() - time > debounce;
     if (analogRead(button_x_axis) > 500) {
-      watch();
-      time = millis();
-      state_off_mode_first();
-    }
-    else if (analogRead(button_y_axis) > 500) {
       watch();
       time = millis();
       state_off_mode_first();
@@ -132,13 +122,11 @@ void setup()
   pinMode(led2, OUTPUT);
   pinMode(button, INPUT);
   pinMode(button2, INPUT);
-      Serial.begin(19200);
+  Serial.begin(14400);
   String str = "[";
   str.concat("{\"from\":\"first\", \"to\":\"second\", \"step\":500, \"sensor\":\"button_x_axis\", \"greater\":false}");
   str.concat(",");
   str.concat("{\"from\":\"second\", \"to\":\"first\", \"step\":500, \"sensor\":\"button_x_axis\", \"greater\":true}");
-  str.concat(",");
-  str.concat("{\"from\":\"second\", \"to\":\"first\", \"step\":400, \"sensor\":\"button_y_axis\", \"greater\":true}");
   str.concat("]");
   Serial.println(str);
 }
@@ -149,6 +137,8 @@ void watch(void)
   str.concat("\"button_x_axis\":"+String(analogRead(button_x_axis)));
   str.concat(",");
   str.concat("\"button_y_axis\":"+String(analogRead(button_y_axis)));
+  str.concat(",");
+  str.concat("\"button\":"+String(digitalRead(button)));
   str.concat("}");
   Serial.println(str);
 }
@@ -172,6 +162,11 @@ sensors:
     axis_label: "button_y_axis"
     min_value : 0
     max_value: 1023
+    max_displayed_values: 30
+  button:
+    axis_label: "button"
+    min_value : 0
+    max_value: 1
     max_displayed_values: 30
 
 display_state: false
