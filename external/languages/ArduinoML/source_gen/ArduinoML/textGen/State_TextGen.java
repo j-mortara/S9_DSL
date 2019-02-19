@@ -48,7 +48,11 @@ public class State_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.increaseIndent();
     tgs.indent();
-    tgs.append("watch();");
+    tgs.append("watch(\"");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append("\", \"");
+    tgs.append(SPropertyOperations.getString(SNodeOperations.cast(SNodeOperations.getParent(ctx.getPrimaryInput()), MetaAdapterFactory.getConcept(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x140fe9644f06a52cL, "ArduinoML.structure.Mode")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append("\");");
     tgs.newLine();
     tgs.indent();
     tgs.append("watchTime = millis();");
