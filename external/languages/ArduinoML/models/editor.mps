@@ -520,6 +520,7 @@
         <node concept="2iRfu4" id="1l$sGUhe4Dx" role="2iSdaV" />
         <node concept="3F0ifn" id="1l$sGUhe4DR" role="3EZMnx">
           <property role="3F0ifm" value="dj" />
+          <ref role="1k5W1q" node="6J7GX9W64wh" resolve="parameter" />
         </node>
         <node concept="1iCGBv" id="1l$sGUhe4CO" role="3EZMnx">
           <ref role="1NtTu8" to="gpyq:1l$sGUhe4Cl" resolve="dj" />
