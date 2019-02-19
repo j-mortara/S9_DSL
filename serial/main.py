@@ -3,12 +3,10 @@ import serial.tools.list_ports
 import matplotlib.pyplot as plot
 import yaml
 import threading
-
+from itertools import cycle
 from collections import defaultdict
 
 sensors = []
-
-cnt = 0
 
 next_line = None
 config_file = open("settings.yaml", 'r')
@@ -27,7 +25,7 @@ def main():
         port = [p for p in ports if "Arduino" in p[1]][0]
     except IndexError:
         port = ports[0]
-    with serial.Serial(port.device, 19200) as ser:
+    with serial.Serial(port.device, 14400) as ser:
         global steps_values
         steps_values = get_steps(ser.readline().decode("utf8").rstrip())
         get_data(ser)
@@ -36,18 +34,25 @@ def main():
 def display_graphs():
     sensor_nb = len(data["sensors"])
     plot.show()
+    fig, axes = plot.subplots(nrows=sensor_nb, ncols=1)
+    fig.tight_layout()
+    timestamps = {sensor_name: [] for sensor_name in data["sensors"]}
+    cnt = 0
     while True:
         if close_app.is_set():
             exit(0)
+        cycol = cycle('bgrcmk')
         if next_line and next_line[0] == '{' and next_line[-1] == '}':
             received_json = json.loads(next_line)
-            global cnt
             cnt += 1
             pos = 0
             for sensor_name, sensor_params in data["sensors"].items():
+                sensor_timestamps = timestamps[sensor_name]
                 if cnt > data["max_displayed_values"]:
                     sensor_values[sensor_name].pop(0)
+                    sensor_timestamps.pop(0)
                 sensor_values[sensor_name].append(received_json[sensor_name])
+                sensor_timestamps.append(received_json["timestamp"])
                 pos += 1
                 min_value = sensor_params["min_value"]
                 max_value = sensor_params["max_value"]
@@ -58,10 +63,12 @@ def display_graphs():
                 plot.title(sensor_name)  # Plot the title
                 plot.grid(True)  # Turn the grid on
                 plot.ylabel(axis_label)  # Set ylabels
-                for step_values in steps_values[sensor_name]:
-                    plot.axhline(step_values["step"], label=step_values["description"])
-                plot.legend(loc='upper left')
-                plot.plot(sensor_values[sensor_name], 'r-', label=sensor_name)
+                if sensor_name in steps_values:
+                    for step_values in steps_values[sensor_name]:
+                        plot.hlines(step_values["step"], sensor_timestamps[0] - 10, sensor_timestamps[-1] + 10,
+                                    label=step_values["description"], colors=next(cycol), linestyles='dashed')
+                    plot.legend(loc='upper left')
+                plot.plot(sensor_timestamps, sensor_values[sensor_name], 'r-', label=sensor_name)
             plot.pause(.000001)
 
 
@@ -70,9 +77,9 @@ def get_data(ser):
         line = ser.readline()
         global next_line
         next_line = line.decode("utf8").rstrip()
-        print()
-        print(next_line)
-        print()
+        # print()
+        # print(next_line)
+        # print()
         # When beginning to read data, it sometimes happens that the first line is not the complete sent JSON.
         # This is a little workaround to prevent reading this line.
 
