@@ -52,6 +52,7 @@
       </concept>
       <concept id="6925272620198221440" name="ArduinoML.structure.Parameter" flags="ng" index="33Jdh1">
         <property id="6925272620198221852" name="parameter" index="33JdFt" />
+        <property id="5227299798284330837" name="value" index="3jJBSH" />
       </concept>
       <concept id="3834294753782225956" name="ArduinoML.structure.StateTransition" flags="ng" index="1eoRFB">
         <reference id="3834294753782225957" name="nextState" index="1eoRFA" />
@@ -86,6 +87,7 @@
     <ref role="1epuHo" node="70o5eU$4sAn" resolve="first" />
     <node concept="33Jdh1" id="37sGB3JVuTf" role="33JdFN">
       <property role="33JdFt" value="display_state" />
+      <property role="3jJBSH" value="true" />
     </node>
     <node concept="33Jdh1" id="37sGB3JVuTh" role="33JdFN" />
     <node concept="2UwSgT" id="404QHBUDzUy" role="2UyesW">
