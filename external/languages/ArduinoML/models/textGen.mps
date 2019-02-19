@@ -321,6 +321,12 @@
           </node>
           <node concept="l8MVK" id="3kQ9GdVsXTC" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="4QmwTtraNrf" role="3cqZAp">
+          <node concept="la8eA" id="4QmwTtraNrg" role="lcghm">
+            <property role="lacIc" value="int power [] = {2, 4, 8, 16, 32, 64, 128, 256, 512};\n" />
+          </node>
+          <node concept="l8MVK" id="4QmwTtraNrh" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="3kQ9GdVlnns" role="3cqZAp">
           <node concept="l8MVK" id="3kQ9GdVlnCJ" role="lcghm" />
         </node>
@@ -1601,7 +1607,7 @@
               </node>
               <node concept="lc7rE" id="3MI$QstG463" role="3cqZAp">
                 <node concept="la8eA" id="3MI$QstG48B" role="lcghm">
-                  <property role="lacIc" value=" * pow(2,analogRead(" />
+                  <property role="lacIc" value=" * power[analogRead(" />
                 </node>
                 <node concept="l9hG8" id="3MI$QstG6Xc" role="lcghm">
                   <node concept="2OqwBi" id="3MI$QstG7DJ" role="lb14g">
@@ -1617,7 +1623,7 @@
                   </node>
                 </node>
                 <node concept="la8eA" id="3MI$QstG83n" role="lcghm">
-                  <property role="lacIc" value=") / 128)" />
+                  <property role="lacIc" value=") / 128]" />
                 </node>
               </node>
             </node>

@@ -183,6 +183,77 @@
         </node>
       </node>
     </node>
+    <node concept="37WvkG" id="4QmwTtrc3aK" role="37WGs$">
+      <ref role="37XkoT" to="gpyq:6J7GX9VQ0k8" resolve="PlayNoteFromMelody" />
+      <node concept="37Y9Zx" id="4QmwTtrc3aL" role="37ZfLb">
+        <node concept="3clFbS" id="4QmwTtrc3aM" role="2VODD2">
+          <node concept="3clFbF" id="4QmwTtrc3br" role="3cqZAp">
+            <node concept="2OqwBi" id="4QmwTtrc3bs" role="3clFbG">
+              <node concept="2OqwBi" id="4QmwTtrc3bt" role="2Oq$k0">
+                <node concept="1r4Lsj" id="4QmwTtrc3bu" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4QmwTtrc3bv" role="2OqNvi">
+                  <ref role="3Tt5mk" to="gpyq:dxpE4MkIOU" resolve="target" />
+                </node>
+              </node>
+              <node concept="2oxUTD" id="4QmwTtrc3bw" role="2OqNvi">
+                <node concept="1PxgMI" id="4QmwTtrc3bx" role="2oxUTC">
+                  <node concept="chp4Y" id="4QmwTtrc3by" role="3oSUPX">
+                    <ref role="cht4Q" to="gpyq:6J7GX9VF6Oc" resolve="Speaker" />
+                  </node>
+                  <node concept="2OqwBi" id="4QmwTtrc3bz" role="1m5AlR">
+                    <node concept="2OqwBi" id="4QmwTtrc3b$" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4QmwTtrc3b_" role="2Oq$k0">
+                        <node concept="1r4N1M" id="4QmwTtrc3bA" role="2Oq$k0" />
+                        <node concept="2Xjw5R" id="4QmwTtrc3bB" role="2OqNvi">
+                          <node concept="1xMEDy" id="4QmwTtrc3bC" role="1xVPHs">
+                            <node concept="chp4Y" id="4QmwTtrc3bD" role="ri$Ld">
+                              <ref role="cht4Q" to="gpyq:dxpE4MkIOc" resolve="App" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3Tsc0h" id="4QmwTtrc3bE" role="2OqNvi">
+                        <ref role="3TtcxE" to="gpyq:dxpE4MkIPM" resolve="bricks" />
+                      </node>
+                    </node>
+                    <node concept="1z4cxt" id="4QmwTtrc3bF" role="2OqNvi">
+                      <node concept="1bVj0M" id="4QmwTtrc3bG" role="23t8la">
+                        <node concept="3clFbS" id="4QmwTtrc3bH" role="1bW5cS">
+                          <node concept="Jncv_" id="4QmwTtrc3bI" role="3cqZAp">
+                            <ref role="JncvD" to="gpyq:6J7GX9VF6Oc" resolve="Speaker" />
+                            <node concept="37vLTw" id="4QmwTtrc3bJ" role="JncvB">
+                              <ref role="3cqZAo" node="4QmwTtrc3bR" resolve="it" />
+                            </node>
+                            <node concept="3clFbS" id="4QmwTtrc3bK" role="Jncv$">
+                              <node concept="3cpWs6" id="4QmwTtrc3bL" role="3cqZAp">
+                                <node concept="3clFbT" id="4QmwTtrc3bM" role="3cqZAk">
+                                  <property role="3clFbU" value="true" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="JncvC" id="4QmwTtrc3bN" role="JncvA">
+                              <property role="TrG5h" value="actuator" />
+                              <node concept="2jxLKc" id="4QmwTtrc3bO" role="1tU5fm" />
+                            </node>
+                          </node>
+                          <node concept="3cpWs6" id="4QmwTtrc3bP" role="3cqZAp">
+                            <node concept="3clFbT" id="4QmwTtrc3bQ" role="3cqZAk" />
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="4QmwTtrc3bR" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="4QmwTtrc3bS" role="1tU5fm" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="37WvkG" id="Bk0Dl7dGZ8" role="37WGs$">
       <ref role="37XkoT" to="gpyq:6cqNWCsSxKA" resolve="DigitalSensor" />
       <node concept="37Y9Zx" id="Bk0Dl7dGZ9" role="37ZfLb">

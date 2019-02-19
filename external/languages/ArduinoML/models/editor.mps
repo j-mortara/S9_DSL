@@ -511,9 +511,6 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
-        <node concept="A1WHr" id="Bk0Dl7go$V" role="3vIgyS">
-          <ref role="2ZyFGn" to="gpyq:6J7GX9VQ0k8" resolve="PlayNoteFromMelody" />
-        </node>
       </node>
       <node concept="2iRfu4" id="6J7GX9VQ0kt" role="2iSdaV" />
       <node concept="3EZMnI" id="1l$sGUhe4Dw" role="3EZMnx">

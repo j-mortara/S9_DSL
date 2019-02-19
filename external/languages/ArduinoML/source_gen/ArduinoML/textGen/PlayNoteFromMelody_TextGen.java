@@ -22,9 +22,9 @@ public class PlayNoteFromMelody_TextGen extends TextGenDescriptorBase {
 
     } else {
       MelodySetup.getNote(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bd80508L, 0x6bc7b3d27bd8050bL, "melody")), ctx);
-      tgs.append(" * pow(2,analogRead(");
+      tgs.append(" * power[analogRead(");
       tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bd80508L, 0x156472ce91384a15L, "dj")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-      tgs.append(") / 128)");
+      tgs.append(") / 128]");
     }
     tgs.append(", ");
     MelodySetup.getBeat(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getReferenceLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x6bc7b3d27bd80508L, 0x6bc7b3d27bd8050bL, "melody")), ctx);

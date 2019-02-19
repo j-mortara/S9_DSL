@@ -34,6 +34,8 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.append("long time =0;long debounce=100;");
     tgs.newLine();
+    tgs.append("int power [] = {2, 4, 8, 16, 32, 64, 128, 256, 512};\n");
+    tgs.newLine();
     tgs.newLine();
     if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies"))).isNotEmpty()) {
       ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x8a1177a2191f4d85L, 0xb39864536e65e675L, 0x36166a13252ed0cL, 0x6bc7b3d27bb8847aL, "melodies"))).visitAll(new IVisitor<SNode>() {
