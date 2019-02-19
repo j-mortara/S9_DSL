@@ -89,10 +89,10 @@
     </node>
     <node concept="33Jdh1" id="37sGB3JVuTh" role="33JdFN" />
     <node concept="2UwSgT" id="404QHBUDzUy" role="2UyesW">
-      <ref role="2UDqnV" node="epUACdPKdt" resolve="button_x_axis" />
+      <ref role="2UDqnV" node="epUACdPKdt" resolve="button_1" />
     </node>
     <node concept="2UwSgT" id="404QHBULPOE" role="2UyesW">
-      <ref role="2UDqnV" node="epUACdQJR1" resolve="button_y_axis" />
+      <ref role="2UDqnV" node="epUACdQJR1" resolve="button_2" />
     </node>
     <node concept="2UwSgT" id="4yb6nyriDNH" role="2UyesW">
       <ref role="2UDqnV" node="3kQ9GdVkWQn" resolve="button" />
@@ -132,7 +132,7 @@
         <ref role="1r2kLs" node="70o5eU$4sB1" resolve="second" />
         <node concept="1r2k71" id="epUACenBmo" role="egLiK">
           <property role="ehl9Z" value="500" />
-          <ref role="ehl9w" node="epUACdPKdt" resolve="button_x_axis" />
+          <ref role="ehl9w" node="epUACdPKdt" resolve="button_1" />
         </node>
       </node>
     </node>
@@ -171,7 +171,7 @@
         <ref role="1r2kLs" node="70o5eU$4sAn" resolve="first" />
         <node concept="1r2k76" id="epUACenBms" role="egLiK">
           <property role="ehl9Z" value="500" />
-          <ref role="ehl9w" node="epUACdPKdt" resolve="button_x_axis" />
+          <ref role="ehl9w" node="epUACdPKdt" resolve="button_1" />
         </node>
       </node>
     </node>
@@ -192,11 +192,11 @@
       <property role="1epAaf" value="12" />
     </node>
     <node concept="eish5" id="epUACdPKdt" role="LcSJj">
-      <property role="TrG5h" value="button_x_axis" />
+      <property role="TrG5h" value="button_1" />
       <property role="1epAaf" value="4" />
     </node>
     <node concept="eish5" id="epUACdQJR1" role="LcSJj">
-      <property role="TrG5h" value="button_y_axis" />
+      <property role="TrG5h" value="button_2" />
       <property role="1epAaf" value="5" />
     </node>
   </node>
@@ -216,7 +216,7 @@
       <property role="1epAaf" value="1" />
     </node>
     <node concept="eish5" id="3MI$QstO1d6" role="LcSJj">
-      <property role="TrG5h" value="baton_de_joie_x" />
+      <property role="TrG5h" value="joystick" />
       <property role="1epAaf" value="2" />
     </node>
     <node concept="1r2kL8" id="Bk0Dl7a6iu" role="LcSJf">
@@ -330,7 +330,7 @@
       <ref role="2UDqnV" node="Bk0Dl7mygR" resolve="analog" />
     </node>
     <node concept="2UwSgT" id="3MI$QstO1db" role="2UyesW">
-      <ref role="2UDqnV" node="3MI$QstO1d6" resolve="baton_de_joie_x" />
+      <ref role="2UDqnV" node="3MI$QstO1d6" resolve="joystick" />
     </node>
   </node>
 </model>
